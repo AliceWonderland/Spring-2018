@@ -1,0 +1,269 @@
+/*GLOBAL STYLES*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+body {
+    line-height: 1;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    content: '';
+    background: #1A1F21;
+    z-index: -1;
+}
+
+header{
+}
+
+main{
+    margin-top:70px;
+    width: 100%;
+}
+
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background: #1A1F21;
+}
+.site-header .container-wide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    position: relative;
+    transition: height .4s ease-out;
+}
+
+/*CONTENT STYLES*/
+.universe{
+    /*position: relative;*/
+    /*height: 300px;*/
+    overflow: hidden;
+    z-index: 2;
+
+
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center; !* vertical *!*/
+    align-items: center; /* horiz */
+}
+.universe-content{
+    /*position:absolute;*/
+    /*top:0px;*/
+    /*left:0px;*/
+    z-index: 3;
+}
+
+
+/*BACKGROUND + STARS*/
+.bg-orange,
+.bg-purple,
+.bg-blue,
+.bg-orange-pink,
+.bg-pink-purple,
+.bg-purple-blue,
+.bg-green-teal,
+.bg-teal,
+.tabs-bg>* {
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 4s ease;
+    z-index: -2
+}
+
+.bg-orange.is-active,
+.bg-purple.is-active,
+.bg-blue.is-active,
+.bg-orange-pink.is-active,
+.bg-pink-purple.is-active,
+.bg-purple-blue.is-active,
+.bg-green-teal.is-active,
+.bg-teal.is-active,
+.tabs-bg>*.is-active {
+    opacity: 1
+}
+.bg-orange {
+    background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%)
+}
+.bg-purple {
+    background: linear-gradient(135deg, #A166AB 0%, #5073B8 100%)
+}
+.bg-blue {
+    background: linear-gradient(135deg, #5073B8 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%)
+}
+.bg-orange-pink {
+    background-image: linear-gradient(-135deg, #EF4E7B 0%, #F37055 51%, #F79533 100%)
+}
+.bg-pink-purple {
+    background-image: linear-gradient(-135deg, #A166AB 0%, #EF4E7B 100%)
+}
+.bg-purple-blue {
+    background-image: linear-gradient(-135deg, #1098AD 0%, #5073B8 100%)
+}
+.bg-green-teal {
+    background-image: linear-gradient(-135deg, #07B39B 0%, #1098AD 100%)
+}
+.bg-teal {
+    background-image: linear-gradient(-135deg, #6DBA82 0%, #07B39B 100%)
+}
+.bg-black{
+    background-color: #22292C;
+    width: 100%;
+    height: 100%;
+    min-height: 1100px;
+    /*display: block;*/
+    /*top: 0px;*/
+    /*left: 0px;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    opacity:1;
+    transition: opacity 4s ease;
+    z-index: -1;
+    position: absolute;
+}
+@keyframes rotate360 {
+    to {
+        transform: rotateZ(360deg)
+    }
+}
+@keyframes pulse {
+    0% {
+        opacity: 0.2
+    }
+    50% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 0.2
+    }
+}
+
+.stars,
+.stars-lg {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    width: 2000px;
+    min-height: 2000px;
+    height: 100%;
+    left: calc(50% - 1000px);
+    top: 0;
+    transform-origin: center;
+    background: url("img/stars-sm.svg") center/800px auto repeat;
+    animation: 1000s rotate360 infinite linear
+}
+.stars-lg {
+    opacity: 0.2;
+    background: url("img/stars-lg.svg") center/1100px auto repeat;
+    animation: 10s pulse infinite linear
+}
+@keyframes shooting-star {
+    0% {
+        opacity: 1;
+        transform: scale(0) translate3d(0, 0, 0)
+    }
+    15% {
+        opacity: 1
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1) translate3d(180px, 0, 0)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) translate3d(180px, 0, 0)
+    }
+}
+.shooting-star {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transform: rotate(30deg);
+    pointer-events: none
+}
+.shooting-star img {
+    opacity: 0;
+    animation-delay: 0;
+    animation: shooting-star 6s infinite ease-out
+}
+.shooting-star-right {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    width: 130px;
+    transform: rotate(-235deg);
+    pointer-events: none
+}
+.shooting-star-right img {
+    opacity: 0;
+    animation: shooting-star 6s 3s infinite ease-out;
+    animation-delay: 2.5s
+}
+
+
+
+
+
+/*MDN Test*/
+div.main {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    position:relative;
+
+    /*-webkit-animation-name: example; !* Safari 4.0 - 8.0 *!*/
+    /*-webkit-animation-duration: 4s; !* Safari 4.0 - 8.0 *!*/
+    /*animation-name: example;*/
+    /*animation-duration: 4s;*/
+
+    -webkit-animation: example 5s infinite; /* Safari 4+ */
+    -moz-animation:    example 5s infinite; /* Fx 5+ */
+    -o-animation:      example 5s infinite; /* Opera 12+ */
+    animation:         example 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {
+        opacity: 0.2;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+    50% {
+        opacity: 0.6;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+    100% {
+        opacity: 0.2;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+}
