@@ -1,16 +1,76 @@
+
+
 /*GLOBAL STYLES*/
+/* vietnamese */
+/*@font-face {*/
+    /*font-family: 'Nunito Sans';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqtDiNsR5a-9Oe_Ivpu8XWlY.woff2) format('woff2');*/
+    /*unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;*/
+/*}*/
+/*!* latin-ext *!*/
+/*@font-face {*/
+    /*font-family: 'Nunito Sans';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqqE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');*/
+    /*unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;*/
+/*}*/
+/*!* latin *!*/
+/*@font-face {*/
+    /*font-family: 'Nunito Sans';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');*/
+    /*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;*/
+/*}*/
+
+@font-face {
+    font-family: 'nunito_sans';
+    src: url("assets/fonts/nunitosans-regular-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'nunito_sans';
+    src: url("assets/fonts/nunitosans-italic-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic
+}
+@font-face {
+    font-family: 'nunito_sans';
+    src: url("assets/fonts/nunitosans-bold-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+@font-face {
+    font-family: 'stratum';
+    src: url("assets/fonts/stratum1-bold-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+@font-face {
+    font-family: 'stratum';
+    src: url("assets/fonts/stratum1-medium-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+@font-face {
+    font-family: 'stratum';
+    src: url("assets/fonts/stratum1-regular-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    border: 0
-}
-
-body {
-    line-height: 1;
-    overflow: hidden;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
+    border: 0;
+    color: #fff;
+    font-family:'nunito_sans', sans-serif;
 }
 
 body:before {
@@ -18,43 +78,97 @@ body:before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 65px;
     content: '';
     background: #1A1F21;
     z-index: -1;
 }
 
+body {
+    line-height: 1;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
 header{
+
 }
 
 main{
-    margin-top:70px;
+    margin-top:65px;
     width: 100%;
 }
 
+a,
+.a {
+    color: inherit;
+    transition: all .4s ease-out
+}
+a:hover,
+.a:hover {
+    cursor: pointer
+}
 
+footer{
+    /*height: 300px;*/
+    overflow: hidden;
+}
+
+
+
+/*CONTENT STYLES*/
+
+#app{
+    display: flex;
+    flex-direction: column;
+}
+
+/*site nav*/
 .site-header {
     position: fixed;
     width: 100%;
     z-index: 10;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 65px;
     background: #1A1F21;
-}
-.site-header .container-wide {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    position: relative;
     transition: height .4s ease-out;
 }
 
-/*CONTENT STYLES*/
+.site-header .container-wide {
+
+}
+
+.site-header a {
+    font-family: 'stratum', arial, sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.site-header a:not(:last-child) {
+    margin-right: 16px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+/*interior page*/
 .universe{
-    /*position: relative;*/
+    position: relative;
     /*height: 300px;*/
+    /*background-color: #22292C; !* remove to go back to bg-black *!*/
     overflow: hidden;
     z-index: 2;
 
@@ -68,8 +182,29 @@ main{
     /*position:absolute;*/
     /*top:0px;*/
     /*left:0px;*/
-    z-index: 3;
+    /*z-index: 3;*/
 }
+
+.horizon{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*footer*/
+footer .universe{
+    height:300px;
+
+}
+.footer-bar {
+    height: 80px;
+    background: #1A1F21;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+}
+
 
 
 /*BACKGROUND + STARS*/
@@ -134,7 +269,7 @@ main{
     background-color: #22292C;
     width: 100%;
     height: 100%;
-    min-height: 1100px;
+    /*min-height: 1100px;*/
     /*display: block;*/
     /*top: 0px;*/
     /*left: 0px;*/
@@ -145,6 +280,16 @@ main{
     z-index: -1;
     position: absolute;
 }
+
+main .bg-black{
+    min-height: 1100px;
+}
+
+footer .bg-black{
+    height: 300px;
+    min-height:300px;
+}
+
 @keyframes rotate360 {
     to {
         transform: rotateZ(360deg)
@@ -165,7 +310,7 @@ main{
 .stars,
 .stars-lg {
     position: absolute;
-    z-index: -1;
+    z-index: -1; /* -1 */
     opacity: 0.3;
     width: 2000px;
     min-height: 2000px;
@@ -173,12 +318,12 @@ main{
     left: calc(50% - 1000px);
     top: 0;
     transform-origin: center;
-    background: url("img/stars-sm.svg") center/800px auto repeat;
+    background: url("assets/img/stars-sm.svg") center/800px auto repeat;
     animation: 1000s rotate360 infinite linear
 }
 .stars-lg {
     opacity: 0.2;
-    background: url("img/stars-lg.svg") center/1100px auto repeat;
+    background: url("assets/img/stars-lg.svg") center/1100px auto repeat;
     animation: 10s pulse infinite linear
 }
 @keyframes shooting-star {

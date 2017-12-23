@@ -1,36 +1,36 @@
 @font-face {
     font-family: 'nunito_sans';
-    src: url("../fonts/universe/nunitosans-regular-webfont.woff2") format("woff2"), url("../fonts/universe/nunitosans-regular-webfont.woff") format("woff");
+    src: url("assets/fonts/nunitosans-regular-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
 @font-face {
     font-family: 'nunito_sans';
-    src: url("../fonts/universe/nunitosans-italic-webfont.woff2") format("woff2"), url("../fonts/universe/nunitosans-italic-webfont.woff") format("woff");
+    src: url("assets/fonts/nunitosans-italic-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-italic-webfont.woff") format("woff");
     font-weight: normal;
     font-style: italic
 }
 @font-face {
     font-family: 'nunito_sans';
-    src: url("../fonts/universe/nunitosans-bold-webfont.woff2") format("woff2"), url("../fonts/universe/nunitosans-bold-webfont.woff") format("woff");
+    src: url("assets/fonts/nunitosans-bold-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-bold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal
 }
 @font-face {
     font-family: 'stratum';
-    src: url("../fonts/universe/stratum1-bold-webfont.woff2") format("woff2"), url("../fonts/universe/stratum1-bold-webfont.woff") format("woff");
+    src: url("assets/fonts/stratum1-bold-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-bold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal
 }
 @font-face {
     font-family: 'stratum';
-    src: url("../fonts/universe/stratum1-medium-webfont.woff2") format("woff2"), url("../fonts/universe/stratum1-medium-webfont.woff") format("woff");
+    src: url("assets/fonts/stratum1-medium-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-medium-webfont.woff") format("woff");
     font-weight: 500;
     font-style: normal
 }
 @font-face {
     font-family: 'stratum';
-    src: url("../fonts/universe/stratum1-regular-webfont.woff2") format("woff2"), url("../fonts/universe/stratum1-regular-webfont.woff") format("woff");
+    src: url("assets/fonts/stratum1-regular-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
