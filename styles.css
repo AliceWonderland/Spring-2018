@@ -102,11 +102,12 @@ main{
 a,
 .a {
     color: inherit;
-    transition: all .4s ease-out
+    transition: all .4s ease-out;
 }
 a:hover,
 .a:hover {
-    cursor: pointer
+    cursor: pointer;
+    opacity: 0.4;
 }
 
 footer{
@@ -139,10 +140,6 @@ footer{
     transition: height .4s ease-out;
 }
 
-.site-header .container-wide {
-
-}
-
 .site-header a {
     font-family: 'stratum', arial, sans-serif;
     letter-spacing: 3px;
@@ -162,6 +159,10 @@ footer{
 .logo img {
     width: 70px;
     vertical-align: middle;
+}
+
+.watch {
+    margin-right: 20px;
 }
 
 /*interior page*/
@@ -189,6 +190,33 @@ footer{
     height: 300px;
     position: relative;
     overflow: hidden;
+}
+
+.space{
+    background-color:#1A1F21;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.space>*{
+    background: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+    padding: 45px 25px;
+    border-radius: 6px;
+    position: relative;
+    width:100px;
+}
+.space>*:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+    left: 4px;
+    background: #22292C;
 }
 
 /*footer*/
