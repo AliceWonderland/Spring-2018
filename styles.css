@@ -1,79 +1,68 @@
-
-
 /*GLOBAL STYLES*/
-/* vietnamese */
-/*@font-face {*/
-    /*font-family: 'Nunito Sans';*/
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqtDiNsR5a-9Oe_Ivpu8XWlY.woff2) format('woff2');*/
-    /*unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;*/
-/*}*/
-/*!* latin-ext *!*/
-/*@font-face {*/
-    /*font-family: 'Nunito Sans';*/
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqqE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');*/
-    /*unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;*/
-/*}*/
-/*!* latin *!*/
-/*@font-face {*/
-    /*font-family: 'Nunito Sans';*/
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');*/
-    /*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;*/
-/*}*/
-
-@font-face {
+@font-face{
     font-family: 'nunito_sans';
     src: url("assets/fonts/nunitosans-regular-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
-
-@font-face {
+@font-face{
     font-family: 'nunito_sans';
     src: url("assets/fonts/nunitosans-italic-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-italic-webfont.woff") format("woff");
     font-weight: normal;
     font-style: italic
 }
-@font-face {
+@font-face{
     font-family: 'nunito_sans';
-    src: url("assets/fonts/nunitosans-bold-webfont.woff2") format("woff2"), url("assets/fonts/nunitosans-bold-webfont.woff") format("woff");
+    src: url("assets/fonts/nunitosans-bold-webfont.woff2") format("woff2"),url("assets/fonts/nunitosans-bold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal
 }
-@font-face {
+@font-face{
     font-family: 'stratum';
     src: url("assets/fonts/stratum1-bold-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-bold-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal
 }
-@font-face {
+@font-face{
     font-family: 'stratum';
     src: url("assets/fonts/stratum1-medium-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-medium-webfont.woff") format("woff");
     font-weight: 500;
     font-style: normal
 }
-@font-face {
+@font-face{
     font-family: 'stratum';
     src: url("assets/fonts/stratum1-regular-webfont.woff2") format("woff2"), url("assets/fonts/stratum1-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
-    color: #fff;
     font-family:'nunito_sans', sans-serif;
+    color: #fff;
 }
 
-body:before {
+html{
+    font-size: 62.5%; /* must be in root for rem units */
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+
+    /*overflow: hidden;*/
+    /*overflow-y: auto;*/
+}
+
+body:before{
     position: absolute;
     top: 0;
     left: 0;
@@ -84,12 +73,6 @@ body:before {
     z-index: -1;
 }
 
-body {
-    line-height: 1;
-    overflow: hidden;
-    overflow-y: auto;
-}
-
 header{
 
 }
@@ -97,35 +80,76 @@ header{
 main{
     margin-top:65px;
     width: 100%;
+    font-size: 1.5rem;
 }
 
-a,
-.a {
+footer{
+    overflow: hidden;
+}
+
+a, .a{
     color: inherit;
     transition: all .4s ease-out;
+    text-decoration: none;
 }
-a:hover,
-.a:hover {
+
+a:hover, .a:hover{
     cursor: pointer;
     opacity: 0.4;
 }
 
-footer{
-    /*height: 300px;*/
-    overflow: hidden;
+h1, h2, h3, h4, h5, h6{
+    font-family: "stratum","Arial Narrow","Trebuchet MS",sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
+h1{
+    font-size: 4.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
 
+h2{
+    font-size: 3.0rem;
+    letter-spacing: 2px;
+    line-height: 1.333;
+    margin-bottom: 5px;
+}
 
-/*CONTENT STYLES*/
+h3{
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+    line-height: 1.85
+}
 
+h4{
+    font-size: 2.0rem;
+    letter-spacing: 3px;
+    line-height: 1.85
+}
+
+h5{
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    line-height: 1.85
+}
+
+h6{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    line-height: 2
+}
+
+/*CONTAINER STYLES*/
+/*app container*/
 #app{
     display: flex;
     flex-direction: column;
 }
 
 /*site nav*/
-.site-header {
+.site-header{
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -140,56 +164,175 @@ footer{
     transition: height .4s ease-out;
 }
 
-.site-header a {
-    font-family: 'stratum', arial, sans-serif;
+/*.site-header a{*/
+    /*font-family: 'stratum', arial, sans-serif;*/
+    /*letter-spacing: 3px;*/
+    /*text-transform: uppercase;*/
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.site-header a:not(:last-child){*/
+    /*margin-right: 16px;*/
+/*}*/
+
+/*.site-navigation{*/
+    /*text-align: center;*/
+    /*padding: 40px 0*/
+/*}*/
+.site-navigation a{
+    display: inline-block;
+    font-family: "stratum", "Arial Narrow", "Trebuchet MS", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2;
+    font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 5px
+}
+.site-navigation a:hover{
+    opacity: 1;
+}
+@media (min-width: 850px){
+    .site-navigation a{
+        font-size: 1.2rem
+    }
+}
+@media (min-width: 1025px){
+    .site-navigation a{
+        font-size: 1.5rem;
+        line-height: 1.8;
+        padding: 5px 5px 6px
+    }
+}
+.site-navigation a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    background: linear-gradient(to right, #E67207 0%, #EF4E7B 50%, #A166AB 100%);
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .4s ease-out
+}
+.site-navigation li.is-active a:after,
+.site-navigation a:hover:after{
+    transform: scaleX(1)
+}
+@media (max-width: 849px){
+    .site-navigation{
+        position: fixed;
+        bottom: 40px;
+        right: 3%;
+        transform: scale(0);
+        z-index: 12
+    }
+    .site-navigation li{
+        opacity: 0;
+        display: block;
+        transform: translate3d(4px, 0px, 0);
+        transition: all .3s ease;
+        text-align: left
+    }
+    .site-navigation li+li{
+        margin-top: 10px
+    }
+    .site-navigation a{
+        text-decoration: none;
+        padding: 4px 8px;
+        color: white
+    }
+}
+@media (min-width: 850px){
+    .site-navigation{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0
+    }
+    .site-navigation ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 445px
+    }
+    .site-navigation ul li{
+        flex-grow: 1
+    }
+}
+@media (min-width: 850px){
+    .site-navigation{
+        justify-content: center
+    }
+}
+@media (min-width: 1025px){
+    .site-navigation ul{
+        max-width: 640px
+    }
 }
 
-.site-header a:not(:last-child) {
-    margin-right: 16px;
-}
-
-.logo {
+.logo{
     margin-left: 20px;
 }
 
-.logo img {
+.logo img{
     width: 70px;
     vertical-align: middle;
 }
 
-.watch {
+.watch{
     margin-right: 20px;
 }
 
-/*interior page*/
-.universe{
+.site-footer{
+    font-family: "stratum","Arial Narrow","Trebuchet MS",sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.site-footer li{
+    list-style: none;
+}
+
+/*page section types*/
+.galaxy{
     position: relative;
-    /*height: 300px;*/
-    /*background-color: #22292C; !* remove to go back to bg-black *!*/
+    background-color: #22292C; /* remove to go back to bg-black */
     overflow: hidden;
     z-index: 2;
 
-
     display: flex;
     flex-direction: column;
-    /*justify-content: center; !* vertical *!*/
+    justify-content: center; /* vert */
     align-items: center; /* horiz */
 }
-.universe-content{
+.galaxy-content{
     /*position:absolute;*/
     /*top:0px;*/
     /*left:0px;*/
     /*z-index: 3;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .horizon{
     height: 300px;
     position: relative;
     overflow: hidden;
+}
+.horizon-content{
+
 }
 
 .space{
@@ -198,6 +341,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     color: #fff;
+    padding: 30px;
 }
 
 .space>*{
@@ -207,7 +351,7 @@ footer{
     position: relative;
     width:100px;
 }
-.space>*:after {
+.space>*:after{
     content: '';
     display: block;
     position: absolute;
@@ -220,11 +364,11 @@ footer{
 }
 
 /*footer*/
-footer .universe{
+footer .galaxy{
     height:300px;
 
 }
-.footer-bar {
+.footer-bar{
     height: 80px;
     background: #1A1F21;
     justify-content: space-between;
@@ -234,7 +378,107 @@ footer .universe{
 }
 
 
+/*animations*/
+[data-animate-in]{
+    opacity: 0;
+}
+[data-animate-in="fadein"]{
+    animation-duration: 1s;
+    animation-name: fadein;
+    -webkit-transition:  transform 0.8s ease, opacity 0.8s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+[data-animate-in="intro"]{
+    animation-duration: 1s;
+    animation-name: slidein;
+    -webkit-transition:  opacity 0.8s ease;
+    transition: opacity 0.3s ease;
+}
+
+@keyframes slidein{
+    from{
+        /*margin-left: 100%;*/
+        /*width: 300%;*/
+        opacity: 0;
+        transform: translate(0px,20px);
+    }
+
+    to{
+        /*margin-left: 0%;*/
+        /*width: 100%;*/
+        opacity: 1;
+        /*transform: rotate(1.0turn);*/
+        transform: translate(none);
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+[data-animate-in].in-view{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transition: transform 0.6s ease, opacity 0.6s ease
+
+}
+
+
+/*CONTENT STYLES*/
+.landing{
+    min-height: calc(100vh - 65px);
+}
+
+/*MDN Test*/
+/*div.main{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);*/
+    /*position:relative;*/
+
+    /*!*-webkit-animation-name: example; !* Safari 4.0 - 8.0 *!*!*/
+    /*!*-webkit-animation-duration: 4s; !* Safari 4.0 - 8.0 *!*!*/
+    /*!*animation-name: example;*!*/
+    /*!*animation-duration: 4s;*!*/
+
+    /*-webkit-animation: example 5s infinite; !* Safari 4+ *!*/
+    /*-moz-animation:    example 5s infinite; !* Fx 5+ *!*/
+    /*-o-animation:      example 5s infinite; !* Opera 12+ *!*/
+    /*animation:         example 5s infinite; !* IE 10+, Fx 29+ *!*/
+/*}*/
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example{
+    0%{
+        opacity: 0.2;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+    50%{
+        opacity: 0.6;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+    100%{
+        opacity: 0.2;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+}
+
+
+/*BEGIN GITHUB UNIVERSE STYLES*/
 /*BACKGROUND + STARS*/
 .bg-orange,
 .bg-purple,
@@ -244,7 +488,7 @@ footer .universe{
 .bg-purple-blue,
 .bg-green-teal,
 .bg-teal,
-.tabs-bg>* {
+.tabs-bg>*{
     width: 100%;
     height: 100%;
     display: block;
@@ -266,31 +510,31 @@ footer .universe{
 .bg-purple-blue.is-active,
 .bg-green-teal.is-active,
 .bg-teal.is-active,
-.tabs-bg>*.is-active {
+.tabs-bg>*.is-active{
     opacity: 1
 }
-.bg-orange {
+.bg-orange{
     background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%)
 }
-.bg-purple {
+.bg-purple{
     background: linear-gradient(135deg, #A166AB 0%, #5073B8 100%)
 }
-.bg-blue {
+.bg-blue{
     background: linear-gradient(135deg, #5073B8 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%)
 }
-.bg-orange-pink {
+.bg-orange-pink{
     background-image: linear-gradient(-135deg, #EF4E7B 0%, #F37055 51%, #F79533 100%)
 }
-.bg-pink-purple {
+.bg-pink-purple{
     background-image: linear-gradient(-135deg, #A166AB 0%, #EF4E7B 100%)
 }
-.bg-purple-blue {
+.bg-purple-blue{
     background-image: linear-gradient(-135deg, #1098AD 0%, #5073B8 100%)
 }
-.bg-green-teal {
+.bg-green-teal{
     background-image: linear-gradient(-135deg, #07B39B 0%, #1098AD 100%)
 }
-.bg-teal {
+.bg-teal{
     background-image: linear-gradient(-135deg, #6DBA82 0%, #07B39B 100%)
 }
 .bg-black{
@@ -318,25 +562,25 @@ footer .bg-black{
     min-height:300px;
 }
 
-@keyframes rotate360 {
-    to {
+@keyframes rotate360{
+    to{
         transform: rotateZ(360deg)
     }
 }
-@keyframes pulse {
-    0% {
+@keyframes pulse{
+    0%{
         opacity: 0.2
     }
-    50% {
+    50%{
         opacity: 0.6
     }
-    100% {
+    100%{
         opacity: 0.2
     }
 }
 
 .stars,
-.stars-lg {
+.stars-lg{
     position: absolute;
     z-index: -1; /* -1 */
     opacity: 0.3;
@@ -349,41 +593,41 @@ footer .bg-black{
     background: url("assets/img/stars-sm.svg") center/800px auto repeat;
     animation: 1000s rotate360 infinite linear
 }
-.stars-lg {
+.stars-lg{
     opacity: 0.2;
     background: url("assets/img/stars-lg.svg") center/1100px auto repeat;
     animation: 10s pulse infinite linear
 }
-@keyframes shooting-star {
-    0% {
+@keyframes shooting-star{
+    0%{
         opacity: 1;
         transform: scale(0) translate3d(0, 0, 0)
     }
-    15% {
+    15%{
         opacity: 1
     }
-    25% {
+    25%{
         opacity: 0;
         transform: scale(1) translate3d(180px, 0, 0)
     }
-    100% {
+    100%{
         opacity: 0;
         transform: scale(0) translate3d(180px, 0, 0)
     }
 }
-.shooting-star {
+.shooting-star{
     position: absolute;
     left: 10%;
     top: 10%;
     transform: rotate(30deg);
     pointer-events: none
 }
-.shooting-star img {
+.shooting-star img{
     opacity: 0;
     animation-delay: 0;
     animation: shooting-star 6s infinite ease-out
 }
-.shooting-star-right {
+.shooting-star-right{
     position: absolute;
     left: 80%;
     top: 80%;
@@ -391,52 +635,35 @@ footer .bg-black{
     transform: rotate(-235deg);
     pointer-events: none
 }
-.shooting-star-right img {
+.shooting-star-right img{
     opacity: 0;
     animation: shooting-star 6s 3s infinite ease-out;
     animation-delay: 2.5s
 }
+/*END GITHUB UNIVERSE STYLES*/
 
 
-
-
-
-/*MDN Test*/
-div.main {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
-    position:relative;
-
-    /*-webkit-animation-name: example; !* Safari 4.0 - 8.0 *!*/
-    /*-webkit-animation-duration: 4s; !* Safari 4.0 - 8.0 *!*/
-    /*animation-name: example;*/
-    /*animation-duration: 4s;*/
-
-    -webkit-animation: example 5s infinite; /* Safari 4+ */
-    -moz-animation:    example 5s infinite; /* Fx 5+ */
-    -o-animation:      example 5s infinite; /* Opera 12+ */
-    animation:         example 5s infinite; /* IE 10+, Fx 29+ */
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    0% {
-        opacity: 0.2;
-        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
-    }
-    50% {
-        opacity: 0.6;
-        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
-    }
-    100% {
-        opacity: 0.2;
-        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
-    }
-}
+/* vietnamese */
+/*@font-face{*/
+/*font-family: 'Nunito Sans';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqtDiNsR5a-9Oe_Ivpu8XWlY.woff2) format('woff2');*/
+/*unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;*/
+/*}*/
+/*!* latin-ext *!*/
+/*@font-face{*/
+/*font-family: 'Nunito Sans';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqqE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');*/
+/*unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;*/
+/*}*/
+/*!* latin *!*/
+/*@font-face{*/
+/*font-family: 'Nunito Sans';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v3/iJ4p9wO0GDKJ-D5teKuZqogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');*/
+/*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;*/
+/*}*/
