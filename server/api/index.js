@@ -3,6 +3,7 @@ const db = require('../db');
 const models=require('../db/models');
 const Students=models.Student;
 const Campuses=models.Campus;
+const Portfolios=models.Portfolio;
 
 // router.use('/puppies', require('./puppies')); // matches all requests to  /api/puppies/
 
@@ -27,6 +28,13 @@ router.get('/campuses', function (req, res, next) {
 router.get('/students', function (req, res, next) {
     Students.findAll({})
     .then(students => res.json(students))
+    .catch(next);
+});
+
+// /api/portfolio
+router.get('/portfolio', function (req, res, next) {
+    Portfolios.findAll({})
+    .then(portoflios => res.json(portoflios))
     .catch(next);
 });
 
