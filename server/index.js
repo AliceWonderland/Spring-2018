@@ -1,6 +1,5 @@
 // SERVER ENTRY FILE
-
-if (process.env.NODE_ENV === 'development') require('../secrets')
+// if (process.env.NODE_ENV === 'development') require('../secrets');
 
 // express routing server
 const express = require('express');
@@ -21,17 +20,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // routing
-app.use('/api', require('./routes')); // matches all requests to /api
+app.use('/api', require('./api'));
 
-  /*
-    Any routes or other various middlewares should go here!
-  */
+/* Any routes or other various middlewares should go here! */
 
-  /*
-    Make sure this is right at the end of your server logic!
-    The only thing after this might be a piece of middleware to serve up 500 errors for server problems
-    (However, if you have middleware to serve up 404s, that go would before this as well)
-  */
+/* Make sure this is right at the end of your server logic!
+The only thing after this might be a piece of middleware to serve up 500 errors for server problems
+(However, if you have middleware to serve up 404s, that go would before this as well) */
 
 // end routing
 
@@ -62,4 +57,3 @@ db.sync()
         console.log(`Browse to http://localhost:${port} to view your app`);
     });
 });
-

@@ -1,24 +1,29 @@
 // CLIENT ENTRY FILE
 import React from 'react';
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './client/store/';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
+import { Provider, connect } from 'react-redux';
+
+import { store } from './client/store';
+import { history } from './client/history.js';
+
 import './client/index.scss';
 
-import Home from './client/components/Home';
-import About from './client/components/About';
-import Bio from './client/components/Bio';
-import Resume from './client/components/Resume';
-import Portfolio from './client/components/Portfolio';
-import Nav from './client/components/Nav';
-import Footer from './client/components/Footer';
+import { Home, About, Bio, Resume, Portfolio, Nav, Footer } from './client/components';
 
+
+// import { createHistory } from 'history';
+//
+// // specify basename below if running in a subdirectory or set as "/" if app runs in root
+// const appHistory = useRouterHistory(createHistory)({
+//     basename: "/app2"
+// });
 
 ReactDOM.render(
 
     <Provider store={store}>
-        <Router>
+        <Router history={history}>
             <div>
                 {/* NAV BAR */}
                 <Nav />

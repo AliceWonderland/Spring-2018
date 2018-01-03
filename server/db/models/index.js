@@ -9,6 +9,7 @@
 const User = require('./user');
 const Campus = require('./campus');
 const Student = require('./student');
+const Portfolio = require('./portfolio');
 
 // Do Joins/Relationships here
 Student.belongsTo(Campus);

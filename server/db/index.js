@@ -9,15 +9,18 @@ const Sequelize = require('sequelize');
 const pkg = require('../../package.json');
 
 const dbName = process.env.DATABASE_NAME || pkg.database;
+// const connectionString = process.env.DATABASE_URL || `postgres://alice:test@localhost:5432/${dbName}`;
 const connectionString = process.env.DATABASE_URL || `postgres://localhost:5432/${dbName}`;
 
 console.log(chalk.yellow(`Opening database connection to ${connectionString}`));
 
 // create the database instance that can be used in other database files
-const db = module.exports = new Sequelize(connectionString, {
+const db = new Sequelize(connectionString, {
     logging: debug, // export DEBUG=sql in the environment to get SQL queries OR false
     native: false   // use pg-native for ~30% more speed, use false to ignore for now
 });
+
+module.exports = db;
 
 // run our models file (makes all associations for our Sequelize objects)
 require('./models');

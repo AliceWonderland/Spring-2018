@@ -1,9 +1,9 @@
 {
-  "name": "react-boilerplater",
+  "name": "AliceChuang.com",
   "version": "1.0.0",
-  "description": "React-Redux Boilerplate by Alice Chuang 2017",
+  "description": "AliceChuang.com Spring 2018",
   "main": "app.js",
-  "database": "boilerplater",
+  "database": "alicechuang",
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
