@@ -5,24 +5,25 @@ var db = require('../index.js');
 module.exports = db.define('portfolio',
   {
       portDate:{
-          type: Sequelize.DATE,
-          allowNull: false
+          type: Sequelize.DATEONLY,
+          allowNull: false,
+          defaultValue: Sequelize.NOW
       },
       portTitle:{
-          type: Sequelize.STRING,
+          type: Sequelize.TEXT,
           allowNull: false
       },
       portSub:{
-          type: Sequelize.STRING,
+          type: Sequelize.TEXT,
           allowNull: true
       },
       portDesc:{
-          type: Sequelize.STRING,
+          type: Sequelize.TEXT,
           allowNull: false
       },
       portImg:{
-          type: Sequelize.STRING,
-          allowNull: false
+          type: Sequelize.TEXT,
+          allowNull: true
       },
       portPub:{
           type: Sequelize.BOOLEAN,
@@ -30,28 +31,28 @@ module.exports = db.define('portfolio',
           defaultValue: true
       },
       portLink:{
-          type: Sequelize.STRING,
-          allowNull: false
+          type: Sequelize.TEXT,
+          allowNull: true
       },
       portLinkText:{
-          type: Sequelize.STRING,
-          allowNull: false
+          type: Sequelize.TEXT,
+          allowNull: true
       },
       portEmployer:{
-          type: Sequelize.STRING,
+          type: Sequelize.TEXT,
           allowNull: false
       },
       portEmployerCity:{
-          type: Sequelize.STRING,
-          allowNull: false
+          type: Sequelize.TEXT,
+          allowNull: true
       },
       portYear:{
-          type: Sequelize.STRING,
+          type: Sequelize.TEXT,
           allowNull: false
       },
       portKeywords:{
-          type: Sequelize.STRING,
-          allowNull: false
+          type: Sequelize.TEXT,
+          allowNull: true
       }
   },
   {

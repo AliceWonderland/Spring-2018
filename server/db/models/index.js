@@ -12,8 +12,10 @@ const Student = require('./student');
 const Portfolio = require('./portfolio');
 
 // Do Joins/Relationships here
+// Order of relationship declaration matters
 Student.belongsTo(Campus);
 Campus.hasMany(Student);
 
-module.exports = { User, Campus, Student };
+
+module.exports = { User, Campus, Student, Portfolio };
 
