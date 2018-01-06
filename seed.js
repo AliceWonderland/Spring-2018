@@ -79,7 +79,6 @@ db.sync({ force: false })
 // });
 
 
-
 // var p1 = new Promise((resolve, reject) => {
 //     return db.sync({ force: true });
 // });

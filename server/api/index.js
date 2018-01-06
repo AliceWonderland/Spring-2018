@@ -12,11 +12,6 @@ router.get('/', function (req, res, next) {
     res.send('api root');
 });
 
-// /api/puppies
-router.get('/puppies', function (req, res, next) {
-  res.send('puppies');
-});
-
 // /api/campuses
 router.get('/campuses', function (req, res, next) {
     Campuses.findAll({})
@@ -38,6 +33,11 @@ router.get('/portfolio', function (req, res, next) {
     .catch(next);
 });
 
+// /api/puppies
+router.get('/puppies', function (req, res, next) {
+    res.send('puppies');
+});
+
 // matches POST requests to /api/puppies/
 router.post('/', function (req, res, next) { /* etc */});
 
@@ -49,7 +49,7 @@ router.delete('/:puppyId', function (req, res, next) { /* etc */});
 
 // handles 404s
 router.use(function (req, res, next) {
-    const err = new Error('Not found.');
+    const err = new Error('Not found. Alice');
     err.status = 404;
     next(err);
 });

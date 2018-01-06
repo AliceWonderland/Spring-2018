@@ -2,7 +2,6 @@ module.exports = {
   entry: './app.js', // assumes your entry point is the app.js in the root of your project folder
   output: {
     path: __dirname,
-    publicPath: '/app2/',
     filename: './public/bundle.js' // assumes your bundle.js will also be in the root of your /public folder
   },
   devtool: 'source-map',

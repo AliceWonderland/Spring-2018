@@ -94,6 +94,8 @@ a, .a{
 }
 
 a:hover, .a:hover{
+    color: #fff;
+    text-decoration: none;
     cursor: pointer;
     opacity: 0.4;
 }
@@ -107,38 +109,42 @@ h1, h2, h3, h4, h5, h6{
 h1{
     font-size: 4.2rem;
     letter-spacing: 3px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 h2{
     font-size: 3.0rem;
     letter-spacing: 2px;
     line-height: 1.333;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
 
 h3{
     font-size: 2.4rem;
     letter-spacing: 3px;
-    line-height: 1.85
+    line-height: 1.85;
+    margin:0;
 }
 
 h4{
     font-size: 2.0rem;
     letter-spacing: 3px;
-    line-height: 1.85
+    line-height: 1.85;
+    margin:0;
 }
 
 h5{
     font-size: 1.7rem;
     letter-spacing: 3px;
-    line-height: 1.85
+    line-height: 1.85;
+    margin:0;
 }
 
 h6{
     font-size: 1.5rem;
     letter-spacing: 3px;
-    line-height: 2
+    line-height: 2;
+    margin:0;
 }
 
 /*CONTAINER STYLES*/
@@ -220,11 +226,11 @@ h6{
     background: linear-gradient(to right, #E67207 0%, #EF4E7B 50%, #A166AB 100%);
     transform-origin: center;
     transform: scaleX(0);
-    transition: transform .4s ease-out
+    transition: transform .4s ease-out;
 }
 .site-navigation li.is-active a:after,
 .site-navigation a:hover:after{
-    transform: scaleX(1)
+    transform: scaleX(1);
 }
 @media (max-width: 849px){
     .site-navigation{
@@ -232,22 +238,22 @@ h6{
         bottom: 40px;
         right: 3%;
         transform: scale(0);
-        z-index: 12
+        z-index: 12;
     }
     .site-navigation li{
         opacity: 0;
         display: block;
         transform: translate3d(4px, 0px, 0);
         transition: all .3s ease;
-        text-align: left
+        text-align: left;
     }
     .site-navigation li+li{
-        margin-top: 10px
+        margin-top: 10px;
     }
     .site-navigation a{
         text-decoration: none;
         padding: 4px 8px;
-        color: white
+        color: white;
     }
 }
 @media (min-width: 850px){
@@ -255,32 +261,33 @@ h6{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 0
+        padding: 0;
     }
     .site-navigation ul{
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        max-width: 445px
+        max-width: 445px;
     }
     .site-navigation ul li{
-        flex-grow: 1
+        flex-grow: 1;
     }
 }
 @media (min-width: 850px){
     .site-navigation{
-        justify-content: center
+        justify-content: center;
     }
 }
 @media (min-width: 1025px){
     .site-navigation ul{
-        max-width: 640px
+        max-width: 640px;
     }
 }
 
 .logo{
     margin-left: 20px;
+    width: 142px;
 }
 
 .logo img{
@@ -290,6 +297,8 @@ h6{
 
 .watch{
     margin-right: 20px;
+    width: 142px;
+    text-align: right;
 }
 
 .site-footer{
@@ -349,7 +358,9 @@ h6{
     padding: 45px 25px;
     border-radius: 6px;
     position: relative;
-    width:100px;
+    min-width: 200px;
+    width: 25%;
+    /*overflow-y: auto;*/
 }
 .space>*:after{
     content: '';
@@ -361,6 +372,7 @@ h6{
     top: 4px;
     left: 4px;
     background: #22292C;
+    z-index: -1;
 }
 
 /*footer*/
@@ -427,7 +439,7 @@ footer .galaxy{
     opacity: 1;
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-    transition: transform 0.6s ease, opacity 0.6s ease
+    transition: transform 0.6s ease, opacity 0.6s ease;
 
 }
 
@@ -499,7 +511,7 @@ footer .galaxy{
     position: fixed;
     opacity: 0;
     transition: opacity 4s ease;
-    z-index: -2
+    z-index: -2;
 }
 
 .bg-orange.is-active,
@@ -511,31 +523,31 @@ footer .galaxy{
 .bg-green-teal.is-active,
 .bg-teal.is-active,
 .tabs-bg>*.is-active{
-    opacity: 1
+    opacity: 1;
 }
 .bg-orange{
-    background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%)
+    background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
 }
 .bg-purple{
-    background: linear-gradient(135deg, #A166AB 0%, #5073B8 100%)
+    background: linear-gradient(135deg, #A166AB 0%, #5073B8 100%);
 }
 .bg-blue{
-    background: linear-gradient(135deg, #5073B8 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%)
+    background: linear-gradient(135deg, #5073B8 0%, #13a793 36%, #07B39B 81%, #6DBA82 100%);
 }
 .bg-orange-pink{
-    background-image: linear-gradient(-135deg, #EF4E7B 0%, #F37055 51%, #F79533 100%)
+    background-image: linear-gradient(-135deg, #EF4E7B 0%, #F37055 51%, #F79533 100%);
 }
 .bg-pink-purple{
-    background-image: linear-gradient(-135deg, #A166AB 0%, #EF4E7B 100%)
+    background-image: linear-gradient(-135deg, #A166AB 0%, #EF4E7B 100%);
 }
 .bg-purple-blue{
-    background-image: linear-gradient(-135deg, #1098AD 0%, #5073B8 100%)
+    background-image: linear-gradient(-135deg, #1098AD 0%, #5073B8 100%);
 }
 .bg-green-teal{
-    background-image: linear-gradient(-135deg, #07B39B 0%, #1098AD 100%)
+    background-image: linear-gradient(-135deg, #07B39B 0%, #1098AD 100%);
 }
 .bg-teal{
-    background-image: linear-gradient(-135deg, #6DBA82 0%, #07B39B 100%)
+    background-image: linear-gradient(-135deg, #6DBA82 0%, #07B39B 100%);
 }
 .bg-black{
     background-color: #22292C;
@@ -564,18 +576,18 @@ footer .bg-black{
 
 @keyframes rotate360{
     to{
-        transform: rotateZ(360deg)
+        transform: rotateZ(360deg);
     }
 }
 @keyframes pulse{
     0%{
-        opacity: 0.2
+        opacity: 0.2;
     }
     50%{
-        opacity: 0.6
+        opacity: 0.6;
     }
     100%{
-        opacity: 0.2
+        opacity: 0.2;
     }
 }
 
@@ -591,28 +603,28 @@ footer .bg-black{
     top: 0;
     transform-origin: center;
     background: url("assets/img/stars-sm.svg") center/800px auto repeat;
-    animation: 1000s rotate360 infinite linear
+    animation: 1000s rotate360 infinite linear;
 }
 .stars-lg{
     opacity: 0.2;
     background: url("assets/img/stars-lg.svg") center/1100px auto repeat;
-    animation: 10s pulse infinite linear
+    animation: 10s pulse infinite linear;
 }
 @keyframes shooting-star{
     0%{
         opacity: 1;
-        transform: scale(0) translate3d(0, 0, 0)
+        transform: scale(0) translate3d(0, 0, 0);
     }
     15%{
-        opacity: 1
+        opacity: 1;
     }
     25%{
         opacity: 0;
-        transform: scale(1) translate3d(180px, 0, 0)
+        transform: scale(1) translate3d(180px, 0, 0);
     }
     100%{
         opacity: 0;
-        transform: scale(0) translate3d(180px, 0, 0)
+        transform: scale(0) translate3d(180px, 0, 0);
     }
 }
 .shooting-star{
@@ -620,12 +632,12 @@ footer .bg-black{
     left: 10%;
     top: 10%;
     transform: rotate(30deg);
-    pointer-events: none
+    pointer-events: none;
 }
 .shooting-star img{
     opacity: 0;
     animation-delay: 0;
-    animation: shooting-star 6s infinite ease-out
+    animation: shooting-star 6s infinite ease-out;
 }
 .shooting-star-right{
     position: absolute;
@@ -633,12 +645,12 @@ footer .bg-black{
     top: 80%;
     width: 130px;
     transform: rotate(-235deg);
-    pointer-events: none
+    pointer-events: none;
 }
 .shooting-star-right img{
     opacity: 0;
     animation: shooting-star 6s 3s infinite ease-out;
-    animation-delay: 2.5s
+    animation-delay: 2.5s;
 }
 /*END GITHUB UNIVERSE STYLES*/
 

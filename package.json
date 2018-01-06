@@ -9,8 +9,9 @@
     "build-client-watch": "webpack -w",
     "start-server": "NODE_ENV='development' nodemon server -e html,js,scss --ignore public",
     "start-dev-env": "npm run build-client-watch & npm run start-server",
+    "start-prod": "DATABASE_URL='postgres://alice:test@localhost:5432/alicechuang' webpack -w &amp; nodemon server",
     "start": "node server",
-    "start-dev": "webpack -w &amp; nodemon server",
+    "start-dev": "webpack -w & nodemon server",
     "tmp": "to run the above use ==> npm run start-dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

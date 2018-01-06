@@ -11,8 +11,9 @@ app.use(morgan('dev'));
 
 // static middleware for files in /public
 const path = require('path');
-app.use(express.static(path.join(__dirname, '..', '/public')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.use('/bootstrap', express.static(path.join(__dirname, '..', '/node_modules/bootstrap/dist')));
+console.log("dirname",__dirname,path.join(__dirname, '../public'));
 
 // parsing middleware
 const bodyParser = require('body-parser');
@@ -51,8 +52,6 @@ db.sync()
     // start server
     const port = process.env.PORT || 3000; // this can be very useful if you deploy to Heroku!
     app.listen(port, function () {
-        console.log("Knock, knock");
-        console.log("Who's there?");
         console.log(`Your server, listening on port ${port}`);
         console.log(`Browse to http://localhost:${port} to view your app`);
     });
