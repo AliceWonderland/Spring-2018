@@ -25,10 +25,9 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
             <div>
-                {/* NAV BAR */}
                 <Nav />
 
-                {/* BODY */}
+                {/*BODY*/}
                 <Switch>
                     <Route exact path="/about" component={About} />
                     <Route exact path="/bio" component={Bio} />
@@ -44,7 +43,6 @@ ReactDOM.render(
                     <Route component={Home} />
                 </Switch>
 
-                {/*FOOTER*/}
                 <Footer />
             </div>
         </Router>
