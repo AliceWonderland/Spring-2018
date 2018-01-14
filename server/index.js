@@ -51,8 +51,9 @@ db.sync()
 .then(() => {
     // start server
     const port = process.env.PORT || 3000; // this can be very useful if you deploy to Heroku!
-    app.listen(port, function () {
+    const srvr = app.listen(port, function () {
         console.log(`Your server, listening on port ${port}`);
         console.log(`Browse to http://localhost:${port} to view your app`);
+        console.log(JSON.stringify(srvr.address()));
     });
 });

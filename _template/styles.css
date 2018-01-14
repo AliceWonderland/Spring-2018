@@ -72,6 +72,9 @@ body:before{
     background: #1A1F21;
     z-index: -1;
 }
+body{
+    /*background-color: #696B6B;*/
+}
 
 header{
 

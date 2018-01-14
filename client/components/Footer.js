@@ -12,7 +12,6 @@ export default class Footer extends Component{
                       <li>Contact <a href="">@Gmail</a></li>
                   </ul>
                   <div className="galaxy-content" data-animate-in="intro">
-                      Embed Facebook Like
                       <div className="fb-like" data-href="https://alicechuang.com" data-width="200px" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                   </div>
 

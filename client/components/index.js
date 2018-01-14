@@ -5,3 +5,4 @@ export {default as About} from './About.js';
 export {default as Bio} from './Bio.js';
 export {default as Resume} from './Resume.js';
 export {default as Portfolio} from './Portfolio.js';
+export {default as Master} from './Master.js';

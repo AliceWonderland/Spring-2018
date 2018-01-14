@@ -5,50 +5,35 @@ export default class About extends Component{
     render() {
         return (
           <main className="gradient">
-              <div className="galaxy landing">
-                  <div className="galaxy-content">
-                      <h1>ABOUT 1</h1>
-                      <h2>Heading 2</h2>
-                      <h3>Heading 3</h3>
-                      <h4>Heading 4</h4>
-                      <h5>Heading 5</h5>
-                      <h6>Heading 6</h6>
-                      <span data-animate-in="intro"><a href="#">SECTION 1 TEXT</a></span>
-                      <span data-animate-in="intro"><img src="assets/img/logo_astro.png" alt="puppynaut" /></span>
-                      <span data-animate-in="intro">Lorem <a href="#">ipsum</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-                  </div>
-
-                  <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
-                      <img src="assets/img/shooting-star.svg" alt="shooting star" />
-                  </figure>
-                  <figure className="shooting-star-right" style={{top: '10%', transform: 'rotate(112deg)'}}>
-                      <img src="assets/img/shooting-star.svg" alt="shooting star" />
-                  </figure>
-                  <div className="stars"></div>
-                  <div className="stars-lg"></div>
-              </div>
-
-              <div className="horizon" data-animate-in="intro" style={{height: '400px'}}>
-                  Goals Refresh, Reinforce, Re-Up
+              <div className="horizon about" data-animate-in="fadein">
+                  <h3>Under The Hood</h3>
+                  <h2>Buiding the future of software</h2>
+                  <p>Goals Refresh, Reinforce, Re-Up
                   Server Setup/Configuration Systems Administration Refresher Nginx vs. Apache
-                  Cloud Computing Digital Ocean and Heroku
+                  Cloud Computing Digital Ocean and Heroku</p>
 
-                  Incorporate SPA development with JS-Based Node stack
+                  <p>http://app3.alicechuang.com/app3</p>
+
+                  <p>Incorporate SPA development with JS-Based Node stack
                   Multi-Page vs Single-Page LAMP to LEMP Php/Mysql to React/PosgresSQL
 
+                      What I'm currently working on:
                   JS Optimization - JS Auditor
 
-                  CS Fundamentals
+                  Redux MVC
+                      All these take planning. Understanding the app I'm trying to build, Entity relationship diagrams, wireframes, understanding how the user navigates the app. All these things should be somewhat solidified before the state object is defined and the actions are set.
 
-                  NOTABLES
+                  CS Fundamentals</p>
+
+                  <p>NOTABLES
                   Audio Player
                   Video
                   FlexBox
                   SASS
 
-                  Structural Design Patters MVC MVP MVVM?
+                  Structural Design Patters MVC MVP MVVM?</p>
 
-                  Resources
+                  <p>Resources
                   A full list of all technologies, tools, and resources used to create this site. All are Open Source and free.
 
                   Application Stack
@@ -77,7 +62,8 @@ export default class About extends Component{
                   Chrome Dev Tools <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener"></a>
                   Dev Tools Audit <a href="#" target="_blank" rel="noopener"></a>
                   Dev Tools Javascript Profiler <a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener"></a>
-                  React Chrome Dev Tools <a href="#" target="_blank" rel="noopener"></a>
+                  React Developer Tools for Chrome <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener"></a>
+                  https://travis-ci.org/
 
                   Google Fonts <a href="https://fonts.google.com/" target="_blank" rel="noopener"></a>
                   FontAwesome <a href="http://fontawesome.io/" target="_blank" rel="noopener"></a>
@@ -97,11 +83,11 @@ export default class About extends Component{
                   React-Training - React Router <a href="https://reacttraining.com/react-router/web/guides/philosophy" target="_blank" rel="noopener"></a>
 
                   DO Referral Link
-                  <a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener"></a>
+                  <a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener"></a></p>
 
-                  Design and Media Tools
+                  <p>Design and Media Tools</p>
 
-                  Launched Spring 2018
+                  <p>Launched Spring 2018</p>
 
                   <div className="stars"></div>
                   <div className="stars-lg"></div>

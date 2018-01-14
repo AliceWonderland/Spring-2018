@@ -449,6 +449,10 @@ footer .galaxy{
     min-height: calc(100vh - 65px);
 }
 
+.about{
+    min-height: calc(100vh - 65px);
+}
+
 /*MDN Test*/
 /*div.main{*/
     /*width: 100px;*/

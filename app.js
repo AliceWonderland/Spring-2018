@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { Provider, connect } from 'react-redux';
 
-import { store } from './client/store';
+import store from './client/store';
 import { history } from './client/history.js';
 
 import './client/index.scss';
 
-import { Home, About, Bio, Resume, Portfolio, Nav, Footer } from './client/components';
+import { Home, About, Bio, Resume, Portfolio, Nav, Footer, Master } from './client/components';
 
 
 // import { createHistory } from 'history';
@@ -21,7 +21,6 @@ import { Home, About, Bio, Resume, Portfolio, Nav, Footer } from './client/compo
 // });
 
 ReactDOM.render(
-
     <Provider store={store}>
         <Router history={history}>
             <div>
@@ -33,6 +32,8 @@ ReactDOM.render(
                     <Route exact path="/bio" component={Bio} />
                     <Route exact path="/resume" component={Resume} />
                     <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/modal" component={Master} />
+                    <Route exact path="/master" component={Master} />
                     {/*<Route exact path="/campuses/new" component={NewCampus} />*/}
                     {/*<Route exact path="/students/edit/:studentId" component={NewStudent} />*/}
                     {/*<Route exact path="/campuses/edit/:campusId" component={NewCampus} />*/}
@@ -47,7 +48,6 @@ ReactDOM.render(
             </div>
         </Router>
     </Provider>,
-
     document.getElementById('app') // <== the id of the div in your index.html
 );
 
