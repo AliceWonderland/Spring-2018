@@ -1,8 +1,29 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default class Portfolio extends Component{
+	constructor(){
+		super();
+		this.state={
+			portfolio:[]
+		};
+
+		this.handleClick=this.handleClick.bind(this);
+	}
+
+	componentDidMount () {
+		axios.get('/api/portfolio')
+		.then(res => res.data)
+		.then(portfolio => this.setState({ portfolio }));
+	}
+	
+	handleClick(e){
+		console.log(e.target);
+    }
+
     render() {
+	    console.log(this.state);
         return (
             <main className="gradient">
                 <div className="horizon" data-animate-in="fadein">

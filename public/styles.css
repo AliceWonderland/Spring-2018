@@ -147,6 +147,34 @@ h6{
     margin:0;
 }
 
+dl {
+
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+    margin-right:5px;
+}
+
+dt::after {
+    /*content: ":";*/
+}
+
+dd {
+    /*margin: 0 0 0 110px;*/
+    /*padding: 0 0 0.5em 0;*/
+}
+
+dl.wide dt{
+    width: auto;
+    margin-right:5px;
+}
+
+
 /*CONTAINER STYLES*/
 /*app container*/
 #app{
@@ -186,6 +214,7 @@ h6{
     /*text-align: center;*/
     /*padding: 40px 0*/
 /*}*/
+
 .site-navigation a{
     display: inline-block;
     font-family: "stratum", "Arial Narrow", "Trebuchet MS", sans-serif;
@@ -198,14 +227,17 @@ h6{
     position: relative;
     padding: 5px
 }
+
 .site-navigation a:hover{
     opacity: 1;
 }
+
 @media (min-width: 850px){
     .site-navigation a{
         font-size: 1.2rem
     }
 }
+
 @media (min-width: 1025px){
     .site-navigation a{
         font-size: 1.5rem;
@@ -213,6 +245,7 @@ h6{
         padding: 5px 5px 6px
     }
 }
+
 .site-navigation a:after{
     content: '';
     display: block;
@@ -228,10 +261,12 @@ h6{
     transform: scaleX(0);
     transition: transform .4s ease-out;
 }
+
 .site-navigation li.is-active a:after,
 .site-navigation a:hover:after{
     transform: scaleX(1);
 }
+
 @media (max-width: 849px){
     .site-navigation{
         position: fixed;
@@ -256,6 +291,7 @@ h6{
         color: white;
     }
 }
+
 @media (min-width: 850px){
     .site-navigation{
         display: flex;
@@ -274,11 +310,13 @@ h6{
         flex-grow: 1;
     }
 }
+
 @media (min-width: 850px){
     .site-navigation{
         justify-content: center;
     }
 }
+
 @media (min-width: 1025px){
     .site-navigation ul{
         max-width: 640px;
@@ -313,6 +351,25 @@ h6{
     list-style: none;
 }
 
+/*footer*/
+footer .galaxy{
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 70px 0px;
+
+}
+.footer-bar{
+    height: 80px;
+    background: #1A1F21;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+}
+
 /*page section types*/
 .galaxy{
     position: relative;
@@ -340,6 +397,7 @@ h6{
     position: relative;
     overflow: hidden;
 }
+
 .horizon-content{
 
 }
@@ -362,6 +420,7 @@ h6{
     width: 25%;
     /*overflow-y: auto;*/
 }
+
 .space>*:after{
     content: '';
     display: block;
@@ -373,20 +432,6 @@ h6{
     left: 4px;
     background: #22292C;
     z-index: -1;
-}
-
-/*footer*/
-footer .galaxy{
-    height:300px;
-
-}
-.footer-bar{
-    height: 80px;
-    background: #1A1F21;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    padding: 0px 30px;
 }
 
 
@@ -445,53 +490,25 @@ footer .galaxy{
 
 
 /*CONTENT STYLES*/
-.landing{
+.landing .galaxy{
     min-height: calc(100vh - 65px);
 }
 
-.about{
-    min-height: calc(100vh - 65px);
+.about .horizon{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/*MDN Test*/
-/*div.main{*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-    /*background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);*/
-    /*position:relative;*/
-
-    /*!*-webkit-animation-name: example; !* Safari 4.0 - 8.0 *!*!*/
-    /*!*-webkit-animation-duration: 4s; !* Safari 4.0 - 8.0 *!*!*/
-    /*!*animation-name: example;*!*/
-    /*!*animation-duration: 4s;*!*/
-
-    /*-webkit-animation: example 5s infinite; !* Safari 4+ *!*/
-    /*-moz-animation:    example 5s infinite; !* Fx 5+ *!*/
-    /*-o-animation:      example 5s infinite; !* Opera 12+ *!*/
-    /*animation:         example 5s infinite; !* IE 10+, Fx 29+ *!*/
-/*}*/
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example{
-    from{background-color: red;}
-    to{background-color: yellow;}
+.about .galaxy {
+    padding: 60px 90px;
 }
 
-/* Standard syntax */
-@keyframes example{
-    0%{
-        opacity: 0.2;
-        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
-    }
-    50%{
-        opacity: 0.6;
-        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
-    }
-    100%{
-        opacity: 0.2;
-        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
-    }
-}
+
+
+
 
 
 /*BEGIN GITHUB UNIVERSE STYLES*/
@@ -657,6 +674,62 @@ footer .bg-black{
     animation-delay: 2.5s;
 }
 /*END GITHUB UNIVERSE STYLES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MDN Test*/
+/*div.main{*/
+/*width: 100px;*/
+/*height: 100px;*/
+/*background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);*/
+/*position:relative;*/
+
+/*!*-webkit-animation-name: example; !* Safari 4.0 - 8.0 *!*!*/
+/*!*-webkit-animation-duration: 4s; !* Safari 4.0 - 8.0 *!*!*/
+/*!*animation-name: example;*!*/
+/*!*animation-duration: 4s;*!*/
+
+/*-webkit-animation: example 5s infinite; !* Safari 4+ *!*/
+/*-moz-animation:    example 5s infinite; !* Fx 5+ *!*/
+/*-o-animation:      example 5s infinite; !* Opera 12+ *!*/
+/*animation:         example 5s infinite; !* IE 10+, Fx 29+ *!*/
+/*}*/
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example{
+    0%{
+        opacity: 0.2;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+    50%{
+        opacity: 0.6;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+    100%{
+        opacity: 0.2;
+        background: linear-gradient(135deg, #F37055 0%, #EF4E7B 52%, #C55B95 77%, #A166AB 100%);
+    }
+}
 
 
 /* vietnamese */

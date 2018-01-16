@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export default class Resume extends Component{
     render() {
         return (
+          <main className="gradient">
             <div className="galaxy landing">
                 <div className="galaxy-content">
                     <h1><span style={{color: 'olive'}}>RESUME</span></h1>
@@ -38,6 +39,7 @@ export default class Resume extends Component{
                 <div className="stars"></div>
                 <div className="stars-lg"></div>
             </div>
+          </main>
         )
     }
 }

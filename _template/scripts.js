@@ -69,7 +69,7 @@ var ENGAGE = ENGAGE || {};
 
       APP.Background = {
           init: function() {
-              console.log('test',$('.gradient, .shooting-star, .stars').length);
+              // console.log('stars test',$('.gradient, .shooting-star, .stars').length);
               if( $('.gradient, .shooting-star, .stars').length ) {
                   this.stars();
               } else {
