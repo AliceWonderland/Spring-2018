@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 export default class About extends Component{
     render() {
         return (
-        <main className="about gradient">
-            <div className="horizon" data-animate-in="fadein">
+        <main className="gradient about">
+            <section className="horizon" data-animate-in="fadein">
                 <h3>Under The Hood</h3>
                 <h2>Buiding the future of software</h2>
                 <div className="stars"></div>
                 <div className="stars-lg"></div>
-            </div>
-            <div className="galaxy" data-animate-in="fadein">
+            </section>
+            <section className="galaxy" data-animate-in="fadein">
                 <h5>What is it?</h5>
                 <p>This site is a Single-Page web app built in Facebook React.</p>
 
@@ -128,13 +128,18 @@ export default class About extends Component{
 
                 <p>Launched Spring 2018</p>
 
+                <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
+                    <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                </figure>
+                <figure className="shooting-star-right" style={{top: '10%', transform: 'rotate(112deg)'}}>
+                    <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                </figure>
                 <div className="stars"></div>
                 <div className="stars-lg"></div>
-            </div>
+            </section>
 
-
-
-            <div className="space">
+            <section className="infinite">
+                <h3>Everything You Need to Build This Site</h3>
                 <div data-animate-in="intro">
                     <h5>Cloud Server (VPS)</h5>
                     <p>This site is hosted on a LEMP server to host my LEMP sites as well as my Node apps.
@@ -170,17 +175,12 @@ export default class About extends Component{
 
                 </div>
                 <div data-animate-in="intro">
-                    <h5>Development Tools</h5>
-
-                    <dl className="wide">
-                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener">Chrome Dev Tools</a></dt><dd>.</dd>
-                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener">Chrome Dev Tools JS Profiler</a></dt><dd>.</dd>
-                        <dt><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">Chrome Lighthouse Auditor</a></dt><dd>.</dd>
-                        <dt><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener">React Developer Tools </a></dt><dd>.</dd>
-                        <dt><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd" target="_blank" rel="noopener">Redux Developer Tools</a></dt><dd>.</dd>
-                        <dt><a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a></dt><dd>Editor</dd>
-                        <dt><a href="#" target="_blank" rel="noopener">GitHub</a></dt><dd>vcs</dd>
-                        <dt></dt><dd></dd>
+                    <h5>UI</h5>
+                    <dl>
+                        <dt><a href="#https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">HTML5+</a></dt><dd>Semantic HTML</dd>
+                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank" rel="noopener">CSS3</a></dt><dd>Gradients + Animation</dd>
+                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank" rel="noopener">FlexBox</a></dt><dd>Responsive</dd>
+                        <dt><a href="http://sass-lang.com/guide" target="_blank" rel="noopener">SASS</a></dt><dd>CSS Pre-Processor</dd>
                     </dl>
 
                     <h5>Design Resources</h5>
@@ -192,9 +192,20 @@ export default class About extends Component{
 
                     <h5>Style Guide</h5>
                     <a href="https://githubuniverse.com/" target="_blank" rel="noopener">GitHub Universe</a>
-
                 </div>
-            </div>
+                <div data-animate-in="intro">
+                    <h5>Development Tools</h5>
+                    <dl className="wide">
+                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener">Chrome Dev Tools</a></dt><dd>.</dd>
+                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener">Chrome Dev Tools JS Profiler</a></dt><dd>.</dd>
+                        <dt><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">Chrome Lighthouse Auditor</a></dt><dd>.</dd>
+                        <dt><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener">React Developer Tools </a></dt><dd>.</dd>
+                        <dt><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd" target="_blank" rel="noopener">Redux Developer Tools</a></dt><dd>.</dd>
+                        <dt><a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a></dt><dd>Editor</dd>
+                        <dt><a href="#" target="_blank" rel="noopener">GitHub</a></dt><dd>vcs</dd>
+                    </dl>
+                </div>
+            </section>
         </main>
         )
     }

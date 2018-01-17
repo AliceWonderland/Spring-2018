@@ -206,9 +206,9 @@ dl.wide dt{
     /*display: inline-block;*/
 /*}*/
 
-/*.site-header a:not(:last-child){*/
-    /*margin-right: 16px;*/
-/*}*/
+.site-header a:not(:last-child){
+    margin-right: 29px;
+}
 
 /*.site-navigation{*/
     /*text-align: center;*/
@@ -393,7 +393,7 @@ footer .galaxy{
 }
 
 .horizon{
-    height: 300px;
+    height: calc(100vh - 65px);
     position: relative;
     overflow: hidden;
 }
@@ -402,7 +402,7 @@ footer .galaxy{
 
 }
 
-.space{
+.space, .infinite{
     background-color:#1A1F21;
     display: flex;
     flex-direction: row;
@@ -411,7 +411,7 @@ footer .galaxy{
     padding: 30px;
 }
 
-.space>*{
+.space>*, .infinite>div{
     background: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
     padding: 45px 25px;
     border-radius: 6px;
@@ -421,7 +421,7 @@ footer .galaxy{
     /*overflow-y: auto;*/
 }
 
-.space>*:after{
+.space>*:after, .infinite>div:after{
     content: '';
     display: block;
     position: absolute;
@@ -434,6 +434,16 @@ footer .galaxy{
     z-index: -1;
 }
 
+.infinite {
+    background-color: #22292C;
+    flex-wrap: wrap;
+}
+
+.infinite h3{
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
 
 /*animations*/
 [data-animate-in]{
@@ -504,6 +514,10 @@ footer .galaxy{
 
 .about .galaxy {
     padding: 60px 90px;
+}
+
+.bio .horizon{
+    height:auto;
 }
 
 
