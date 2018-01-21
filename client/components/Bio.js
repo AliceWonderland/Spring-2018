@@ -59,7 +59,7 @@ export default class Bio extends Component{
 
                         <dl>
                             <dt>Current Fave Stores</dt><dd>H&M, Ikea, Uniqlo</dd>
-                            <dt></dt><dd></dd>
+                            <dt>Social Issues</dt><dd>Gender, Human, Reproductive Rights</dd>
                             <dt></dt><dd></dd>
                             <dt></dt><dd></dd>
                         </dl>
@@ -110,6 +110,8 @@ export default class Bio extends Component{
                         ikea
                         uniqlo
 
+                            30sec cooking videos yummly twisted
+
 
                         Current Fave Tech
                         Javascript - Objects, Spread Operator, Promises, ES6 Notation, Arrays
@@ -118,6 +120,8 @@ export default class Bio extends Component{
                         Shortcut Keys Forever
 
                         knitting blog http://omgheart.com/
+
+                            The most precious thing anyone can give you is the freedom to spread your wings. In work, in life, in relationships, in tech.
                         </p>
                     </span>
 

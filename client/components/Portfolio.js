@@ -25,27 +25,55 @@ export default class Portfolio extends Component{
     render() {
 	    console.log(this.state);
         return (
-            <main className="gradient">
-                <div className="horizon" data-animate-in="fadein">
-                    <div className="horizon-content">
-                        <h1><span style={{color: 'olive'}}>PORT</span></h1>
-                        <div>
-                            <span data-animate-in="intro"><a href="#">SECTION 1 TEXT</a></span>
-                            <span data-animate-in="intro"><img src="assets/img/logo_astro.png" alt="puppynaut" /></span>
-                            <span data-animate-in="intro">
-                            breakdown phases of career by era challenges lessons learned
+            <main className="gradient portfolio">
+				<section className="horizon" data-animate-in="fadein">
+					<h3>My Work By Example</h3>
+					<h2>Websites Then and Now</h2>
+					<div className="stars"></div>
+					<div className="stars-lg"></div>
+				</section>
+				<section className="galaxy" data-animate-in="fadein">
+					<h3>Boop</h3>
+					<div className="grid-container">
+						<div className="nav">
+							<nav>
+								<ul>
+									<li>
+										<h5>Independent</h5>
+										<p>Freelance Development</p>
+									</li>
+									<li>
+										<h5>Corporate</h5>
+										<p>News/Media/Video Games</p>
+									</li>
+									<li>
+										<h5>Agency</h5>
+										<p>Design/Advertising Agency</p>
 
-                            hashbangs MVC Node
-
-                            </span>
-                        </div>
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div className="stars"></div>
-                    <div className="stars-lg"></div>
-                </div>
+									</li>
+									<li>Filter</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div className="grid-container">
+						<div><h5>2014</h5></div><div className="sub-header"><h5>sub-header</h5></div>
+						<div>p</div><div>p</div><div>p</div><div>p</div>
+						<div>p</div><div>p</div><div>p</div>
+					</div>
+					<div className="grid-container">
+						<div><h5>2008</h5></div><div className="sub-header"><h5>sub-header</h5></div>
+						<div>p</div><div>p</div><div>p</div>
+						<div>p</div><div>p</div><div>p</div><div>p</div>
+						<div>p</div><div>p</div><div>p</div>
+					</div>
+					<span data-animate-in="intro">
+						breakdown phases of career by era challenges lessons learned
+						hashbangs MVC Node
+					</span>
+					<div className="stars"></div>
+					<div className="stars-lg"></div>
+				</section>
             </main>
 
         )

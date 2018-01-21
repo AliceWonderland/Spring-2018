@@ -72,6 +72,13 @@ export default class About extends Component{
                   SASS
                   Structural Design Patters MVC MVP MVVM?</p>
 
+                <h5>UI + Design</h5>
+                <p>
+                    CSS Flexbox vs. CSS Grid Layout
+                    Theme Unity Rainbow Intersectional
+
+                </p>
+
                 <h5>Application Stack</h5>
                 React <a href="https://reactjs.org/" target="_blank" rel="noopener"></a>
                 React-Redux <a href="https://github.com/reactjs/react-redux" target="_blank" rel="noopener"></a>
@@ -142,15 +149,14 @@ export default class About extends Component{
                 <h3>Everything You Need to Build This Site</h3>
                 <div data-animate-in="intro">
                     <h5>Cloud Server (VPS)</h5>
-                    <p>This site is hosted on a LEMP server to host my LEMP sites as well as my Node apps.
-                        Try DigitalOcean for free using my referreral link <a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener">here</a>.</p>
+                    <p>LEMP server hosts both LEMP sites as well as Node apps.</p>
                     <dl>
                         <dt><a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener">Digital Ocean</a></dt><dd>VPS</dd>
                         <dt><a href="https://www.ubuntu.com/download" target="_blank" rel="noopener">Ubuntu</a></dt><dd>OS</dd>
                         <dt><a href="https://www.nginx.com/resources/admin-guide/" target="_blank" rel="noopener">Nginx</a></dt><dd>HTTP Server</dd>
                     </dl>
 
-                    <h5>Server Admin Packages</h5>
+                    <h5>Admin Tools</h5>
                     <p><a href="http://pm2.keymetrics.io/" target="_blank" rel="noopener">PM2</a> or <a href="https://github.com/foreverjs/forever" target="_blank" rel="noopener">Forever</a></p>
                 </div>
                 <div data-animate-in="intro">
@@ -165,9 +171,9 @@ export default class About extends Component{
                         <dt><a href="http://docs.sequelizejs.com/" target="_blank" rel="noopener">Sequelize</a></dt><dd>ORM</dd>
                     </dl>
 
-                    <h5>Supporting Packages</h5>
+                    <h5>Build Tools</h5>
                     <dl>
-                        <dt><a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a></dt><dd>Package Manager</dd>
+                        <dt><a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a></dt><dd>Pkg Manager</dd>
                         <dt><a href="https://babeljs.io/" target="_blank" rel="noopener">Babel</a></dt><dd>Transpiler</dd>
                         <dt><a href="https://webpack.js.org/concepts/" target="_blank" rel="noopener">Webpack</a></dt><dd>Bundler</dd>
                         <dt><a href="https://nodemon.io/" target="_blank" rel="noopener">Nodemon</a></dt><dd>Watcher</dd>
@@ -175,9 +181,10 @@ export default class About extends Component{
 
                 </div>
                 <div data-animate-in="intro">
-                    <h5>UI</h5>
+                    <h5>UI + Layout</h5>
+                    <p>Flexbox and SASS</p>
                     <dl>
-                        <dt><a href="#https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">HTML5+</a></dt><dd>Semantic HTML</dd>
+                        <dt><a href="#https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">HTML5</a></dt><dd>Semantic HTML</dd>
                         <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank" rel="noopener">CSS3</a></dt><dd>Gradients + Animation</dd>
                         <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank" rel="noopener">FlexBox</a></dt><dd>Responsive</dd>
                         <dt><a href="http://sass-lang.com/guide" target="_blank" rel="noopener">SASS</a></dt><dd>CSS Pre-Processor</dd>
@@ -185,9 +192,9 @@ export default class About extends Component{
 
                     <h5>Design Resources</h5>
                     <dl>
-                        <dt><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a></dt><dd>.</dd>
-                        <dt><a href="http://fontawesome.io/" target="_blank" rel="noopener">FontAwesome</a></dt><dd>.</dd>
-                        <dt><a href="#" target="_blank" rel="noopener">LogoJoy</a></dt><dd>.</dd>
+                        <dt><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a></dt><dd>&nbsp;</dd>
+                        <dt><a href="http://fontawesome.io/" target="_blank" rel="noopener">FontAwesome</a></dt><dd>&nbsp;</dd>
+                        <dt><a href="#" target="_blank" rel="noopener">LogoJoy</a></dt><dd>&nbsp;</dd>
                     </dl>
 
                     <h5>Style Guide</h5>
@@ -196,11 +203,11 @@ export default class About extends Component{
                 <div data-animate-in="intro">
                     <h5>Development Tools</h5>
                     <dl className="wide">
-                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener">Chrome Dev Tools</a></dt><dd>.</dd>
-                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener">Chrome Dev Tools JS Profiler</a></dt><dd>.</dd>
-                        <dt><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">Chrome Lighthouse Auditor</a></dt><dd>.</dd>
-                        <dt><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener">React Developer Tools </a></dt><dd>.</dd>
-                        <dt><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd" target="_blank" rel="noopener">Redux Developer Tools</a></dt><dd>.</dd>
+                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener">Chrome Dev Tools</a></dt><dd>&nbsp;</dd>
+                        <dt><a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener">Chrome Dev Tools JS Profiler</a></dt><dd>&nbsp;</dd>
+                        <dt><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">Chrome Lighthouse Auditor</a></dt><dd>&nbsp;</dd>
+                        <dt><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener">React Developer Tools </a></dt><dd>&nbsp;</dd>
+                        <dt><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd" target="_blank" rel="noopener">Redux Developer Tools</a></dt><dd>&nbsp;</dd>
                         <dt><a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a></dt><dd>Editor</dd>
                         <dt><a href="#" target="_blank" rel="noopener">GitHub</a></dt><dd>vcs</dd>
                     </dl>

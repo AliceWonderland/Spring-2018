@@ -26,7 +26,19 @@ export default class Resume extends Component{
                         Years working and technologies
                         Achievements
 
-                        Business experience. While I consider this my craft what drives me is the application. What it can bring to the user experience the product the business.
+                        My degree is in managing development projects. However, my interests lie in engineering.
+
+                        Business experience. While I consider this my craft what drives me is the application of these skills. What it can bring to the user experience the product the business.
+
+                        My goal as a lead engineer is to provide options and solutions to meet the needs of the product. Always with the User Experience in mind driven by a respect for the Engineering behind it.
+
+                        My goal in re-entering development is to provide these option in a modern development environment as way to both delve into the current technologies and find ways to apply my skills in this environment.
+
+                        As a developer, I'm interested in technology itself. What it does. What can it do for me. How can we apply this to best meet our needs. And what the UI, Product, Business challenges may be.
+
+                        My goal as a team member is to make an effective and meaningful contribution by learning best where to apply my skills and strengths and learning the skills and strengths, ideals and interests of others.
+
+                        My passion is in making the virtual a reality.
                     </span>
                 </div>
 

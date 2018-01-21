@@ -43,6 +43,9 @@
     font-family:'nunito_sans', sans-serif;
     color: #fff;
 }
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 html{
     font-size: 62.5%; /* must be in root for rem units */
@@ -154,7 +157,7 @@ dl {
 dt {
     float: left;
     clear: left;
-    width: 100px;
+    width: 44%;
     text-align: left;
     font-weight: bold;
     margin-right:5px;
@@ -416,8 +419,9 @@ footer .galaxy{
     padding: 45px 25px;
     border-radius: 6px;
     position: relative;
-    min-width: 200px;
-    width: 25%;
+    min-width: 310px;
+    width: 30%;
+    margin-bottom: 30px;
     /*overflow-y: auto;*/
 }
 
@@ -444,6 +448,10 @@ footer .galaxy{
     text-align: center;
     padding: 0px 0px 30px 0px;
 }
+
+
+
+
 
 /*animations*/
 [data-animate-in]{
@@ -504,7 +512,7 @@ footer .galaxy{
     min-height: calc(100vh - 65px);
 }
 
-.about .horizon{
+.about .horizon, .portfolio .horizon{
     height: 230px;
     display: flex;
     flex-direction: column;
@@ -512,17 +520,112 @@ footer .galaxy{
     align-items: center;
 }
 
-.about .galaxy {
-    padding: 60px 90px;
+.about .galaxy, .portfolio .galaxy {
+    padding: 60px 30px;
 }
 
 .bio .horizon{
     height:auto;
 }
 
+.portfolio .galaxy{
+    /*background-color:#1a1f21;*/
+}
 
+.portfolio nav{
+    background: #22292C;
+    width: 100%;
+}
+.portfolio nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    padding: 20px;
+    margin: 0px;
+}
+.portfolio nav li{
+    list-style-type: none;
+    width: 25%;
+    height: 60px;
+    max-width: 260px;
+    text-align: center;
+    cursor: pointer;
 
+    background: #F37055;
+    border-radius: 6px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+}
+.portfolio nav li:last-child{
+    width: 100px;
+}
+.portfolio nav li:hover:not(:last-child){
+    /*display: block;*/
+    /*width: calc(100% - 8px);*/
+    /*height: calc(100% - 8px);*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate3d(-50%, -50%, 0);*/
+    /*border-radius: 6px;*/
+    /*z-index: -1;*/
+    /*transition: all .4s ease-out;*/
+    /*opacity: 0;*/
+}
+.portfolio nav li:hover:nth-child(1){
+    background: #F37055;
+}
+.portfolio nav li:hover:nth-child(2){
+    background: #EF4E7B;
+}
+.portfolio nav li:hover:nth-child(3){
+    background: #13a793;
+}
 
+.portfolio .galaxy .grid-container{
+    display: grid;
+    grid-template-columns: 140px minmax(300px,1fr) minmax(300px,1fr) minmax(300px,1fr);
+    grid-gap: 1px;
+    /*background: #22292C;*/
+    width: 100%;
+    /*max-width: 1065px;*/
+    padding: 1px;
+}
+
+.portfolio .galaxy .grid-container > div{
+    background: #1a1d21;
+    padding: 10px;
+}
+
+.portfolio .galaxy .grid-container > .menu {
+
+}
+
+.portfolio .galaxy .grid-container > .nav {
+    grid-column: auto / span 4;
+    padding: 0px;
+}
+
+.portfolio .galaxy .grid-container > .header {
+    grid-column: auto / span 4;
+    text-align: center;
+    height: 100px;
+    padding: 27px;
+}
+
+.portfolio .galaxy .grid-container > .sub-header {
+    grid-column: auto / span 3;
+    text-align: center;
+    height: 65px;
+    color: #696B6B;
+    padding: 18px 0px 20px 0px;
+}
+
+.portfolio .galaxy .grid-container > .row-span {
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+}
 
 
 /*BEGIN GITHUB UNIVERSE STYLES*/
