@@ -28,13 +28,14 @@ ReactDOM.render(
 
                 {/*BODY*/}
                 <Switch>
+                    <Route exact path="/" component={Home} />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/bio" component={Bio} />
                     <Route exact path="/resume" component={Resume} />
                     <Route exact path="/portfolio" component={Portfolio} />
                     <Route exact path="/modal" component={Master} />
                     <Route exact path="/master" component={Master} />
-                    {/*<Route exact path="/campuses/new" component={NewCampus} />*/}
+                    <Route exact path="/campuses/new" component={Bio} />
                     {/*<Route exact path="/students/edit/:studentId" component={NewStudent} />*/}
                     {/*<Route exact path="/campuses/edit/:campusId" component={NewCampus} />*/}
                     {/*<Route exact path="/students/view/:studentId" component={SingleStudent} />*/}

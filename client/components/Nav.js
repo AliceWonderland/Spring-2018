@@ -5,8 +5,14 @@ export default class Nav extends Component{
     render() {
         return (
           <header className="site-header">
-              <div className="logo"><a href="/"><img src="assets/img/logo_astro.png" alt="puppynaut" /> Puppynaut</a></div>
-              <nav className="site-navigation"><a href="/about">About</a> <a href="/bio">Bio</a> <a href="/resume">Resume</a> <a href="/portfolio">Portfolio</a> <a href="/modal">Contact</a> </nav>
+              <div className="logo"><Link to="/"><img src="assets/img/logo_astro.png" alt="puppynaut" /> Puppynaut</Link></div>
+              <nav className="site-navigation">
+                  <Link to="/about">About</Link>
+                  <Link to="/bio">Bio</Link>
+                  <Link to="/resume">Resume</Link>
+                  <Link to="/portfolio">Portfolio</Link>
+                  <Link to="/modal">Contact</Link>
+              </nav>
               <div className="watch">GitHub</div>
 
               {/*<nav className="navbar navbar-inverse navbar-fixed-top">*/}

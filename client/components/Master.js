@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import $ from "jquery";
+import { LiftOff } from '../scripts.js';
 
 export default class Master extends Component{
+	constructor(){
+		super();
+		this.state={};
+	}
+
+	componentDidMount(){
+		LiftOff($,{});
+	}
+
     render() {
         return (
           <main className="gradient" data-animate-in="fadein">

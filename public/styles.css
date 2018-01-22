@@ -552,10 +552,10 @@ footer .galaxy{
     text-align: center;
     cursor: pointer;
 
-    background: #F37055;
-    border-radius: 6px;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
+    /*background: #F37055;*/
+    /*border-radius: 6px;*/
+    /*width: calc(100% - 8px);*/
+    /*height: calc(100% - 8px);*/
 }
 .portfolio nav li:last-child{
     width: 100px;
@@ -568,7 +568,7 @@ footer .galaxy{
     /*top: 50%;*/
     /*left: 50%;*/
     /*transform: translate3d(-50%, -50%, 0);*/
-    /*border-radius: 6px;*/
+    border-radius: 6px;
     /*z-index: -1;*/
     /*transition: all .4s ease-out;*/
     /*opacity: 0;*/
@@ -590,7 +590,7 @@ footer .galaxy{
     /*background: #22292C;*/
     width: 100%;
     /*max-width: 1065px;*/
-    padding: 1px;
+    padding: 1px 0px 0px 0px;
 }
 
 .portfolio .galaxy .grid-container > div{

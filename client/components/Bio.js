@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import $ from "jquery";
+import { LiftOff } from '../scripts.js';
 
 export default class Bio extends Component{
 	constructor(){
@@ -13,7 +15,11 @@ export default class Bio extends Component{
 
 		this.handleClick=this.handleClick.bind(this);
 	}
-	
+
+	componentDidMount(){
+	    LiftOff($,{});
+    }
+
 	handleClick(e){
 		console.log(e.target);
     }
