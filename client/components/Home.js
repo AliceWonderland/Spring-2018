@@ -18,7 +18,7 @@ export default class Home extends Component{
           <main className="landing gradient" data-animate-in="fadein">
               <div className="galaxy">
                   <div className="galaxy-content">
-                      <span><img src="assets/img/logo_astro_invis.png" alt="puppynaut" /></span>
+                      <span><img src="/assets/img/logo_astro_invis.png" alt="puppynaut" /></span>
                       <h1>Greetings, Earthling</h1>
                       <h3 data-animate-in="intro">Welcome to my portfolio site</h3>
                       <h4 data-animate-in="intro">Choose Your Path</h4>
@@ -28,10 +28,10 @@ export default class Home extends Component{
                   </div>
 
                   <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
-                      <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                      <img src="/assets/img/shooting-star.svg" alt="shooting star" />
                   </figure>
                   <figure className="shooting-star-right" style={{top: '10%', transform: 'rotate(112deg)'}}>
-                      <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                      <img src="/assets/img/shooting-star.svg" alt="shooting star" />
                   </figure>
                   <div className="stars"></div>
                   <div className="stars-lg"></div>

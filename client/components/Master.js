@@ -32,10 +32,10 @@ export default class Master extends Component{
                   </div>
 
                   <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
-                      <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                      <img src="/assets/img/shooting-star.svg" alt="shooting star" />
                   </figure>
                   <figure className="shooting-star-right" style={{top: '10%', transform: 'rotate(112deg)'}}>
-                      <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                      <img src="/assets/img/shooting-star.svg" alt="shooting star" />
                   </figure>
                   <div className="stars"></div>
                   <div className="stars-lg"></div>

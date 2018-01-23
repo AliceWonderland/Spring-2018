@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import $ from "jquery";
 import { LiftOff } from '../scripts.js';
+import PortDesc from './PortDesc'
 
 export default class Portfolio extends Component{
 	constructor(props){
@@ -50,33 +51,36 @@ export default class Portfolio extends Component{
 				<section className="horizon" data-animate-in="fadein">
 					<h3>My Work By Example</h3>
 					<h2>Websites Then and Now</h2>
+
 					<div className="stars"></div>
 					<div className="stars-lg"></div>
 				</section>
 				<section className="galaxy" data-animate-in="fadein">
-					<h3>Boop</h3>
 					<div className="grid-container">
 						<div className="nav">
 							<nav>
 								<ul>
-									<li key="indie" onClick={this.handleClick.bind(this,'indie')} filter="indie">
+									<li className={(visibilityFilter==='indie' ? 'indie' : '')} key="indie" onClick={this.handleClick.bind(this,'indie')} filter="indie">
 										<h5>Independent</h5>
 										<p>Freelance Development</p>
 									</li>
-									<li key="corpo" onClick={this.handleClick.bind(this,'corpo')} filter="corpo">
+									<li className={(visibilityFilter==='corpo' ? 'corpo' : '')} key="corpo" onClick={this.handleClick.bind(this,'corpo')} filter="corpo">
 										<h5>Corporate</h5>
 										<p>News/Media/Video Games</p>
 									</li>
-									<li key="agency" onClick={this.handleClick.bind(this,'agency')} filter="agency">
+									<li className={(visibilityFilter==='agency' ? 'agency' : '')} key="agency" onClick={this.handleClick.bind(this,'agency')} filter="agency">
 										<h5>Agency</h5>
 										<p>Design/Advertising Agency</p>
 
 									</li>
-									<li>Filter</li>
+									<li className={(visibilityFilter==='node' ? 'node' : '')} onClick={this.handleClick.bind(this,'node')}><h5>Node</h5>
+										<p>Projects</p></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
+
+
 					{
 						(visibilityFilter==='corpo' || visibilityFilter==='all') ?
 						  <div className="grid-container">
@@ -87,10 +91,20 @@ export default class Portfolio extends Component{
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
-										  return [<div></div>,<div key={listItem.id}>{listItem.portTitle}</div>]
+										  return [<div></div>,<div key={listItem.id}>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <h6>{listItem.portTitle}</h6>
+											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  </div>]
 									  }
 									  count++;
-									  return <div key={listItem.id}>{listItem.portTitle}</div>
+									  return <div key={listItem.id}>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <h6>{listItem.portTitle}</h6>
+										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+									  </div>
 								  }
 							  })}
 						  </div>
@@ -108,10 +122,20 @@ export default class Portfolio extends Component{
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
-										  return [<div></div>,<div key={listItem.id}>{listItem.portTitle}</div>]
+										  return [<div></div>,<div key={listItem.id}>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <h6>{listItem.portTitle}</h6>
+											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  </div>]
 									  }
 									  count++;
-									  return <div key={listItem.id}>{listItem.portTitle}</div>
+									  return <div key={listItem.id}>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <h6>{listItem.portTitle}</h6>
+										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+									  </div>
 								  }
 							  })
 							  }
@@ -130,10 +154,20 @@ export default class Portfolio extends Component{
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
-										  return [<div></div>,<div key={listItem.id}>{listItem.portTitle}</div>]
+										  return [<div></div>,<div key={listItem.id}>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <h6>{listItem.portTitle}</h6>
+											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  </div>]
 									  }
 									  count++;
-									  return <div key={listItem.id}>{listItem.portTitle}</div>
+									  return <div key={listItem.id}>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <h6>{listItem.portTitle}</h6>
+										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+									  </div>
 								  }
 							  })}
 						  </div>
@@ -151,10 +185,20 @@ export default class Portfolio extends Component{
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
-										  return [<div></div>,<div key={listItem.id}>{listItem.portTitle}</div>]
+										  return [<div></div>,<div key={listItem.id}>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <h6>{listItem.portTitle}</h6>
+											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  </div>]
 									  }
 									  count++;
-									  return <div key={listItem.id}>{listItem.portTitle}</div>
+									  return <div key={listItem.id}>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <h6>{listItem.portTitle}</h6>
+										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+									  </div>
 								  }
 							  })}
 						  </div>
@@ -177,10 +221,20 @@ export default class Portfolio extends Component{
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
-										  return [<div></div>,<div key={listItem.id}>{listItem.portTitle}</div>]
+										  return [<div></div>,<div key={listItem.id}>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <h6>{listItem.portTitle}</h6>
+											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  </div>]
 									  }
 									  count++;
-									  return <div key={listItem.id}>{listItem.portTitle}</div>
+									  return <div key={listItem.id}>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <h6>{listItem.portTitle}</h6>
+										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+									  </div>
 								  }
 							  })}
 						  </div>
@@ -192,6 +246,14 @@ export default class Portfolio extends Component{
 						breakdown phases of career by era challenges lessons learned
 						hashbangs MVC Node
 					</p>
+
+
+					<figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
+						<img src="/assets/img/shooting-star.svg" alt="shooting star" />
+					</figure>
+					<figure className="shooting-star-right" style={{top: '10%', transform: 'rotate(112deg)'}}>
+						<img src="/assets/img/shooting-star.svg" alt="shooting star" />
+					</figure>
 					<div className="stars"></div>
 					<div className="stars-lg"></div>
 				</section>

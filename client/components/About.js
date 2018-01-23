@@ -46,7 +46,7 @@ export default class About extends Component{
                 <p>primarily hand-coded with minimal use of 3rd-Party UI libraries like Bootstrap with exception for jQuery for cross-browser compatibility.
                 </p>
 
-                <h5>Refresh, Reinforce, Re-Up</h5>
+                <h5>Why? Refresh, Reinforce, Re-Up</h5>
                 <p>My goal in building this site was to give myself a project where I could apply all my previous UI skills implementing HTML/CSS while tying in the new skills I just learned using React to build a new site
 
                 Server Setup/Configuration Systems Administration Refresher Nginx vs. Apache
@@ -91,67 +91,13 @@ export default class About extends Component{
 
                 </p>
 
-                <h5>Application Stack</h5>
-                React <a href="https://reactjs.org/" target="_blank" rel="noopener"></a>
-                React-Redux <a href="https://github.com/reactjs/react-redux" target="_blank" rel="noopener"></a>
-                Node <a href="https://nodejs.org/en/" target="_blank" rel="noopener"></a>
-                Express <a href="https://expressjs.com/" target="_blank" rel="noopener"></a>
-                Sequelize <a href="http://docs.sequelizejs.com/" target="_blank" rel="noopener"></a>
-                Postgres or MySQL <a href="https://www.postgresql.org/" target="_blank" rel="noopener"></a>
 
-                <h5>Other Resources</h5>
-                <p>A full list of all technologies, tools, and resources used to create this site. All are Open Source and free.
-
-                Node Packages
-                NPM <a href="https://www.npmjs.com/" target="_blank" rel="noopener"></a>
-                Babel <a href="https://babeljs.io/" target="_blank" rel="noopener"></a> Transpiler
-                Webpack <a href="https://webpack.js.org/concepts/" target="_blank" rel="noopener"></a>
-                Nodemon <a href="https://nodemon.io/" target="_blank" rel="noopener"></a>
-                HMR <a href="https://webpack.js.org/concepts/hot-module-replacement/"></a>
-                SASS <a href="http://sass-lang.com/" target="_blank" rel="noopener"></a> CSS Compiler
-
-                Cloud Server (VPS)
-                Digital Ocean <a href="https://www.digitalocean.com/" target="_blank" rel="noopener"></a>
-                Ubuntu <a href="https://www.ubuntu.com/download" target="_blank" rel="noopener"></a>
-                Nginx  <a href="https://www.nginx.com/resources/admin-guide/" target="_blank" rel="noopener"></a>
-                This site is hosted on an Nginx web server using reverse proxy installed on Linux OS. Try DigitalOcean for free using my referreral link <a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener">here</a>.
-
-                Server Admin Packages
-                PM2 or Forever <a href="http://pm2.keymetrics.io/" target="_blank" rel="noopener"></a>
-                <a href="https://github.com/foreverjs/forever" target="_blank" rel="noopener"></a>
-
-                Development Tools and Libraries
-                Chrome Dev Tools <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener"></a>
-                Chrome Dev Tools Audit <a href="#" target="_blank" rel="noopener"></a>
-                Chrome Dev Tools Javascript Profiler <a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener"></a>
-                React Developer Tools for Chrome <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener"></a>
-                Webstorm Editor (not free!) <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener"></a>
-                Mac Terminal <a href="#" target="_blank" rel="noopener"></a>
-                GitHub Source Control <a href="#" target="_blank" rel="noopener"></a>
-                https://travis-ci.org/
-
-                Design Resources
-                Google Fonts <a href="https://fonts.google.com/" target="_blank" rel="noopener"></a>
-                FontAwesome <a href="http://fontawesome.io/" target="_blank" rel="noopener"></a>
-                LogoJoy <a href="#" target="_blank" rel="noopener"></a>
-                FlexBox
-
-                Tutorials
-                ES6 <a href="http://es6-features.org/" target="_blank" rel="noopener"></a>
-                Digital Ocean Nginx Setup <a href="#" target="_blank" rel="noopener"></a>
-                React-Training - React Router <a href="https://reacttraining.com/react-router/web/guides/philosophy" target="_blank" rel="noopener"></a>
-
-                </p>
-                <p>Design and Style Guide</p>
-                GitHub Universe
-
-                <p>Launched Spring 2018</p>
 
                 <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
-                    <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                    <img src="/assets/img/shooting-star.svg" alt="shooting star" />
                 </figure>
                 <figure className="shooting-star-right" style={{top: '10%', transform: 'rotate(112deg)'}}>
-                    <img src="assets/img/shooting-star.svg" alt="shooting star" />
+                    <img src="/assets/img/shooting-star.svg" alt="shooting star" />
                 </figure>
                 <div className="stars"></div>
                 <div className="stars-lg"></div>
@@ -198,7 +144,8 @@ export default class About extends Component{
                     <dl>
                         <dt><a href="#https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">HTML5</a></dt><dd>Semantic HTML</dd>
                         <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank" rel="noopener">CSS3</a></dt><dd>Gradients + Animation</dd>
-                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank" rel="noopener">FlexBox</a></dt><dd>Responsive</dd>
+                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank" rel="noopener">CSS FlexBox</a></dt><dd>Responsive Page Layout</dd>
+                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank" rel="noopener">CSS Grid</a></dt><dd>Table and Data Display</dd>
                         <dt><a href="http://sass-lang.com/guide" target="_blank" rel="noopener">SASS</a></dt><dd>CSS Pre-Processor</dd>
                     </dl>
 
@@ -224,6 +171,72 @@ export default class About extends Component{
                         <dt><a href="#" target="_blank" rel="noopener">GitHub</a></dt><dd>vcs</dd>
                     </dl>
                 </div>
+            </section>
+            <section className="galaxy" data-animate-in="fadein">
+                <h5>Application Stack</h5>
+                React <a href="https://reactjs.org/" target="_blank" rel="noopener"></a>
+                React-Redux <a href="https://github.com/reactjs/react-redux" target="_blank" rel="noopener"></a>
+                Node <a href="https://nodejs.org/en/" target="_blank" rel="noopener"></a>
+                Express <a href="https://expressjs.com/" target="_blank" rel="noopener"></a>
+                Sequelize <a href="http://docs.sequelizejs.com/" target="_blank" rel="noopener"></a>
+                Postgres or MySQL <a href="https://www.postgresql.org/" target="_blank" rel="noopener"></a>
+
+                <h5>Other Resources</h5>
+                <p>A full list of all technologies, tools, and resources used to create this site. All are Open Source and free.
+
+                    Node Packages
+                    NPM <a href="https://www.npmjs.com/" target="_blank" rel="noopener"></a>
+                    Babel <a href="https://babeljs.io/" target="_blank" rel="noopener"></a> Transpiler
+                    Webpack <a href="https://webpack.js.org/concepts/" target="_blank" rel="noopener"></a>
+                    Nodemon <a href="https://nodemon.io/" target="_blank" rel="noopener"></a>
+                    HMR <a href="https://webpack.js.org/concepts/hot-module-replacement/"></a>
+                    SASS <a href="http://sass-lang.com/" target="_blank" rel="noopener"></a> CSS Compiler
+
+                    Cloud Server (VPS)
+                    Digital Ocean <a href="https://www.digitalocean.com/" target="_blank" rel="noopener"></a>
+                    Ubuntu <a href="https://www.ubuntu.com/download" target="_blank" rel="noopener"></a>
+                    Nginx  <a href="https://www.nginx.com/resources/admin-guide/" target="_blank" rel="noopener"></a>
+                    This site is hosted on an Nginx web server using reverse proxy installed on Linux OS. Try DigitalOcean for free using my referreral link <a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener">here</a>.
+
+                    Server Admin Packages
+                    PM2 or Forever <a href="http://pm2.keymetrics.io/" target="_blank" rel="noopener"></a>
+                    <a href="https://github.com/foreverjs/forever" target="_blank" rel="noopener"></a>
+
+                    Development Tools and Libraries
+                    Chrome Dev Tools <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener"></a>
+                    Chrome Dev Tools Audit <a href="#" target="_blank" rel="noopener"></a>
+                    Chrome Dev Tools Javascript Profiler <a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener"></a>
+                    React Developer Tools for Chrome <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener"></a>
+                    Webstorm Editor (not free!) <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener"></a>
+                    Mac Terminal <a href="#" target="_blank" rel="noopener"></a>
+                    GitHub Source Control <a href="#" target="_blank" rel="noopener"></a>
+                    https://travis-ci.org/
+
+                    Design Resources
+                    Google Fonts <a href="https://fonts.google.com/" target="_blank" rel="noopener"></a>
+                    FontAwesome <a href="http://fontawesome.io/" target="_blank" rel="noopener"></a>
+                    LogoJoy <a href="#" target="_blank" rel="noopener"></a>
+                    FlexBox
+
+                    Tutorials
+                    ES6 <a href="http://es6-features.org/" target="_blank" rel="noopener"></a>
+                    Digital Ocean Nginx Setup <a href="#" target="_blank" rel="noopener"></a>
+                    React-Training - React Router <a href="https://reacttraining.com/react-router/web/guides/philosophy" target="_blank" rel="noopener"></a>
+
+                    <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
+                        <img src="/assets/img/shooting-star.svg" alt="shooting star" />
+                    </figure>
+                    <figure className="shooting-star-right" style={{top: '10%', transform: 'rotate(112deg)'}}>
+                        <img src="/assets/img/shooting-star.svg" alt="shooting star" />
+                    </figure>
+                    <div className="stars"></div>
+                    <div className="stars-lg"></div>
+
+                </p>
+                <p>Design and Style Guide</p>
+                GitHub Universe
+
+                <p>Launched Spring 2018</p>
             </section>
         </main>
         )

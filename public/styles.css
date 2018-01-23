@@ -96,7 +96,7 @@ a, .a{
     text-decoration: none;
 }
 
-a:hover, .a:hover{
+a:hover, .a:hover, a.visited{
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -170,6 +170,7 @@ dt::after {
 dd {
     /*margin: 0 0 0 110px;*/
     /*padding: 0 0 0.5em 0;*/
+    color: #828585;
 }
 
 dl.wide dt{
@@ -554,8 +555,8 @@ footer .galaxy{
 
     /*background: #F37055;*/
     /*border-radius: 6px;*/
-    /*width: calc(100% - 8px);*/
-    /*height: calc(100% - 8px);*/
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
 }
 .portfolio nav li:last-child{
     width: 100px;
@@ -573,14 +574,22 @@ footer .galaxy{
     /*transition: all .4s ease-out;*/
     /*opacity: 0;*/
 }
-.portfolio nav li:hover:nth-child(1){
+.portfolio nav li:hover:nth-child(1), .portfolio nav li.indie{
     background: #F37055;
+    border-radius: 6px;
 }
-.portfolio nav li:hover:nth-child(2){
+.portfolio nav li:hover:nth-child(2), .portfolio nav li.corpo{
     background: #EF4E7B;
+    border-radius: 6px;
 }
-.portfolio nav li:hover:nth-child(3){
+.portfolio nav li:hover:nth-child(3), .portfolio nav li.agency{
     background: #13a793;
+    border-radius: 6px;
+}
+
+.portfolio nav li:hover:nth-child(4), .portfolio nav li.node{
+    background: #A166AB;
+    border-radius: 6px;
 }
 
 .portfolio .galaxy .grid-container{
@@ -595,9 +604,18 @@ footer .galaxy{
 
 .portfolio .galaxy .grid-container > div{
     background: #1a1d21;
-    padding: 10px;
+    padding: 30px 40px;
 }
-
+.portfolio .galaxy .grid-container > div > img:first-child, .portfolio .galaxy .grid-container > div > a:first-child{
+    margin: 0 auto 17px auto;
+    display: block;
+    text-align: center;
+}
+.portfolio .galaxy .grid-container > div > p{
+    font-size: 1.3rem;
+    color: #a2a2a2;
+    line-height: 1.3;
+}
 .portfolio .galaxy .grid-container > .menu {
 
 }
@@ -617,9 +635,9 @@ footer .galaxy{
 .portfolio .galaxy .grid-container > .sub-header {
     grid-column: auto / span 3;
     text-align: center;
-    height: 65px;
+    /*height: 65px;*/
     color: #696B6B;
-    padding: 18px 0px 20px 0px;
+    /*padding: 18px 0px 20px 0px;*/
 }
 
 .portfolio .galaxy .grid-container > .row-span {

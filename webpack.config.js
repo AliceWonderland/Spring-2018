@@ -27,6 +27,14 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+          test: /\.css$/,
+          use: [ 'style-loader', 'css-loader', 'sass-loader' ] //must incl this for @import
+      },
+      {
+          test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
+          loader: 'file-loader' // must include this for fonts
       }
     ]
   }

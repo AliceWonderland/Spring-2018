@@ -5,7 +5,7 @@ export default class Nav extends Component{
     render() {
         return (
           <header className="site-header">
-              <div className="logo"><Link to="/"><img src="assets/img/logo_astro.png" alt="puppynaut" /> Puppynaut</Link></div>
+              <div className="logo"><Link to="/"><img src="/assets/img/logo_astro.png" alt="puppynaut" /> Puppynaut</Link></div>
               <nav className="site-navigation">
                   <Link to="/about">About</Link>
                   <Link to="/bio">Bio</Link>
