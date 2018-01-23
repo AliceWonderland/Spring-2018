@@ -95,7 +95,7 @@ export default class Portfolio extends Component{
 											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 										  </div>]
 									  }
 									  count++;
@@ -103,7 +103,7 @@ export default class Portfolio extends Component{
 										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 									  </div>
 								  }
 							  })}
@@ -126,7 +126,7 @@ export default class Portfolio extends Component{
 											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 										  </div>]
 									  }
 									  count++;
@@ -134,7 +134,7 @@ export default class Portfolio extends Component{
 										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 									  </div>
 								  }
 							  })
@@ -158,7 +158,7 @@ export default class Portfolio extends Component{
 											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 										  </div>]
 									  }
 									  count++;
@@ -166,7 +166,7 @@ export default class Portfolio extends Component{
 										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 									  </div>
 								  }
 							  })}
@@ -189,7 +189,7 @@ export default class Portfolio extends Component{
 											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 										  </div>]
 									  }
 									  count++;
@@ -197,7 +197,7 @@ export default class Portfolio extends Component{
 										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 									  </div>
 								  }
 							  })}
@@ -225,7 +225,7 @@ export default class Portfolio extends Component{
 											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-											  <p>{listItem.portEmployer} {listItem.portYear}</p>
+											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 										  </div>]
 									  }
 									  count++;
@@ -233,7 +233,7 @@ export default class Portfolio extends Component{
 										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
-										  <p>{listItem.portEmployer} {listItem.portYear}</p>
+										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
 									  </div>
 								  }
 							  })}

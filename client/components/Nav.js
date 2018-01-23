@@ -13,7 +13,7 @@ export default class Nav extends Component{
                   <Link to="/portfolio">Portfolio</Link>
                   <Link to="/modal">Contact</Link>
               </nav>
-              <div className="watch">GitHub</div>
+              <div className="watch"><a href="https://github.com/AliceWonderland" target="_blank" rel="noopener"><i className="fa fa-github fa-2" aria-hidden="true"></i></a></div>
 
               {/*<nav className="navbar navbar-inverse navbar-fixed-top">*/}
               {/*<div className="container">*/}
