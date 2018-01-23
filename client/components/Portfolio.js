@@ -49,8 +49,8 @@ export default class Portfolio extends Component{
         return (
             <main className="gradient portfolio">
 				<section className="horizon" data-animate-in="fadein">
-					<h3>My Work By Example</h3>
-					<h2>Websites Then and Now</h2>
+					<h3 data-animate-in="intro">My Work By Example</h3>
+					<h2 data-animate-in="intro">Websites Then and Now</h2>
 
 					<div className="stars"></div>
 					<div className="stars-lg"></div>
@@ -231,6 +231,37 @@ export default class Portfolio extends Component{
 									  count++;
 									  return <div key={listItem.id}>
 										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <h6>{listItem.portTitle}</h6>
+										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
+									  </div>
+								  }
+							  })}
+						  </div>
+						  :
+						  <div></div>
+					}
+
+					{
+						(visibilityFilter==='node') ?
+						  <div className="grid-container">
+							  <div><h5></h5></div><div className="sub-header"><h5>Node Projects</h5></div>
+							  {port.map((listItem,ind) => {
+								  if(ind===0){count=0;}
+								  if(listItem.portSub==='4'){
+									  if(count===3){count=0;}
+									  if(count===0) {
+										  count++;
+										  return [<div></div>,<div key={listItem.id}>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} width="210" /></a>
+											  <h6>{listItem.portTitle}</h6>
+											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
+											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
+										  </div>]
+									  }
+									  count++;
+									  return <div key={listItem.id}>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} width="210"  /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>

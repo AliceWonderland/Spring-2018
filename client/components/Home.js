@@ -18,13 +18,10 @@ export default class Home extends Component{
           <main className="landing gradient" data-animate-in="fadein">
               <div className="galaxy">
                   <div className="galaxy-content">
-                      <span><img src="/assets/img/logo_astro_invis.png" alt="puppynaut" /></span>
-                      <h1>Greetings, Earthling</h1>
+                      <span data-animate-in="intro"><img src="/assets/img/logo_astro_invis.png" alt="puppynaut" /></span>
+                      <h1 data-animate-in="intro">Greetings, Earthling</h1>
                       <h3 data-animate-in="intro">Welcome to my portfolio site</h3>
                       <h4 data-animate-in="intro">Choose Your Path</h4>
-
-                      <div data-animate-in="intro">Lorem <a href="#">ipsum</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                      <div data-animate-in="intro">blab</div>
                   </div>
 
                   <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
@@ -37,18 +34,17 @@ export default class Home extends Component{
                   <div className="stars-lg"></div>
               </div>
 
-              <div className="horizon" data-animate-in="intro" style={{height: '400px'}}>
-                  blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
-                  <div className="stars"></div>
-                  <div className="stars-lg"></div>
-              </div>
-
-              <div className="space">
-                  <div data-animate-in="intro">Lorem <a href="#">ipsum</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div data-animate-in="intro">node projects
-
-                  </div>
-                  <div data-animate-in="intro">blab</div>
+              <div className="infinite">
+				  <div data-animate-in="intro"><a href="http://alicechuang.com/"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/mpa.png" /></a>
+				  	<h6>MPA</h6>
+				  	<p>A study in Responsive Design built to work across all platforms + browsers</p>
+				  </div>
+				  <div data-animate-in="intro"><Link to="about"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/spa.png" /></Link>
+					  <h6>SPA</h6>
+					  <p>A study in SPAs built on a modern web stack using React (beta)</p></div>
+                  <div data-animate-in="intro"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/github.png" />
+					  <h6>GIT</h6>
+					  <p>My source code can be found on the quintessential respository of the world</p></div>
               </div>
           </main>
         )

@@ -18,8 +18,8 @@ export default class About extends Component{
         return (
         <main className="gradient about">
             <section className="horizon" data-animate-in="fadein">
-                <h3>Under The Hood</h3>
-                <h2>Buiding the future of software</h2>
+                <h3 data-animate-in="intro">Under The Hood</h3>
+                <h2 data-animate-in="intro">Buiding the future of software</h2>
                 <div className="stars"></div>
                 <div className="stars-lg"></div>
             </section>

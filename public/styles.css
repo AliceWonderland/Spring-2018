@@ -2754,7 +2754,18 @@ footer .galaxy {
 
 /*CONTENT STYLES*/
 .landing .galaxy {
-  min-height: calc(100vh - 65px); }
+  min-height: calc(100vh - 365px); }
+
+.landing .infinite img {
+  float: left;
+  width: 210px;
+  margin-right: 20px;
+  border-radius: 4px;
+  border: 1px solid #313030; }
+
+.landing .infinite p {
+  color: #828585;
+  font-size: 1.4rem; }
 
 .about .horizon, .portfolio .horizon {
   height: 230px;

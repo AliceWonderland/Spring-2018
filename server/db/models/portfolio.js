@@ -40,7 +40,7 @@ module.exports = db.define('portfolio',
       },
       portEmployer:{
           type: Sequelize.TEXT,
-          allowNull: false
+          allowNull: true
       },
       portEmployerCity:{
           type: Sequelize.TEXT,
