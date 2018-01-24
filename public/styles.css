@@ -2462,20 +2462,25 @@ h6 {
   line-height: 2;
   margin: 0; }
 
+p {
+  margin: 0 0 10px; }
+
 dt {
   float: left;
   clear: left;
   width: 44%;
   text-align: left;
   font-weight: bold;
-  margin-right: 5px; }
+  margin-right: 5px;
+  line-height: 1.42857143; }
 
 dt::after {
   /*content: ":";*/ }
 
 dd {
   /*margin: 0 0 0 110px;*/
-  /*padding: 0 0 0.5em 0;*/ }
+  /*padding: 0 0 0.5em 0;*/
+  line-height: 1.42857143; }
 
 dl.wide dt {
   width: auto;
@@ -2556,6 +2561,7 @@ dl.wide dt {
   transition: transform .4s ease-out; }
 
 .site-navigation li.is-active a:after,
+.site-navigation a.is-active:after,
 .site-navigation a:hover:after {
   transform: scaleX(1); }
 
@@ -2845,7 +2851,8 @@ footer .galaxy {
   /*background: #22292C;*/
   width: 100%;
   /*max-width: 1065px;*/
-  padding: 1px 0px 0px 0px; }
+  padding: 1px 0px 0px 0px;
+  opacity: 1; }
 
 .portfolio .galaxy .grid-container > div {
   background: #1a1d21;

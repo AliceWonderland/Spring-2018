@@ -2,16 +2,27 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 export default class Nav extends Component{
+	constructor(props){
+		super(props);
+		this.state={};
+	}
+
+	componentDidMount () {
+		// console.log('props',location.pathname);
+	}
+
     render() {
+	    let page=location.pathname;
+		console.log('BLOBLOB',page,page.slice(0,page.indexOf('/', 1)));
         return (
           <header className="site-header">
               <div className="logo"><Link to="/"><img src="/assets/img/logo_astro.png" alt="puppynaut" /> Puppynaut</Link></div>
               <nav className="site-navigation">
-                  <Link to="/about">About</Link>
-                  <Link to="/bio">Bio</Link>
-                  <Link to="/resume">Resume</Link>
-                  <Link to="/portfolio">Portfolio</Link>
-                  <Link to="/modal">Contact</Link>
+                  <Link className={(page==='/about' ? 'is-active' : '')} to="/about">About</Link>
+                  <Link className={(page==='/bio' ? 'is-active' : '')} to="/bio">Bio</Link>
+                  <Link className={(page==='/resume' ? 'is-active' : '')} to="/resume">Resume</Link>
+                  <Link className={(page.indexOf('/portfolio') > -1 ? 'is-active' : '')} to="/portfolio">Portfolio</Link>
+                  <Link className={(page==='/modal' ? 'is-active' : '')} to="/modal">Contact</Link>
               </nav>
               <div className="watch"><a href="https://github.com/AliceWonderland" target="_blank" rel="noopener"><i className="fa fa-github fa-2" aria-hidden="true"></i></a></div>
 

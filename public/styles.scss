@@ -152,6 +152,9 @@ h6{
   line-height: 2;
   margin:0;
 }
+p{
+  margin: 0 0 10px;
+}
 
 dl {
 
@@ -164,6 +167,7 @@ dt {
   text-align: left;
   font-weight: bold;
   margin-right:5px;
+  line-height: 1.42857143;
 }
 
 dt::after {
@@ -174,6 +178,7 @@ dd {
   /*margin: 0 0 0 110px;*/
   /*padding: 0 0 0.5em 0;*/
   //color: #828585;
+  line-height: 1.42857143;
 }
 
 dl.wide dt{
@@ -259,6 +264,8 @@ dl.wide dt{
   }
 }
 
+
+
 .site-navigation a:after{
   content: '';
   display: block;
@@ -276,6 +283,7 @@ dl.wide dt{
 }
 
 .site-navigation li.is-active a:after,
+.site-navigation a.is-active:after,
 .site-navigation a:hover:after{
   transform: scaleX(1);
 }
@@ -625,6 +633,7 @@ footer .galaxy{
   width: 100%;
   /*max-width: 1065px;*/
   padding: 1px 0px 0px 0px;
+  opacity:1;
 }
 
 .portfolio .galaxy .grid-container > div{

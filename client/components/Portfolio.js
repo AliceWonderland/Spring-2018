@@ -44,10 +44,11 @@ export default class Portfolio extends Component{
 	
 	handleClick(filter,e){
 		console.log(e,e.target,filter);
-		// if(this.state.visibilityFilter===filter){filter='all'}
+
 		// this.setState({visibilityFilter:filter});
 		let path='/portfolio/'+filter;
 		this.props.history.push(path);
+		if(this.state.category===filter){filter='all'}
 		this.setState({category:filter});
     }
 
@@ -94,7 +95,7 @@ export default class Portfolio extends Component{
 
 					{
 						(category==='corporate' || category==='all') ?
-						  <div className="grid-container">
+						  <div className="grid-container" data-animate-in="fadein">
 							  <div><h5>2013</h5></div><div className="sub-header"><h5>NBC Universal</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
@@ -125,7 +126,7 @@ export default class Portfolio extends Component{
 
 					{
 						(category==='corporate' || category==='all') ?
-						  <div className="grid-container">
+						  <div className="grid-container" data-animate-in="fadein">
 							  <div><h5>2010</h5></div><div className="sub-header"><h5>Rockstar Games</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
@@ -157,7 +158,7 @@ export default class Portfolio extends Component{
 
 					{
 						(category==='corporate' || category==='all') ?
-						  <div className="grid-container">
+						  <div className="grid-container" data-animate-in="fadein">
 							  <div><h5>2004</h5></div><div className="sub-header"><h5>Advance Internet - Conde Nast</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
@@ -188,7 +189,7 @@ export default class Portfolio extends Component{
 
 					{
 						(category==='agency' || category==='all') ?
-						  <div className="grid-container">
+						  <div className="grid-container" data-animate-in="fadein">
 							  <div><h5>2000</h5></div><div className="sub-header"><h5>Nuforia - Red Sky Interactive</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
@@ -219,7 +220,7 @@ export default class Portfolio extends Component{
 
 					{
 						(category==='independent' || category==='all') ?
-						  <div className="grid-container">
+						  <div className="grid-container" data-animate-in="fadein">
 							  <div><h5>2000</h5></div><div className="sub-header"><h5>Freelance - Independent Work</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
@@ -255,7 +256,7 @@ export default class Portfolio extends Component{
 
 					{
 						(category==='node') ?
-						  <div className="grid-container">
+						  <div className="grid-container" data-animate-in="fadein">
 							  <div><h5></h5></div><div className="sub-header"><h5>Node Projects</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
