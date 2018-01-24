@@ -173,7 +173,7 @@ dt::after {
 dd {
   /*margin: 0 0 0 110px;*/
   /*padding: 0 0 0.5em 0;*/
-  color: #828585;
+  //color: #828585;
 }
 
 dl.wide dt{
@@ -543,6 +543,12 @@ footer .galaxy{
 
 .about .galaxy, .portfolio .galaxy {
   padding: 60px 30px;
+}
+
+.about .infinite dd{
+    /*margin: 0 0 0 110px;*/
+    /*padding: 0 0 0.5em 0;*/
+    color: #828585;
 }
 
 .bio .horizon{

@@ -29,8 +29,8 @@ ReactDOM.render(
                     <Route exact path="/about" component={About} />
                     <Route exact path="/bio" component={Bio} />
                     <Route exact path="/resume" component={Resume} />
-                    <Route exact path="/portfolio/new" component={Bio} />
                     <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/portfolio/:cat" component={Portfolio} />
                     <Route exact path="/modal" component={Master} />
                     <Route exact path="/master" component={Master} />
                     <Route component={Home} />

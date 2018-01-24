@@ -10,14 +10,15 @@ export default class Portfolio extends Component{
 		super(props);
 		this.state={
 			portfolio:[],
-			visibilityFilter:'all'
+			visibilityFilter:'all',
+			category:''
 		};
 
 		this.handleClick=this.handleClick.bind(this);
 	}
 
 	componentDidMount () {
-		// console.log('props',this.props.match.params);
+		console.log('props',this.props.match.params, this.props.match, this.props.match.url,this.props.match.params.cat);
 		axios.get('/api/portfolio')
 		.then(res => res.data)
 		.then(portfolio => {
@@ -29,22 +30,32 @@ export default class Portfolio extends Component{
 			// console.log({...port,agency,corpo});
 			console.log(portfolio);
 
-			//setState
 			this.setState({portfolio});
+
+			if(this.props.match.params.cat){
+				this.setState({category:this.props.match.params.cat});
+			}else{
+				this.setState({category:'all'});
+			}
+
 			LiftOff($,{});
 		});
 	}
 	
 	handleClick(filter,e){
 		console.log(e,e.target,filter);
-		if(this.state.visibilityFilter===filter){filter='all'}
-		this.setState({visibilityFilter:filter});
+		// if(this.state.visibilityFilter===filter){filter='all'}
+		// this.setState({visibilityFilter:filter});
+		let path='/portfolio/'+filter;
+		this.props.history.push(path);
+		this.setState({category:filter});
     }
 
     render() {
 		let port=this.state.portfolio;
 		let visibilityFilter=this.state.visibilityFilter;
 		let count=0;
+		let category=this.state.category;
 		console.log(this.state);
         return (
             <main className="gradient portfolio">
@@ -60,20 +71,20 @@ export default class Portfolio extends Component{
 						<div className="nav">
 							<nav>
 								<ul>
-									<li className={(visibilityFilter==='indie' ? 'indie' : '')} key="indie" onClick={this.handleClick.bind(this,'indie')} filter="indie">
+									<li className={(category==='independent' ? 'indie' : '')} key="indie" onClick={this.handleClick.bind(this,'independent')} filter="independent">
 										<h5>Independent</h5>
 										<p>Freelance Development</p>
 									</li>
-									<li className={(visibilityFilter==='corpo' ? 'corpo' : '')} key="corpo" onClick={this.handleClick.bind(this,'corpo')} filter="corpo">
+									<li className={(category==='corporate' ? 'corpo' : '')} key="corpo" onClick={this.handleClick.bind(this,'corporate')} filter="corporate">
 										<h5>Corporate</h5>
 										<p>News/Media/Video Games</p>
 									</li>
-									<li className={(visibilityFilter==='agency' ? 'agency' : '')} key="agency" onClick={this.handleClick.bind(this,'agency')} filter="agency">
+									<li className={(category==='agency' ? 'agency' : '')} key="agency" onClick={this.handleClick.bind(this,'agency')} filter="agency">
 										<h5>Agency</h5>
 										<p>Design/Advertising Agency</p>
 
 									</li>
-									<li className={(visibilityFilter==='node' ? 'node' : '')} onClick={this.handleClick.bind(this,'node')}><h5>Node</h5>
+									<li className={(category==='node' ? 'node' : '')} onClick={this.handleClick.bind(this,'node')}><h5>Node</h5>
 										<p>Projects</p></li>
 								</ul>
 							</nav>
@@ -82,7 +93,7 @@ export default class Portfolio extends Component{
 
 
 					{
-						(visibilityFilter==='corpo' || visibilityFilter==='all') ?
+						(category==='corporate' || category==='all') ?
 						  <div className="grid-container">
 							  <div><h5>2013</h5></div><div className="sub-header"><h5>NBC Universal</h5></div>
 							  {port.map((listItem,ind) => {
@@ -113,7 +124,7 @@ export default class Portfolio extends Component{
 					}
 
 					{
-						(visibilityFilter==='corpo' || visibilityFilter==='all') ?
+						(category==='corporate' || category==='all') ?
 						  <div className="grid-container">
 							  <div><h5>2010</h5></div><div className="sub-header"><h5>Rockstar Games</h5></div>
 							  {port.map((listItem,ind) => {
@@ -145,7 +156,7 @@ export default class Portfolio extends Component{
 					}
 
 					{
-						(visibilityFilter==='corpo' || visibilityFilter==='all') ?
+						(category==='corporate' || category==='all') ?
 						  <div className="grid-container">
 							  <div><h5>2004</h5></div><div className="sub-header"><h5>Advance Internet - Conde Nast</h5></div>
 							  {port.map((listItem,ind) => {
@@ -176,7 +187,7 @@ export default class Portfolio extends Component{
 					}
 
 					{
-						(visibilityFilter==='agency' || visibilityFilter==='all') ?
+						(category==='agency' || category==='all') ?
 						  <div className="grid-container">
 							  <div><h5>2000</h5></div><div className="sub-header"><h5>Nuforia - Red Sky Interactive</h5></div>
 							  {port.map((listItem,ind) => {
@@ -207,7 +218,7 @@ export default class Portfolio extends Component{
 					}
 
 					{
-						(visibilityFilter==='indie' || visibilityFilter==='all') ?
+						(category==='independent' || category==='all') ?
 						  <div className="grid-container">
 							  <div><h5>2000</h5></div><div className="sub-header"><h5>Freelance - Independent Work</h5></div>
 							  {port.map((listItem,ind) => {
@@ -243,7 +254,7 @@ export default class Portfolio extends Component{
 					}
 
 					{
-						(visibilityFilter==='node') ?
+						(category==='node') ?
 						  <div className="grid-container">
 							  <div><h5></h5></div><div className="sub-header"><h5>Node Projects</h5></div>
 							  {port.map((listItem,ind) => {

@@ -31,6 +31,7 @@ export default class About extends Component{
                 <p>A popular JS-based UI framework for building highly-interactive websites! A great example of a highly dynamic website would be Facebook itself. The UI changes are based on both the primary user's interaction as well as an aggregate of other users' interactions. On a real-time, almost instant, basis. Consider how your Facebook News Feed updates with articles, each article with reactions and comments, each comment with content and so on. Consider how Facebook Notifications update as other users are responding to your posts, comments, and reactions. All in real-time. To achieve management and display of this complex network of interactions, developers needed a different approach to accommodate these needs.</p>
 
                 <p>Enter frameworks like Backbone + Underscore, Angular, React, Vue.</p>
+                <p>Values in Engineering</p>
 
                 <p>Different than UI frameworks like Bootstrap which deal only in manipulation of the UI display through CSS styles and client-side Javascript, React is a framework for manipulating page content much like a templating system on the server-side. While React and Bootstrap are not interchangeable, they have a place in your application structure. Depending on how it's structured!</p>
 
