@@ -105,6 +105,10 @@ a:hover, .a:hover, a.visited{
   cursor: pointer;
   opacity: 0.4;
 }
+a:focus{
+  color: #fff;
+  text-decoration: none;
+}
 
 h1, h2, h3, h4, h5, h6{
   font-family: "stratum","Arial Narrow","Trebuchet MS",sans-serif;
@@ -433,7 +437,7 @@ footer .galaxy{
   padding: 30px;
 }
 
-.space>*, .infinite>div{
+.space>*, .infinite>div, .galaxy>section{
   background: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
   padding: 45px 25px;
   border-radius: 6px;
@@ -444,7 +448,7 @@ footer .galaxy{
   /*overflow-y: auto;*/
 }
 
-.space>*:after, .infinite>div:after{
+.space>*:after, .infinite>div:after, .galaxy>section:after{
   content: '';
   display: block;
   position: absolute;
@@ -539,6 +543,7 @@ footer .galaxy{
 .landing .infinite p{
   color: #828585;
   font-size: 1.4rem;
+  line-height: 1.3em;
 }
 
 .about .horizon, .portfolio .horizon{
@@ -558,6 +563,33 @@ footer .galaxy{
     /*padding: 0 0 0.5em 0;*/
     color: #828585;
 }
+
+.about .galaxy{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.about .galaxy > section{
+  width: 80%;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.about .galaxy > section > h3 {
+  margin-bottom: 14px;
+}
+
+.about .galaxy > section > p{
+  font-family: "nunito_sans",serif;
+  font-size: 1.8rem;
+  line-height: 1.66;
+  margin-bottom: 20px;
+}
+
+
 
 .bio .horizon{
   height:auto;

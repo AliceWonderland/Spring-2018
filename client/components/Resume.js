@@ -21,6 +21,35 @@ export default class Resume extends Component{
                     <h1><span style={{color: 'olive'}}>RESUME</span></h1>
                     <span data-animate-in="intro"><a href="#">SECTION 1 TEXT</a></span>
                     <span data-animate-in="intro"><img src="assets/img/logo_astro.png" alt="puppynaut" /></span>
+
+                    <p className="lead">I heart where Science, Art, and Culture meet.</p>
+                    <p>If only to emerge as a new invention. My science is in Web Technology.</p>
+                    <p>My career has been spent pursuing these interests through <strong>Code</strong>. Never purely for coding's sake but for what it can bring, to the real world. And in my case, <strong>Commerce and Industry</strong>.</p>
+
+                    <p>From exploiting browser bugs and bending code for highly interactive (and animated) showcase marketing sites when my career began. <a href="#" className="poplink" rel="popover" data-trigger="hover" data-content="An advanced achievement at that time given pre-Web 2.0 constraints" data-original-title="Pre-Web 2.0">Pre-Web 2.0.</a></p>
+                    <p>To mastering the DOM and complete page control for sophisticated <a href="#" className="poplink" rel="popover" data-trigger="hover" data-placement="left" data-content="For highly interactive, non-refreshing pages using AJAX-loaded XML/JSON content" data-original-title="Advanced UX">User Interface experiences</a>.</p>
+                    <p>Motion Tweening, Frame Rate Manipulating, and Movie Clip Loading Management for media-rich sites featuring custom built <a href="#" className="poplink" rel="popover" data-trigger="hover" data-placement="top" data-content="Custom-Built and skinned in Flash and ActionScript" data-original-title="High Bandwidth Video">high-bandwidth video players</a> based in Flash and ActionScript. And dynamically driven by XML and/or PHP!</p>
+                    <p>Wrangling PHP and MySQL to RSS, XML/XSL/T, and JSON/P for <a href="#" className="poplink" rel="popover" data-trigger="hover" data-placement="left" data-content="Content-heavy and user-managed websites with custom built CMS tools" data-original-title="Dynamic Sites">dynamic data-driven</a> sites.</p>
+                    <p>Down to customizing your own mobile app like BrighCove to integrating <a href="#" className="poplink" rel="popover" data-trigger="hover" data-placement="left" data-content="Like building mobile pages to be pulled into a mobile app" data-original-title="Mobile Content">mobile content</a> with 3rd parties like Verve to working with 360 turnkey solutions.</p>
+
+                    <p>To now. The era of Progressive Web Applications. Usually based in a UI Application Framework like React sometimes referred to as Full-Stack Software Engineering. Where these development approaches are now mainstream. Somewhat frightening in their usage and maturity. Regardless of the approach, all these technologies are borne out of a need to support user experiences. Push what an application can do for a user and provide novel user interactions. A focus that I share as a developer.</p>
+
+                    My degree is in managing development projects. However, my interests lie in engineering.
+
+                    Business experience. While I consider this my craft what drives me is the application of these skills. What it can bring to the user experience, the product, the business.
+
+                    My goal as a lead engineer is to provide options and solutions to meet the needs of the product. Always with the User Experience in mind driven by a respect for the Engineering behind it. Always with a comprehensive understanding of the applications we're building. Explore and discover new technologies and tools. Provide proof of concepts to illustrate viability. Set coding conventions. Fix the hard stuff, come up with emergency solutions, gauge status and progress, make some judgement calls. To work with Product, Design, and Back-End to arrive at a feasible plan.
+
+                    As a developer, I'm interested in the technology itself. What it does. What can it do for me. How can we apply this to best meet our needs. And what the UI, Product, Business challenges may be. My goal is to make an effective and responsible contribution. By learning the codebase and development process, adhering to conventions, consideration of boundaries both in roles and coding. By having a good understanding of the deliverables. Staying upfront and transparent about my skills and status.
+
+                    My goal in re-entering development in this new frontier is not to lead but to learn these technologies. To practically apply my skills while I connect the dots, fill in the blanks, and take stock of their usage. Form my own conclusions. So that I can once again wield these tools as effectively as possible.
+
+                    I seek an environment that shares these values. Fosters exploration and discovery. Driven by the User Experience. Loves the innovation. Respects the code. Has the courage to make dreams a reality.
+
+                    By learning best where to apply my skills and strengths and learning the skills and strengths, ideals, and interests of others.
+
+                    My passion is in making the virtual a reality.
+
                     <span data-animate-in="intro">
                         Intro
                         Breakdown phases of career by
