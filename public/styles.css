@@ -2989,6 +2989,12 @@ footer .galaxy {
   background: #1a1d21;
   padding: 30px 40px; }
 
+.portfolio .galaxy .grid-container > div img {
+  width: 210px;
+  height: 118px;
+  border: 1px solid #464444;
+  border-radius: 3px; }
+
 .portfolio .galaxy .grid-container > div i.fa.fa-external-link {
   margin-left: 5px; }
 

@@ -100,11 +100,13 @@ export default class Portfolio extends Component{
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
 								  if(listItem.portEmployer==='NBC Universal'){
+									  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
+
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
 										  return [<div></div>,<div key={listItem.id}>
-											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -112,7 +114,7 @@ export default class Portfolio extends Component{
 									  }
 									  count++;
 									  return <div key={listItem.id}>
-										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -131,11 +133,13 @@ export default class Portfolio extends Component{
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
 								  if(listItem.portEmployer==='Rockstar Games'){
+									  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
+
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
 										  return [<div></div>,<div key={listItem.id}>
-											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -143,7 +147,7 @@ export default class Portfolio extends Component{
 									  }
 									  count++;
 									  return <div key={listItem.id}>
-										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -163,11 +167,13 @@ export default class Portfolio extends Component{
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
 								  if(listItem.portEmployer==='Advance Internet'){
+									  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
+
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
 										  return [<div></div>,<div key={listItem.id}>
-											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -175,7 +181,7 @@ export default class Portfolio extends Component{
 									  }
 									  count++;
 									  return <div key={listItem.id}>
-										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -194,11 +200,13 @@ export default class Portfolio extends Component{
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
 								  if(listItem.portEmployer==='Nuforia - Red Sky Interactive'){
+									  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
+
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
 										  return [<div></div>,<div key={listItem.id}>
-											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -206,7 +214,7 @@ export default class Portfolio extends Component{
 									  }
 									  count++;
 									  return <div key={listItem.id}>
-										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -230,11 +238,13 @@ export default class Portfolio extends Component{
 									|| listItem.portEmployer==='Principle MCD'
 									|| listItem.portEmployer==='ITVR Media'
 									|| listItem.portEmployer==='Princeton Information'){
+									  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
+
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
 										  return [<div></div>,<div key={listItem.id}>
-											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -242,7 +252,7 @@ export default class Portfolio extends Component{
 									  }
 									  count++;
 									  return <div key={listItem.id}>
-										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} /></a>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -259,13 +269,15 @@ export default class Portfolio extends Component{
 						  <div className="grid-container" data-animate-in="fadein">
 							  <div><h5></h5></div><div className="sub-header"><h5>Node Projects</h5></div>
 							  {port.map((listItem,ind) => {
+								  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
+
 								  if(ind===0){count=0;}
 								  if(listItem.portSub==='4'){
 									  if(count===3){count=0;}
 									  if(count===0) {
 										  count++;
 										  return [<div></div>,<div key={listItem.id}>
-											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} width="210" /></a>
+											  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} width="210" /></a>
 											  <h6>{listItem.portTitle}</h6>
 											  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 											  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
@@ -273,7 +285,7 @@ export default class Portfolio extends Component{
 									  }
 									  count++;
 									  return <div key={listItem.id}>
-										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={`http://www.alicechuang.com/site/spring2010_v3/images_210x118/${listItem.portImg}`} width="210"  /></a>
+										  <a href={listItem.portLink}  target="_blank" rel="noopener"><img src={img} width="210"  /></a>
 										  <h6>{listItem.portTitle}</h6>
 										  <p dangerouslySetInnerHTML={{__html: listItem.portDesc}}></p>
 										  <p>{listItem.portEmployer} {listItem.portYear} <a href={listItem.portLink}  target="_blank" rel="noopener"><i className="fa fa-external-link" aria-hidden="true"></i></a></p>
