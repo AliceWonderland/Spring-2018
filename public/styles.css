@@ -2993,7 +2993,8 @@ footer .galaxy {
   width: 210px;
   height: 118px;
   border: 1px solid #464444;
-  border-radius: 3px; }
+  border-radius: 3px;
+  background-color: #1c1c1d; }
 
 .portfolio .galaxy .grid-container > div i.fa.fa-external-link {
   margin-left: 5px; }
