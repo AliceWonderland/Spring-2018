@@ -42,7 +42,7 @@ export default class Home extends Component{
 				  <div data-animate-in="intro"><Link to="about"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/spa.png" /></Link>
 					  <h6>SPA</h6>
 					  <p>A study in SPAs built on a modern web stack using React (beta)</p></div>
-                  <div data-animate-in="intro"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/github.png" />
+				  <div data-animate-in="intro"><a href="https://github.com/AliceWonderland"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/github.png" /></a>
 					  <h6>GIT</h6>
 					  <p>My source code can be found on the quintessential respository of the world</p></div>
               </div>

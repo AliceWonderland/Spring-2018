@@ -25,26 +25,26 @@ export default class About extends Component{
             </section>
             <section className="galaxy">
 
-                <section data-animate-in="intro">
+                <section>
 
-                <h3>What is it?</h3>
-                <p>This site is a Single-Page Web App built in Facebook React.</p>
+                    <h3 data-animate-in="intro">What is it?</h3>
+                    <p data-animate-in="intro">This site is a Single-Page Web App built in Facebook React.</p>
 
-                <p>In short, this site is a single HTML page that uses React to manipulate the elements within a page to display different content rather than make a request to the server for a new page. Traditional websites may incorporate requests to the server and use AJAX for instant responses to avoid having the user wait for an entire page to reload. It achieved this by making a request based on a user action or browser event, like a click, after the page loads, asynchronously, and then only modifies a portion of the page, or the DOM, to change the content. While all this is achievable without React, it's far more limited.</p>
+                    <p data-animate-in="intro">In short, this site is a single HTML page that uses React to manipulate the elements within a page to display different content rather than make a request to the server for a new page. Traditional websites may incorporate requests to the server and use AJAX for instant responses to avoid having the user wait for an entire page to reload. It achieved this by making a request based on a user action or browser event, like a click, after the page loads, asynchronously, and then only modifies a portion of the page, or the DOM, to change the content. While all this is achievable without React, it's far more limited.</p>
 
-                <h4>Frameworks</h4>
-                <p>Different than a UI CSS Framework like Bootstrap, which is entirely browser-based and primarily for styling, React is a UI Application Framework used to both build web apps and provide an efficient way to manipulate the DOM. It's a templating system based on a modern application design with some very handy features built in.</p>
+                    <h4 data-animate-in="intro">Frameworks</h4>
+                    <p data-animate-in="intro">Different than a UI CSS Framework like Bootstrap, which is entirely browser-based and primarily for styling, React is a UI Application Framework used to both build web apps and provide an efficient way to manipulate the DOM. It's a templating system based on a modern application design with some very handy features built in.</p>
 
-                <p>Both are for Responsive experiences. As is the jQuery library, a Javascript API used to manipulate the DOM. All provide responsiveness through different aspects. While Bootstrap and jQuery are primarily page-level and entirely browser-based or client-side, React is on the application level. Built using Javascript on the server-side. It requires that page data be represented as objects in code, that when changed, trigger a change to the DOM thus what the user sees. React's <a href="https://reactjs.org/docs/faq-internals.html" target="_blank" rel="noopener">Virtual DOM</a> is akin to the jQuery API and is one those handy built-in features mentioned above.</p>
+                    <p data-animate-in="intro">Both are for Responsive experiences. As is the jQuery library, a Javascript API used to manipulate the DOM. All provide responsiveness through different aspects. While Bootstrap and jQuery are primarily page-level and entirely browser-based or client-side, React is on the application level. Built using Javascript on the server-side. It requires that page data be represented as objects in code, that when changed, trigger a change to the DOM thus what the user sees. React's <a href="https://reactjs.org/docs/faq-internals.html" target="_blank" rel="noopener">Virtual DOM</a> is akin to the jQuery API and is one those handy built-in features mentioned above.</p>
 
-                <h4>Packages</h4>
-                <p>There are other technologies, or packages, required in conjunction with React to provide instantaneous responses as they happen in real-time. But this is a platform for those technologies. A lightweight (ish), entirely Javascript-based platform that serves to merge the divide between client-side and server-side and minimize the challenges that may bring.</p>
+                    <h4 data-animate-in="intro">Packages</h4>
+                    <p data-animate-in="intro">There are other technologies, or packages, required in conjunction with React to provide instantaneous responses as they happen in real-time. But this is a platform for those technologies. A lightweight (ish), entirely Javascript-based platform that serves to merge the divide between client-side and server-side and minimize the challenges that may bring.</p>
 
-                <p>This site also uses Express Server for web routes, Redux for managing the 'state' or data objects, Postgres for the database, SASS for fun, and a few other supporting packages required to develop a React Web App.</p>
+                    <p data-animate-in="intro">This site also uses Express Server for web routes, Redux for managing the 'state' or data objects, Postgres for the database, SASS for fun, and a few other supporting packages required to develop a React Web App.</p>
 
-                <p>On the DevOps or SysAdmin side, this site runs on a LEMP server on the cloud! A modern form of virtual private server that hosts both my PHP/MySql sites and my Node-based applications. Nginx is used in place of Apache to handle the requests for my traditional sites and as well my Node-based apps.</p>
+                    <p data-animate-in="intro">On the DevOps or SysAdmin side, this site runs on a LEMP server on the cloud! A modern form of virtual private server that hosts both my PHP/MySql sites and my Node-based applications. Nginx is used in place of Apache to handle the requests for my traditional sites and as well my Node-based apps.</p>
 
-                <p>It is a study in application tools and technologies for UI engineering but not UI styling.</p>
+                    <p data-animate-in="intro">At the moment it is a study in application tools and technologies for UI engineering but not UI styling.</p>
                 </section>
 
 
@@ -75,29 +75,29 @@ export default class About extends Component{
                 {/*<p>primarily hand-coded with minimal use of 3rd-Party UI libraries like Bootstrap with exception for jQuery for cross-browser compatibility.*/}
                 {/*</p>*/}
 
-                <section data-animate-in="intro">
+                <section>
 
-                <h3>Why? Refresh, Reinforce, Re-Up</h3>
-                <p>To apply my previous skills in a new environment. Give myself a project where I could both utilize and explore these new technologies while providing some background on me. Also, my personal website needed an update!</p>
+                    <h3 data-animate-in="intro">Why? Refresh, Reinforce, Re-Up</h3>
+                    <p data-animate-in="intro">To apply my previous skills in a new environment. Give myself a project where I could both utilize and explore these new technologies while providing some background on me. Also, my personal website needed an update!</p>
 
-                <h4>Study</h4>
-                <p>While the MV* design concepts behind building applications and technologies like Angular have existed for quite some time, they are now what's defining modern web development. Fast becoming the standard. I chose Node + React as my entry point because it was both newer than Angular and more popular. The support, documentation, and popularity in the Open Source community all contribute to make it more accessible and far more useful.</p>
+                    <h4 data-animate-in="intro">Study</h4>
+                    <p data-animate-in="intro">While the MV* design concepts behind building applications and technologies like Angular have existed for quite some time, they are now what's defining modern web development. Fast becoming the standard. I chose Node + React as my entry point because it was both newer than Angular and more popular. The support, documentation, and popularity in the Open Source community all contribute to make it more accessible and far more useful.</p>
 
-                <h4>Practice</h4>
-                <p>Apply my core skills in HTML, CSS, and Javascript while extending them to include exploring ES6. A version of Javascript that gives it greater functionality akin to making it more of a legitimate programming language rather than a mere scripting language used only within a web browser.</p>
+                    <h4 data-animate-in="intro">Practice</h4>
+                    <p data-animate-in="intro">Apply my core skills in HTML, CSS, and Javascript while extending them to include exploring ES6. A version of Javascript that gives it greater functionality akin to making it more of a legitimate programming language rather than a mere scripting language used only within a web browser.</p>
 
-                <h4>Extend</h4>
-                <p>A way to incorporate all the above in a practical fashion to begin connecting how these technologies can truly be harnessed.</p>
+                    <h4 data-animate-in="intro">Extend</h4>
+                    <p data-animate-in="intro">A way to incorporate all the above in a practical fashion to begin connecting how these technologies can truly be harnessed.</p>
 
-                <h4>Explore</h4>
-                <p>For more exploration into Responsiveness. An age-old challenge in web development especially UI/Front-End Engineering. What used to be called Dynamic or Highly-Interactive. What now drives modern web engineering.</p>
+                    <h4 data-animate-in="intro">Explore</h4>
+                    <p data-animate-in="intro">For more exploration into Responsiveness. An age-old challenge in web development especially UI/Front-End Engineering. What used to be called Dynamic or Highly-Interactive. What now drives modern web engineering.</p>
 
-                <p>The time it takes for a user to see a response to their actions is critical. Not only for an enjoyable experience but also to provide more sophisticated customized experiences. Requesting and reloading these pages take precious time and impact that response. It relies on the server, bandwidth, the user's system, and the browser to determine how fast a user can access what they want. All of which severely limits what kind of experience a web application can provide.</p>
+                    <p data-animate-in="intro">The time it takes for a user to see a response to their actions is critical. Not only for an enjoyable experience but also to provide more sophisticated customized experiences. Requesting and reloading these pages take precious time and impact that response. It relies on the server, bandwidth, the user's system, and the browser to determine how fast a user can access what they want. All of which severely limits what kind of experience a web application can provide.</p>
 
-                <p>Consider users on mobile where data is paid for by usage and speed is throttled. Or streaming an entire movie where content is heavy and updating frame by frame. Consider the Google Search Bar that autocompletes suggestions as you type where inputs are processed and then returned at each keystroke. Consider Facebook itself. Just the notifications. Just the comments. Just the emojis flying by on a live video. The Facebook News Feed page alone is managing hundreds of interactions, responses, display changes at once. Then consider that an infinite number of users could be interacting with that page concurrently. Handling all these reponses, processing, and then redrawing them takes time and resources. Which is how frameworks like Backbone + Underscore, Angular, and React were born. Out of a need to support more sophisticated function and feature-rich web user interfaces within the current limitations of the universe it resides in.</p>
+                    <p data-animate-in="intro">Consider users on mobile where data is paid for by usage and speed is throttled. Or streaming an entire movie where content is heavy and updating frame by frame. Consider the Google Search Bar that autocompletes suggestions as you type where inputs are processed and then returned at each keystroke. Consider Facebook itself. Just the notifications. Just the comments. Just the emojis flying by on a live video. The Facebook News Feed page alone is managing hundreds of interactions, responses, display changes at once. Then consider that an infinite number of users could be interacting with that page concurrently. Handling all these reponses, processing, and then redrawing them takes time and resources. Which is how frameworks like Backbone + Underscore, Angular, and React were born. Out of a need to support more sophisticated function and feature-rich web user interfaces within the current limitations of the universe it resides in.</p>
 
-                <h4>Drive</h4>
-                <p>User Experiences and Interfaces are not only what I find most compelling, personally. But what happen to drive the most notable engineering innovations to date. It is what connects the user to the application, what gives technology context and meaning, relevance. From Backbone to Bootstrap to Angular to GitHub. Companies like Twitter, Google, Facebook, GitHub have made some of the most major contributions to my field of engineering. As did many other aspects of engineering from Cloud Computing to Deep Learning. Whether it be in the Distributed System or in the Algorithm. All are driven by a need to satisfy a user's desires and the search for the next innovation. All boil down to the experience and today that is through responsiveness.</p>
+                    <h4 data-animate-in="intro">Drive</h4>
+                    <p data-animate-in="intro">User Experiences and Interfaces are not only what I find most compelling, personally. But what happen to drive the most notable engineering innovations to date. It is what connects the user to the application, what gives technology context and meaning, relevance. From Backbone to Bootstrap to Angular to GitHub. Companies like Twitter, Google, Facebook, GitHub have made some of the most major contributions to my field of engineering. As did many other aspects of engineering from Cloud Computing to Deep Learning. Whether it be in the Distributed System or in the Algorithm. All are driven by a need to satisfy a user's desires and the search for the next innovation. All boil down to the experience and today that is through responsiveness.</p>
 
                 </section>
 
@@ -233,34 +233,31 @@ export default class About extends Component{
             </section>
 
             <section className="galaxy">
-                <section className="puppynaut-theme" data-animate-in="intro">
-                    <h3>Puppynaut Universe Theme</h3>
-                    <p>This website represents both an aesthetic I find beautiful and an allegory for a new frontier. Time, Space, and Dimension are what I felt were a fitting representation.</p>
+                <section>
+                    <h3 data-animate-in="intro">Puppynaut Universe Theme</h3>
+                    <p data-animate-in="intro">This website represents both an aesthetic I find beautiful and an allegory for a new frontier. Time, Space, and Dimension are what I felt were a fitting representation.</p>
 
-                    <h4>Time</h4>
-                    <p>The eras of the web world that I've grown up in and the future beyond.</p>
+                    <h4 data-animate-in="intro">Time</h4>
+                    <p data-animate-in="intro">The eras of the web world that I've grown up in and the future beyond.</p>
 
-                    <h4>Space</h4>
-                    <p>The infinite new frontiers to discover and the journey I'm embarking on.</p>
+                    <h4 data-animate-in="intro">Space</h4>
+                    <p data-animate-in="intro">The infinite new frontiers to discover and the journey I'm embarking on.</p>
 
-                    <h4>Dimension</h4>
-                    <p>The modern web stack and the Progressive Web App as yet another aspect of the kind of engineering I inhabit.</p>
+                    <h4 data-animate-in="intro">Dimension</h4>
+                    <p data-animate-in="intro">The modern web stack and the Progressive Web App as yet another aspect of the kind of engineering I inhabit.</p>
 
-                    <h4>Worlds</h4>
-                    <p>The different worlds all of us may inhabit while residing on the same space time continuum.</p>
-                    <p>The rainbow a nod to intersectional unity and cross-functional approaches to development. The myriad of technologies that form the current landscape.</p>
-                    <p>A nod to the importance of Science, Technology, Medicine.</p>
-                    <p>Plus, I love gradients and 2018 is the Year of the Dog. And I love dogs.</p>
+                    <h4 data-animate-in="intro">Worlds</h4>
+                    <p data-animate-in="intro">The different worlds all of us may inhabit while residing on the same space time continuum. The rainbow a nod to intersectional unity and cross-functional approaches to development. The myriad of technologies that form the current landscape. A nod to the importance of Science, Technology, Medicine. Plus, I love gradients and 2018 is the Year of the Dog. And I love dogs.</p>
                 </section>
 
-                {/*<section data-animate-in="intro">*/}
-                    {/*<h3>Do I Like It?</h3>*/}
-                    {/*<p>Not yet. While being introduced to these technologies in a fullstack engineering program, I was able to begin to use these technologies, get a sense of its usage, find out what's out there, but not a complete understanding of its context. As with most concepts in technology, that takes time working with the environment and experience in real-world situations. But with React especially, it seemed moreso. Less intuitive, more abstracted. Prone to be mis-used. It's easily accessible but not easily mastered. The usage is clear but its efficacy changes based on context and how it's applied. Best practices are hard to nail down as they vary with context. Open Source is its own beast. There are few senior/lead fullstack devs out there with the knowledge and experience to help set those. Partly because things like React are newly mainstream. Partly because things like React are overcomplicated. Partly because there is a pandemic of misinformation authored by enthusiastic yet inexperienced devs. And as always, the terminology is often loosely (and mis-) used and highly based on the context.</p>*/}
+                <section data-animate-in="intro">
+                    <h3 data-animate-in="intro">Do I Like It?</h3>
+                    <p data-animate-in="intro">While being introduced to these technologies in a fullstack engineering program, I was able to begin to use these technologies, get a sense of its usage, find out what's out there, but not a complete understanding of its context. As with most concepts in technology, that takes time working with the environment and experience in real-world situations. But with React especially, it seemed moreso. Less intuitive, more abstracted. Prone to be mis-used. It's easily accessible but not easily mastered. The usage is clear but its efficacy changes based on context and how it's applied. Best practices are hard to nail down as they vary with context. Open Source is its own beast. There are few senior/lead fullstack devs out there with the knowledge and experience to help set those. Partly because things like React are newly mainstream. Partly because things like React are overcomplicated. Partly because there is a pandemic of misinformation authored by enthusiastic yet inexperienced devs. And as always, the terminology is often loosely (and mis-) used and highly based on the context.</p>
 
-                    {/*<p>I do love that this is an entirely new dimension for me to explore. While concepts may not be new, the technologies and approaches are newer and new to me! A brand new world.</p>*/}
+                    <p data-animate-in="intro">I do love that this is an entirely new dimension for me to explore. While concepts may not be new, the technologies and approaches are newer and new to me! A brand new world.</p>
 
-                    {/*<p>This site is currently an extremely rough beta. Just presentable enough so that I can convey an current reflection of myself. From an animated logo to transitions, the organization of my components to when/if I should use Redux. It mixes both vanilla React for State Lifting and Redux. Down to the copy content. DO NOT LOOK AT THIS SITE ON YOUR PHONE. It is not built to support all platforms and browsers yet!</p>*/}
-                {/*</section>*/}
+                    <p data-animate-in="intro">This site is currently an extremely rough beta. Just presentable enough so that I can convey a current reflection of myself. From an animated logo to transitions, the organization of my components to when/if I should use Redux. It mixes both vanilla React for State Lifting and Redux. Down to the copy content. DO NOT LOOK AT THIS SITE ON YOUR PHONE. It is not built to support all platforms and browsers yet!</p>
+                </section>
 
 
                 {/*<h5>Application Stack</h5>*/}
@@ -316,7 +313,7 @@ export default class About extends Component{
                 {/*<p>Design and Style Guide</p>*/}
                 {/*GitHub Universe*/}
 
-                <p>Launched Spring 2018</p>
+
 
                 <figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>
                     <img src="/assets/img/shooting-star.svg" alt="shooting star" />

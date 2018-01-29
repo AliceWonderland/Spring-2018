@@ -459,6 +459,15 @@ footer .galaxy{
   background: #22292C;
   z-index: -1;
 }
+.galaxy>section{
+
+}
+.galaxy>section:after{
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  top: 0px;
+  left: 0px;
+}
 
 .infinite {
   background-color: #22292C;
