@@ -566,7 +566,7 @@ footer .galaxy{
   align-items: center;
 }
 
-.about .galaxy, .portfolio .galaxy {
+.about .galaxy{
   padding: 60px 30px;
 }
 
@@ -641,7 +641,7 @@ footer .galaxy{
   display: flex;
   flex-direction: row;
   align-items: normal;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 53px 90px;
 
@@ -686,7 +686,7 @@ footer .galaxy{
     padding: 35px 30px;
     width: 45%;
     min-height: 300px;
-    margin: 30px 40px 30px 0px;
+    margin: 30px 20px 30px 20px;
     //min-height: 100px;
     //display: flex;
     //align-items: stretch;
@@ -721,6 +721,7 @@ footer .galaxy{
 }
 
 .portfolio .galaxy{
+  padding: 60px 60px;
   /*background-color:#1a1f21;*/
 }
 

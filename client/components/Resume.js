@@ -18,7 +18,7 @@ export default class Resume extends Component{
           <main className="gradient resume">
             <div className="galaxy">
                 <h1 data-animate-in="intro">Coming Soon</h1>
-                <h2 data-animate-in="intro">Resume</h2>
+                <h2 data-animate-in="intro"> &gt;&gt; <a href="http://alicechuang.com/site/spring2013/resume.html" target="_blank" rel="noopener">Resume</a> &lt;&lt; </h2>
                 <span data-animate-in="intro"><img className="puppynaut-img" src="assets/img/logo_astro.png" alt="puppynaut" /></span>
 
 

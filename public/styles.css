@@ -2793,7 +2793,7 @@ footer .galaxy {
   justify-content: center;
   align-items: center; }
 
-.about .galaxy, .portfolio .galaxy {
+.about .galaxy {
   padding: 60px 30px; }
 
 .about .infinite dd {
@@ -2853,7 +2853,7 @@ footer .galaxy {
   display: flex;
   flex-direction: row;
   align-items: normal;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 53px 90px; }
 
@@ -2894,7 +2894,7 @@ footer .galaxy {
   padding: 35px 30px;
   width: 45%;
   min-height: 300px;
-  margin: 30px 40px 30px 0px; }
+  margin: 30px 20px 30px 20px; }
 
 .bio .horizon div.list:after {
   content: '';
@@ -2921,6 +2921,7 @@ footer .galaxy {
   width: 75%; }
 
 .portfolio .galaxy {
+  padding: 60px 60px;
   /*background-color:#1a1f21;*/ }
 
 .portfolio nav {
