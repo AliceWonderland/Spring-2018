@@ -285,10 +285,10 @@ export default class Portfolio extends Component{
 						  <div></div>
 					}
 
-					<p data-animate-in="intro">
-						breakdown phases of career by era challenges lessons learned
-						hashbangs MVC Node
-					</p>
+					{/*<p data-animate-in="intro">*/}
+						{/*breakdown phases of career by era challenges lessons learned*/}
+						{/*hashbangs MVC Node*/}
+					{/*</p>*/}
 
 
 					<figure className="shooting-star" style={{top: '8%', transform: 'rotate(151deg)'}}>

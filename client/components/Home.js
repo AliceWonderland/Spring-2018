@@ -15,7 +15,7 @@ export default class Home extends Component{
 
     render() {
         return (
-          <main className="landing gradient" data-animate-in="fadein">
+          <main className="gradient landing" data-animate-in="fadein">
               <div className="galaxy">
                   <div className="galaxy-content">
                       <span data-animate-in="intro"><img src="/assets/img/logo_astro_invis.png" alt="puppynaut" /></span>

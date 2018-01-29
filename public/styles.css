@@ -2822,6 +2822,26 @@ footer .galaxy {
   /* display: inline; */
   padding-bottom: 0px; }
 
+.about .galaxy section.puppynaut-theme {
+  background: none;
+  width: 100%; }
+
+.about .galaxy section.puppynaut-theme h3 {
+  text-align: center; }
+
+.about .galaxy section.puppynaut-theme h4 {
+  display: inline-block;
+  margin: 0px 10px; }
+
+.about .galaxy section.puppynaut-theme h4:first-of-type {
+  margin: 0px 10px 0px 0px; }
+
+.about .galaxy section.puppynaut-theme p:not(:first-of-type) {
+  display: inline; }
+
+.about .galaxy section.puppynaut-theme:after {
+  background: none; }
+
 .bio .horizon {
   height: auto;
   display: flex;
@@ -2999,6 +3019,12 @@ footer .galaxy {
 .portfolio .galaxy .grid-container > .row-span {
   grid-column: auto / span 2;
   grid-row: auto / span 2; }
+
+.resume .galaxy {
+  min-height: calc(100vh - 65px); }
+
+.resume img.puppynaut-img {
+  border-radius: 100px; }
 
 /*BEGIN GITHUB UNIVERSE STYLES*/
 /*BACKGROUND + STARS*/

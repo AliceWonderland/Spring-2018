@@ -23,7 +23,7 @@ export default class About extends Component{
                 <div className="stars"></div>
                 <div className="stars-lg"></div>
             </section>
-            <section className="galaxy" data-animate-in="fadein">
+            <section className="galaxy">
 
                 <section data-animate-in="intro">
 
@@ -101,36 +101,7 @@ export default class About extends Component{
 
                 </section>
 
-                <section data-animate-in="intro">
-                    <h3>Puppynaut Universe</h3>
 
-                    <h4>Theme</h4>
-                    <p>This website represents both an aesthetic I find beautiful and an allegory for a new frontier. Time, Space, and Dimension are what I felt were a fitting representation.</p>
-
-                    <h4>Time</h4>
-                    <p>The eras of the web world that I've grown up in and the future beyond.</p>
-
-                    <h4>Space</h4>
-                    <p>The infinite new frontiers to discover and the journey I'm embarking on.</p>
-
-                    <h4>Dimension</h4>
-                    <p>The modern web stack and the Progressive Web App as yet another aspect of the kind of engineering I inhabit.</p>
-
-                    <h4>Worlds</h4>
-                    <p>The different worlds all of us may inhabit while residing on the same space time continuum.</p>
-                    <p>The rainbow a nod to intersectional unity and cross-functional approaches to development. The myriad of technologies that form the current landscape.</p>
-                    <p>A nod to the importance of Science, Technology, Medicine.</p>
-                    <p>Plus, I love gradients and 2018 is the Year of the Dog. And I love dogs.</p>
-                </section>
-
-                <section data-animate-in="intro">
-                    <h3>Do I Like It?</h3>
-                    <p>Not yet. While being introduced to these technologies in a fullstack engineering program, I was able to begin to use these technologies, get a sense of its usage, find out what's out there, but not a complete understanding of its context. As with most concepts in technology, that takes time working with the environment and experience in real-world situations. But with React especially, it seemed moreso. Less intuitive, more abstracted. Prone to be mis-used. It's easily accessible but not easily mastered. The usage is clear but its efficacy changes based on context and how it's applied. Best practices are hard to nail down as they vary with context. Open Source is its own beast. There are few senior/lead fullstack devs out there with the knowledge and experience to help set those. Partly because things like React are newly mainstream. Partly because things like React are overcomplicated. Partly because there is a pandemic of misinformation authored by enthusiastic yet inexperienced devs. And as always, the terminology is often loosely (and mis-) used and highly based on the context.</p>
-
-                    <p>I do love that this is an entirely new dimension for me to explore. While concepts may not be new, the technologies and approaches are newer and new to me! A brand new world.</p>
-
-                    <p>This site is currently an extremely rough beta. Just presentable enough so that I can convey an current reflection of myself. From an animated logo to transitions, the organization of my components to when/if I should use Redux. It mixes both vanilla React for State Lifting and Redux. Down to the copy content. DO NOT LOOK AT THIS SITE ON YOUR PHONE. It is not built to support all platforms and browsers yet!</p>
-                </section>
 
 
                 {/*<p>Server Setup/Configuration Systems Administration Refresher Nginx vs. Apache*/}
@@ -261,61 +232,89 @@ export default class About extends Component{
                 </div>
             </section>
 
+            <section className="galaxy">
+                <section className="puppynaut-theme" data-animate-in="intro">
+                    <h3>Puppynaut Universe Theme</h3>
+                    <p>This website represents both an aesthetic I find beautiful and an allegory for a new frontier. Time, Space, and Dimension are what I felt were a fitting representation.</p>
+
+                    <h4>Time</h4>
+                    <p>The eras of the web world that I've grown up in and the future beyond.</p>
+
+                    <h4>Space</h4>
+                    <p>The infinite new frontiers to discover and the journey I'm embarking on.</p>
+
+                    <h4>Dimension</h4>
+                    <p>The modern web stack and the Progressive Web App as yet another aspect of the kind of engineering I inhabit.</p>
+
+                    <h4>Worlds</h4>
+                    <p>The different worlds all of us may inhabit while residing on the same space time continuum.</p>
+                    <p>The rainbow a nod to intersectional unity and cross-functional approaches to development. The myriad of technologies that form the current landscape.</p>
+                    <p>A nod to the importance of Science, Technology, Medicine.</p>
+                    <p>Plus, I love gradients and 2018 is the Year of the Dog. And I love dogs.</p>
+                </section>
+
+                {/*<section data-animate-in="intro">*/}
+                    {/*<h3>Do I Like It?</h3>*/}
+                    {/*<p>Not yet. While being introduced to these technologies in a fullstack engineering program, I was able to begin to use these technologies, get a sense of its usage, find out what's out there, but not a complete understanding of its context. As with most concepts in technology, that takes time working with the environment and experience in real-world situations. But with React especially, it seemed moreso. Less intuitive, more abstracted. Prone to be mis-used. It's easily accessible but not easily mastered. The usage is clear but its efficacy changes based on context and how it's applied. Best practices are hard to nail down as they vary with context. Open Source is its own beast. There are few senior/lead fullstack devs out there with the knowledge and experience to help set those. Partly because things like React are newly mainstream. Partly because things like React are overcomplicated. Partly because there is a pandemic of misinformation authored by enthusiastic yet inexperienced devs. And as always, the terminology is often loosely (and mis-) used and highly based on the context.</p>*/}
+
+                    {/*<p>I do love that this is an entirely new dimension for me to explore. While concepts may not be new, the technologies and approaches are newer and new to me! A brand new world.</p>*/}
+
+                    {/*<p>This site is currently an extremely rough beta. Just presentable enough so that I can convey an current reflection of myself. From an animated logo to transitions, the organization of my components to when/if I should use Redux. It mixes both vanilla React for State Lifting and Redux. Down to the copy content. DO NOT LOOK AT THIS SITE ON YOUR PHONE. It is not built to support all platforms and browsers yet!</p>*/}
+                {/*</section>*/}
 
 
-            <section className="galaxy" data-animate-in="fadein">
-                <h5>Application Stack</h5>
-                React <a href="https://reactjs.org/" target="_blank" rel="noopener"></a>
-                React-Redux <a href="https://github.com/reactjs/react-redux" target="_blank" rel="noopener"></a>
-                Node <a href="https://nodejs.org/en/" target="_blank" rel="noopener"></a>
-                Express <a href="https://expressjs.com/" target="_blank" rel="noopener"></a>
-                Sequelize <a href="http://docs.sequelizejs.com/" target="_blank" rel="noopener"></a>
-                Postgres or MySQL <a href="https://www.postgresql.org/" target="_blank" rel="noopener"></a>
+                {/*<h5>Application Stack</h5>*/}
+                {/*React <a href="https://reactjs.org/" target="_blank" rel="noopener"></a>*/}
+                {/*React-Redux <a href="https://github.com/reactjs/react-redux" target="_blank" rel="noopener"></a>*/}
+                {/*Node <a href="https://nodejs.org/en/" target="_blank" rel="noopener"></a>*/}
+                {/*Express <a href="https://expressjs.com/" target="_blank" rel="noopener"></a>*/}
+                {/*Sequelize <a href="http://docs.sequelizejs.com/" target="_blank" rel="noopener"></a>*/}
+                {/*Postgres or MySQL <a href="https://www.postgresql.org/" target="_blank" rel="noopener"></a>*/}
 
-                <h5>Other Resources</h5>
-                <p>A full list of all technologies, tools, and resources used to create this site. All are Open Source and free.
+                {/*<h5>Other Resources</h5>*/}
+                {/*<p>A full list of all technologies, tools, and resources used to create this site. All are Open Source and free.*/}
 
-                    Node Packages
-                    NPM <a href="https://www.npmjs.com/" target="_blank" rel="noopener"></a>
-                    Babel <a href="https://babeljs.io/" target="_blank" rel="noopener"></a> Transpiler
-                    Webpack <a href="https://webpack.js.org/concepts/" target="_blank" rel="noopener"></a>
-                    Nodemon <a href="https://nodemon.io/" target="_blank" rel="noopener"></a>
-                    HMR <a href="https://webpack.js.org/concepts/hot-module-replacement/"></a>
-                    SASS <a href="http://sass-lang.com/" target="_blank" rel="noopener"></a> CSS Compiler
+                    {/*Node Packages*/}
+                    {/*NPM <a href="https://www.npmjs.com/" target="_blank" rel="noopener"></a>*/}
+                    {/*Babel <a href="https://babeljs.io/" target="_blank" rel="noopener"></a> Transpiler*/}
+                    {/*Webpack <a href="https://webpack.js.org/concepts/" target="_blank" rel="noopener"></a>*/}
+                    {/*Nodemon <a href="https://nodemon.io/" target="_blank" rel="noopener"></a>*/}
+                    {/*HMR <a href="https://webpack.js.org/concepts/hot-module-replacement/"></a>*/}
+                    {/*SASS <a href="http://sass-lang.com/" target="_blank" rel="noopener"></a> CSS Compiler*/}
 
-                    Cloud Server (VPS)
-                    Digital Ocean <a href="https://www.digitalocean.com/" target="_blank" rel="noopener"></a>
-                    Ubuntu <a href="https://www.ubuntu.com/download" target="_blank" rel="noopener"></a>
-                    Nginx  <a href="https://www.nginx.com/resources/admin-guide/" target="_blank" rel="noopener"></a>
-                    This site is hosted on an Nginx web server using reverse proxy installed on Linux OS. Try DigitalOcean for free using my referreral link <a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener">here</a>.
+                    {/*Cloud Server (VPS)*/}
+                    {/*Digital Ocean <a href="https://www.digitalocean.com/" target="_blank" rel="noopener"></a>*/}
+                    {/*Ubuntu <a href="https://www.ubuntu.com/download" target="_blank" rel="noopener"></a>*/}
+                    {/*Nginx  <a href="https://www.nginx.com/resources/admin-guide/" target="_blank" rel="noopener"></a>*/}
+                    {/*This site is hosted on an Nginx web server using reverse proxy installed on Linux OS. Try DigitalOcean for free using my referreral link <a href="https://m.do.co/c/ac3f1feffe7a" target="_blank" rel="noopener">here</a>.*/}
 
-                    Server Admin Packages
-                    PM2 or Forever <a href="http://pm2.keymetrics.io/" target="_blank" rel="noopener"></a>
-                    <a href="https://github.com/foreverjs/forever" target="_blank" rel="noopener"></a>
+                    {/*Server Admin Packages*/}
+                    {/*PM2 or Forever <a href="http://pm2.keymetrics.io/" target="_blank" rel="noopener"></a>*/}
+                    {/*<a href="https://github.com/foreverjs/forever" target="_blank" rel="noopener"></a>*/}
 
-                    Development Tools and Libraries
-                    Chrome Dev Tools <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener"></a>
-                    Chrome Dev Tools Audit <a href="#" target="_blank" rel="noopener"></a>
-                    Chrome Dev Tools Javascript Profiler <a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener"></a>
-                    React Developer Tools for Chrome <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener"></a>
-                    Webstorm Editor (not free!) <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener"></a>
-                    Mac Terminal <a href="#" target="_blank" rel="noopener"></a>
-                    GitHub Source Control <a href="#" target="_blank" rel="noopener"></a>
-                    https://travis-ci.org/
+                    {/*Development Tools and Libraries*/}
+                    {/*Chrome Dev Tools <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank" rel="noopener"></a>*/}
+                    {/*Chrome Dev Tools Audit <a href="#" target="_blank" rel="noopener"></a>*/}
+                    {/*Chrome Dev Tools Javascript Profiler <a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution" target="_blank" rel="noopener"></a>*/}
+                    {/*React Developer Tools for Chrome <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener"></a>*/}
+                    {/*Webstorm Editor (not free!) <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener"></a>*/}
+                    {/*Mac Terminal <a href="#" target="_blank" rel="noopener"></a>*/}
+                    {/*GitHub Source Control <a href="#" target="_blank" rel="noopener"></a>*/}
+                    {/*https://travis-ci.org/*/}
 
-                    Design Resources
-                    Google Fonts <a href="https://fonts.google.com/" target="_blank" rel="noopener"></a>
-                    FontAwesome <a href="http://fontawesome.io/" target="_blank" rel="noopener"></a>
-                    LogoJoy <a href="#" target="_blank" rel="noopener"></a>
-                    FlexBox
+                    {/*Design Resources*/}
+                    {/*Google Fonts <a href="https://fonts.google.com/" target="_blank" rel="noopener"></a>*/}
+                    {/*FontAwesome <a href="http://fontawesome.io/" target="_blank" rel="noopener"></a>*/}
+                    {/*LogoJoy <a href="#" target="_blank" rel="noopener"></a>*/}
+                    {/*FlexBox*/}
 
-                    Tutorials
-                    ES6 <a href="http://es6-features.org/" target="_blank" rel="noopener"></a>
-                    Digital Ocean Nginx Setup <a href="#" target="_blank" rel="noopener"></a>
-                    React-Training - React Router <a href="https://reacttraining.com/react-router/web/guides/philosophy" target="_blank" rel="noopener"></a>
-                </p>
-                <p>Design and Style Guide</p>
-                GitHub Universe
+                    {/*Tutorials*/}
+                    {/*ES6 <a href="http://es6-features.org/" target="_blank" rel="noopener"></a>*/}
+                    {/*Digital Ocean Nginx Setup <a href="#" target="_blank" rel="noopener"></a>*/}
+                    {/*React-Training - React Router <a href="https://reacttraining.com/react-router/web/guides/philosophy" target="_blank" rel="noopener"></a>*/}
+                {/*</p>*/}
+                {/*<p>Design and Style Guide</p>*/}
+                {/*GitHub Universe*/}
 
                 <p>Launched Spring 2018</p>
 
