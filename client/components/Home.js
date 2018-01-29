@@ -35,7 +35,7 @@ export default class Home extends Component{
               </div>
 
               <div className="infinite">
-				  <div data-animate-in="intro"><a href="http://alicechuang.com/"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/mpa.png" /></a>
+				  <div data-animate-in="intro"><a href="http://alicechuang.com/site/spring2013"><img src="http://www.alicechuang.com/site/spring2010_v3/images_210x118/mpa.png" /></a>
 				  	<h6>MPA</h6>
 				  	<p>A study in Responsive Design built to work across all platforms + browsers</p>
 				  </div>

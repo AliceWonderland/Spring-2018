@@ -35,7 +35,7 @@ export default class About extends Component{
                 <h4>Frameworks</h4>
                 <p>Different than a UI CSS Framework like Bootstrap, which is entirely browser-based and primarily for styling, React is a UI Application Framework used to both build web apps and provide an efficient way to manipulate the DOM. It's a templating system based on a modern application design with some very handy features built in.</p>
 
-                <p>Both are for Responsive experiences. As is the jQuery library, a Javascript API used to manipulate the DOM. All provide responsiveness through different aspects. While Bootstrap and jQuery are primarily page-level and entirely browser-based or client-side, React is on the application level. Built using Javascript on the server-side. It requires that page data be represented as objects in code, that when changed, trigger a change to the DOM thus what the user sees. React's Virtual DOM is akin to the jQuery API and is one those handy built-in features mentioned above.</p>
+                <p>Both are for Responsive experiences. As is the jQuery library, a Javascript API used to manipulate the DOM. All provide responsiveness through different aspects. While Bootstrap and jQuery are primarily page-level and entirely browser-based or client-side, React is on the application level. Built using Javascript on the server-side. It requires that page data be represented as objects in code, that when changed, trigger a change to the DOM thus what the user sees. React's <a href="https://reactjs.org/docs/faq-internals.html" target="_blank" rel="noopener">Virtual DOM</a> is akin to the jQuery API and is one those handy built-in features mentioned above.</p>
 
                 <h4>Packages</h4>
                 <p>There are other technologies, or packages, required in conjunction with React to provide instantaneous responses as they happen in real-time. But this is a platform for those technologies. A lightweight (ish), entirely Javascript-based platform that serves to merge the divide between client-side and server-side and minimize the challenges that may bring.</p>
@@ -43,6 +43,8 @@ export default class About extends Component{
                 <p>This site also uses Express Server for web routes, Redux for managing the 'state' or data objects, Postgres for the database, SASS for fun, and a few other supporting packages required to develop a React Web App.</p>
 
                 <p>On the DevOps or SysAdmin side, this site runs on a LEMP server on the cloud! A modern form of virtual private server that hosts both my PHP/MySql sites and my Node-based applications. Nginx is used in place of Apache to handle the requests for my traditional sites and as well my Node-based apps.</p>
+
+                <p>It is a study in application tools and technologies for UI engineering but not UI styling.</p>
                 </section>
 
 
@@ -79,7 +81,7 @@ export default class About extends Component{
                 <p>To apply my previous skills in a new environment. Give myself a project where I could both utilize and explore these new technologies while providing some background on me. Also, my personal website needed an update!</p>
 
                 <h4>Study</h4>
-                <p>While the MV* design concepts behind building applications and technologies like Angular have existed for quite some time, they are now what's defining modern web development. Fast becoming the standard. I chose React as my entry point because it was both newer than Angular and more popular. The support, documentation, and popularity in the Open Source community all contribute to make it more accessible and far more useful.</p>
+                <p>While the MV* design concepts behind building applications and technologies like Angular have existed for quite some time, they are now what's defining modern web development. Fast becoming the standard. I chose Node + React as my entry point because it was both newer than Angular and more popular. The support, documentation, and popularity in the Open Source community all contribute to make it more accessible and far more useful.</p>
 
                 <h4>Practice</h4>
                 <p>Apply my core skills in HTML, CSS, and Javascript while extending them to include exploring ES6. A version of Javascript that gives it greater functionality akin to making it more of a legitimate programming language rather than a mere scripting language used only within a web browser.</p>
@@ -95,7 +97,7 @@ export default class About extends Component{
                 <p>Consider users on mobile where data is paid for by usage and speed is throttled. Or streaming an entire movie where content is heavy and updating frame by frame. Consider the Google Search Bar that autocompletes suggestions as you type where inputs are processed and then returned at each keystroke. Consider Facebook itself. Just the notifications. Just the comments. Just the emojis flying by on a live video. The Facebook News Feed page alone is managing hundreds of interactions, responses, display changes at once. Then consider that an infinite number of users could be interacting with that page concurrently. Handling all these reponses, processing, and then redrawing them takes time and resources. Which is how frameworks like Backbone + Underscore, Angular, and React were born. Out of a need to support more sophisticated function and feature-rich web user interfaces within the current limitations of the universe it resides in.</p>
 
                 <h4>Drive</h4>
-                <p>User Experiences and Interfaces are not only what I find most compelling, personally. But what happen to drive the most notable engineering innovations to date. It is what connects the user to the application, what gives technology context and meaning. From Backbone to Bootstrap to Angular to GitHub. Companies like Twitter, Google, Facebook, GitHub have made some of the most major contributions to my field of engineering. And I'm sure many more aspects of engineering from Cloud Computing to Deep Learning. Whether it be in the Distributed System or in the Algorithm. All are driven by a need to satisfy a user's desires and the search for the next innovation. All boil down to the experience and today it's through responsiveness.</p>
+                <p>User Experiences and Interfaces are not only what I find most compelling, personally. But what happen to drive the most notable engineering innovations to date. It is what connects the user to the application, what gives technology context and meaning, relevance. From Backbone to Bootstrap to Angular to GitHub. Companies like Twitter, Google, Facebook, GitHub have made some of the most major contributions to my field of engineering. As did many other aspects of engineering from Cloud Computing to Deep Learning. Whether it be in the Distributed System or in the Algorithm. All are driven by a need to satisfy a user's desires and the search for the next innovation. All boil down to the experience and today that is through responsiveness.</p>
 
                 </section>
 
@@ -112,7 +114,7 @@ export default class About extends Component{
                     <p>The infinite new frontiers to discover and the journey I'm embarking on.</p>
 
                     <h4>Dimension</h4>
-                    <p>Yet another aspect of the kind of engineering I inhabit.</p>
+                    <p>The modern web stack and the Progressive Web App as yet another aspect of the kind of engineering I inhabit.</p>
 
                     <h4>Worlds</h4>
                     <p>The different worlds all of us may inhabit while residing on the same space time continuum.</p>
@@ -123,7 +125,7 @@ export default class About extends Component{
 
                 <section data-animate-in="intro">
                     <h3>Do I Like It?</h3>
-                    <p>Not yet. While being introduced to these technologies in a fullstack engineering program, I was able to begin to use these technologies, get a sense of its usage, find out what's out there, but not a complete understanding of what, how, and why they work. As with most concepts in technology, that takes time working with the environment and experience in real-world situations. But with React especially, it seemed moreso. Less intuitive, more abstracted. Prone to be mis-used. It's easily accessible but not easily mastered. Best practices are hard to nail down. Open Source is its own beast. There are few senior/lead fullstack devs out there with the knowledge and experience to help set those. Partly because things like React are newly mainstream. Partly because things like React are overcomplicated. Partly because there is a pandemic of misinformation authored by enthusiastic yet inexperienced devs. And as always, the terminology is often loosely and mis- used and highly based on the context.</p>
+                    <p>Not yet. While being introduced to these technologies in a fullstack engineering program, I was able to begin to use these technologies, get a sense of its usage, find out what's out there, but not a complete understanding of its context. As with most concepts in technology, that takes time working with the environment and experience in real-world situations. But with React especially, it seemed moreso. Less intuitive, more abstracted. Prone to be mis-used. It's easily accessible but not easily mastered. The usage is clear but its efficacy changes based on context and how it's applied. Best practices are hard to nail down as they vary with context. Open Source is its own beast. There are few senior/lead fullstack devs out there with the knowledge and experience to help set those. Partly because things like React are newly mainstream. Partly because things like React are overcomplicated. Partly because there is a pandemic of misinformation authored by enthusiastic yet inexperienced devs. And as always, the terminology is often loosely (and mis-) used and highly based on the context.</p>
 
                     <p>I do love that this is an entirely new dimension for me to explore. While concepts may not be new, the technologies and approaches are newer and new to me! A brand new world.</p>
 
