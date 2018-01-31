@@ -35,24 +35,27 @@ export default class Bio extends Component{
                         <h3 data-animate-in="intro">There is no Data. There is only XUL.</h3>
                     </div>
                     <div className="bio-intro">
-                        <p className="lead">I once dedicated a full year to World of Warcraft.</p>
-                        <p>A subject many advised not to include in my description but what I felt was important enough to devote a full paragraph to. What I consider one of the </p>
-                        <blockquote>
-                            <p>" ... signature artistic, technological, and sociological achievements of our time."</p>
-                            <small>Edward Castronova, <cite title="Synthetic Worlds: The Business and Culture of Online Games">Synthetic Worlds: The Business and Culture of Online Games</cite></small>
-                        </blockquote>
-                        <p className="clearfix"></p>
-                        <p>3 subjects that represent what I find most compelling about the Internet phenomenon. Each distinctly represented in exquisite execution and as a whole to form one brilliant living concept. Though a mere computer game, it is an uniquely illuminating portrayal of society today and ultimately Internet culture, technology, and trends. </p>
-                        <p>I immersed myself in it and during the height of my WoW pursuits made it to #4 in my class and guild master for an almost all-girl guild with over 50 members. I found a uniquely eloquent allegory to the actual in something very virtual. I personally felt it was a rite of passage for those in my field and, like many Internet concepts, is something you must try to fully understand.</p>
 
-                        <p className="muted"><small>Footnote: Quote taken from MIT PRESS on <a href="http://bit.ly/DsqrL" target="_blank" rel="noopener"><cite title="The Warcraft Civilization: Social Science in a Virtual World">The Warcraft Civilization: Social Science in a Virtual World</cite></a> by William Sims Bainbridge</small></p>
+                        <p className="lead">I grew up in one of the most immigrant-rich, diverse cities in the world.</p>
+                        <p>There were no queen bees in my high school. No in or out. Cool or not cool. Rather there were cliques of Greek American kids, Italian American, Korean American, Chinese American, Southeast Asian American, Indian American, and a myriad more obscure ethnicity cliques. Each with their own hierarchy. The Thais and Indonesians tended to be artsy, goth, think The Cure. The Greeks and Italians were the roughest, think Jersey Shore. Koreans tended to be gangsters or snotty. The Indians were typical math nerds. The Chinese, were into their sports cars and customizations, usually attended church. Motley crews of cliques also formed themselves. We grew up in an already wordly world. By default we knew there was a much bigger world out there than our puny little lives. Our parents were ambitious hard-working immigrants taking every opportunity they had to make a better lives for themselves and us. We grew up with this drive and that hard-working ethic. The courage to dream and also proof that if you work hard enough you can make it. In New York. In America.</p>
 
-                        <p className="lead">I love to Knit, Sew, and Crochet.</p>
-                        <p>So much so that several years ago I decided to start my own blog. As a teenager, I taught myself to knit through books from the public library. Before the Web, Yahoo! Search, and then Google Search even hit the scene. When beepers were the norm and mobile phones were giant bricks that only day traders, drug dealers, and sports agents carried around.</p>
-                        <p>In said blog I give away free patterns that I create and find on the Internet. It is a catalog of what I consider the best resources throughout the Web. And of course, lots of fiber crafty fodder. It's called <a href="http://www.omgheart.com/2011/05/13/8-bit-rpgs-amigurumis-nerd-love/" target="_blank" rel="noopener">OMG! Heart</a> as in OMG! heart Knitting, Sewing, and Crochet.</p>
+                        <p className="lead">My grade school classmates were all children of immigrants.</p>
+                        <p>From Greece to Armenia. Who brought their exotic ethnic foods to lunch instead of sandwiches. They were from far flung places, second or third world countries. We all had one thing in common, we were first generation kids, our parents were immigrants from Eastern Europe to the Middle East. I remember my classmate Jessica Blotzke's parents who were hair metal enthusiasts drove me to school in their thunderbird with zebra print upholstery, Miranda Busillo's Italian dad was a city bus driver, Linda Kwok's Korean family who made their own homemade kimchi, to my Taiwanese family where church was a community and support network.</p>
 
-                        <p className="lead">Does it get any Nerdier?</p>
-                        <p>Some friends call me "The Bomber". It's short for the nerdbomber. As in "You nerdbomber!" as quoted from DJ Tanner, Full House, circa the 90's. So probably not.</p>
+                        <p className="lead">My mom was a single parent building her own business.</p>
+                        <p>As a real estate broker, her clients themselves were mostly immigrants who would take her to the best hidden ethnic gems of their homeland to eat or gift smuggled cheeses and delicacies straight out of their luggage. I grew up on bagels, gefilte fish, pork chop rice, kebab, kalbi, and couscous. Beef noodle soup and Italian Heros. Gyros and Hot Pot. Each neighborhood was its own pocket of culture, its own mini replica of the old world.</p>
+
+
+                        <p className="lead">The village my family is from is in southern Taiwan.</p>
+                        <p>It used to take a full day to get from the airport to our village and a family friend with a car would have to make the drive up to get us and back. It used to be called Tiger's Tail. Now it's part of Yunlin County and noone recognizes its name. There are now street signs in English, high-speed bullet trains that go from Chiang Kai Shek Airport to our village in about 3 hours, and now you can run across German Tourists deep in the Alishan Mountains. Our uncle's house was one of few that had indoor plumbing. Most abodes were tin-covered stalls. We talk politics and business with our family. American culture. We speak in Taiwanese or Mainan-Hwa, not Mandarin, which is now the national language. Big Uncle, a Taoist Buddhist, would take us up the mountain to his temple to attend religious drumming ceremonies. Where Taiwan's aborigines would be going about their daily lives. It was wild and beautiful. Ancient and ethereal. While in the 80's, Run DMC and Aerosmith were crashing through walls on MTV. Now Taiwan has a democratically elected female president and is the first Asian country to recognize and legalize Gay marriage. It is a quiet leader in technology. A place where both old and new are revered.</p>
+
+                        <p>I come from both these worlds. As does my brother. As do many of those today in New York City. We all have our own customs and cultural values, biases and opinions. But we know tolerance. And we know humanity. What connects us all.</p>
+
+                        <p>From worlds that no longer exists or too obscure to notice, each of these immigrants bring with them a precious insight that no other can. Something any country can benefit from. I look not only to pursue my interests but to make as much of a positive impact as possible throughout my journey.</p>
+
+
+                        <p className="lead">I live in East Harlem</p>
+                        <p>Predominantly Hispanic usually Puerto Rican, Carribean, or Mexican. I get the latest news of Syria and the Middle East from my deli guy who is from Yemen. Across the street is a quaint bed and breakfast run by a Gay couple from the Midwest. My building is filled with creatives, professionals, educators. All within a single block radius.</p>
                     </div>
 
                     {/*<div className="list-section">*/}
@@ -121,7 +124,7 @@ export default class Bio extends Component{
                             </dd>
                             </dl>
                             <dl>
-                                <dt>Amazon Everything</dt><dd>Smile, Essentials, Basics, Elements, Prime, Restaurants, Now, Pantry, Go, Home Services</dd>
+                                <dt>Amazon Everything</dt><dd>Smile, Essentials, Basics, Elements, Prime, Restaurants, Now, Pantry, Video, Go, Home Services</dd>
                             </dl>
                         </div>
 
@@ -135,14 +138,14 @@ export default class Bio extends Component{
                                 Shortcut Keys Forever</dd>
                             </dl>
                             <dl>
+                                <dt>Google Everything</dt>
+                                <dd>Chrome - Chrome Dev Tools - Chromecast - Project Fi</dd>
+                            </dl>
+                            <dl>
                                 <dt>Apps</dt>
                                 <dd>Google Arts & Culture -
                                     Reddit
                                 </dd>
-                            </dl>
-
-                            <dl>
-                                <dt>Blogs</dt><dd><a href="http://omgheart.com/" target="_blank" rel="noopener">OMG! Heart</a></dd>
                             </dl>
                         </div>
 

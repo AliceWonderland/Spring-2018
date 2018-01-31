@@ -10,7 +10,7 @@ import { history } from './client/history.js';
 
 import './client/index.scss';
 
-import { Home, About, Bio, Resume, Portfolio, Nav, Footer, Master } from './client/components';
+import { Home, About, Bio, Resume, Portfolio, Nav, Footer, Master, Modal } from './client/components';
 
 
 // // specify basename below if running in a subdirectory or set as "/" if app runs in root
@@ -37,6 +37,7 @@ ReactDOM.render(
                     <Route path='*' component={Home} />
                 </Switch>
 
+                <Modal />
                 <Footer />
             </div>
         </Router>

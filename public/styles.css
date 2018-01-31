@@ -2403,6 +2403,9 @@ body:before {
   background: #1A1F21;
   z-index: -1; }
 
+body {
+  background-color: #333; }
+
 main {
   margin-top: 65px;
   width: 100%;
@@ -3039,6 +3042,22 @@ footer .galaxy {
 
 .resume img.puppynaut-img {
   border-radius: 100px; }
+
+#contact-modal {
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+  visibility: hidden;
+  z-index: 100;
+  background-color: #333;
+  text-align: center;
+  padding: 10px; }
 
 /*BEGIN GITHUB UNIVERSE STYLES*/
 /*BACKGROUND + STARS*/

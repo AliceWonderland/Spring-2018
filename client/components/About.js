@@ -44,7 +44,7 @@ export default class About extends Component{
 
                     <p data-animate-in="intro">On the DevOps or SysAdmin side, this site runs on a LEMP server on the cloud! A modern form of virtual private server that hosts both my PHP/MySql sites and my Node-based applications. Nginx is used in place of Apache to handle the requests for my traditional sites and as well my Node-based apps.</p>
 
-                    <p data-animate-in="intro">At the moment it is a study in application tools and technologies for UI engineering but not UI styling.</p>
+                    <p data-animate-in="intro">This site is currently a work in progress. Once the barebones are in place, each piece from the CSS + Responsiveness to the deploy config will be upgraded to reflect what I consider best practice.</p>
                 </section>
 
 

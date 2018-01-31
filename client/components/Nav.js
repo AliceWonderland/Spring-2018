@@ -4,11 +4,42 @@ import { Link } from 'react-router-dom';
 export default class Nav extends Component{
 	constructor(props){
 		super(props);
-		this.state={};
+		this.state={
+			modal:false
+		};
+
+		this.contactClick=this.contactClick.bind(this);
+		this.handleScroll=this.handleScroll.bind(this);
 	}
 
 	componentDidMount () {
 		// console.log('props',location.pathname);
+		document.addEventListener("scroll", this.handleScroll);
+	}
+
+	componentWillUnmount() {
+		document.removeEventListener("scroll", this.handleScroll);
+	}
+
+	handleScroll() {
+		console.log('scrolling',this.state.modal);
+		if(this.state.modal){
+			document.getElementById('contact-modal').style.visibility='hidden';
+			this.setState({modal:!this.state.modal});
+		}
+	}
+
+	contactClick(e){
+		console.log('contact', e, e.target, e.value,document.getElementById('contact-modal').innerHTML,this.state.modal);
+		if(this.state.modal){
+			document.getElementById('contact-modal').style.visibility='hidden';
+		}else{
+			document.getElementById('contact-modal').style.visibility='visible';
+		}
+
+		this.setState({modal:!this.state.modal});
+
+		// if modal and click anywhere on page toggle off
 	}
 
     render() {
@@ -22,7 +53,7 @@ export default class Nav extends Component{
                   <Link className={(page==='/bio' ? 'is-active' : '')} to="/bio">Bio</Link>
                   <Link className={(page==='/resume' ? 'is-active' : '')} to="/resume">Resume</Link>
                   <Link className={(page.indexOf('/portfolio') > -1 ? 'is-active' : '')} to="/portfolio">Portfolio</Link>
-                  <Link className={(page==='/modal' ? 'is-active' : '')} to="/modal">Contact</Link>
+                  <Link className={(page==='/modal' ? 'is-active' : '')} to="#"  onClick={this.contactClick}>Contact</Link>
               </nav>
               <div className="watch"><a href="https://github.com/AliceWonderland" target="_blank" rel="noopener"><i className="fa fa-github fa-2" aria-hidden="true"></i></a></div>
 
