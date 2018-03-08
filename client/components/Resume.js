@@ -23,7 +23,10 @@ export default class Resume extends Component{
                 <span data-animate-in="intro"><img className="puppynaut-img" src="assets/img/logo_astro.png" alt="puppynaut" /></span>
 				<p data-animate-in="intro" className="lead">I'm a Web Engineer.</p>
 				<p data-animate-in="intro">I heart where Science, Art, and Culture meet.</p>
+
 				<p data-animate-in="intro" className="lead">My specialty is in building UI.</p>
+				<p data-animate-in="intro">My body of work spans from 2000 until today.</p>
+				<p data-animate-in="intro">Check out my <a href="http://node.alicechuang.com/portfolio"><b>Portfolio</b></a> page for a full list of my work.</p>
 
 				<p data-animate-in="intro">See my <a href="https://github.com/AliceWonderland" target="_blank" rel="noopener"><b>Github</b></a> for latest <a href="http://node.alicechuang.com/portfolio/node"><b>Node Projects</b></a></p>
 

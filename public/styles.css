@@ -3051,8 +3051,13 @@ footer .galaxy li a {
 .resume img.puppynaut-img {
   border-radius: 100px; }
 
+.resume p {
+  width: 50%;
+  text-align: center; }
+
 .resume p.lead {
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 10px; }
 
 #contact-modal {
   width: 300px;
