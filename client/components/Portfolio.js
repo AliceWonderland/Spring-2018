@@ -38,6 +38,7 @@ export default class Portfolio extends Component{
 				this.setState({category:'all'});
 			}
 
+			document.title = 'AliceChuang.com > Spring 2018 > Portfolio';
 			LiftOff($,{});
 		});
 	}
@@ -60,14 +61,14 @@ export default class Portfolio extends Component{
 		console.log(this.state);
         return (
             <main className="gradient portfolio">
-				<section className="horizon" data-animate-in="fadein">
+				<section className="horizon"	>
 					<h3 data-animate-in="intro">My Work By Example</h3>
 					<h2 data-animate-in="intro">Websites Then and Now</h2>
 
 					<div className="stars"></div>
 					<div className="stars-lg"></div>
 				</section>
-				<section className="galaxy" data-animate-in="fadein">
+				<section className="galaxy">
 					<div className="grid-container">
 						<div className="nav">
 							<nav>

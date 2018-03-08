@@ -20,8 +20,8 @@ export default class Footer extends Component{
                   <div className="stars-lg"></div>
               </div>
               <div className="footer-bar">
-                  <div><small>Chrome xxx and above on Mac</small></div>
-                  <div><small>&copy; AliceChuang.com 2001-2017</small></div>
+                  <div><small>Optimized for Chrome Current on OSX</small></div>
+                  <div><small>&copy; AliceChuang.com 2001-2018</small></div>
               </div>
           </footer>
         )

@@ -2542,16 +2542,6 @@ dl.wide dt {
 .site-navigation a:hover {
   opacity: 1; }
 
-@media (min-width: 850px) {
-  .site-navigation a {
-    font-size: 1.2rem; } }
-
-@media (min-width: 1025px) {
-  .site-navigation a {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    padding: 5px 5px 6px; } }
-
 .site-navigation a:after {
   content: '';
   display: block;
@@ -2571,6 +2561,16 @@ dl.wide dt {
 .site-navigation a.is-active:after,
 .site-navigation a:hover:after {
   transform: scaleX(1); }
+
+@media (min-width: 850px) {
+  .site-navigation a {
+    font-size: 1.2rem; } }
+
+@media (min-width: 1025px) {
+  .site-navigation a {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 5px 5px 6px; } }
 
 @media (max-width: 849px) {
   .site-navigation {
@@ -2644,9 +2644,12 @@ footer .galaxy {
   height: 230px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 70px 0px; }
+  padding: 70px 0px 70px 95px; }
+
+footer .galaxy li a {
+  text-transform: lowercase; }
 
 .footer-bar {
   height: 80px;
@@ -2700,7 +2703,8 @@ footer .galaxy {
   min-width: 310px;
   width: 30%;
   margin-bottom: 30px;
-  /*overflow-y: auto;*/ }
+  /*overflow-y: auto;*/
+  z-index: 1; }
 
 .space > *:after, .infinite > div:after, .galaxy > section:after {
   content: '';
@@ -2715,7 +2719,7 @@ footer .galaxy {
   z-index: -1; }
 
 .galaxy > section:after {
-  width: calc(100% - 0px);
+  width: 100%;
   height: calc(100% - 0px);
   top: 0px;
   left: 0px; }
@@ -2731,7 +2735,8 @@ footer .galaxy {
 
 /*animations*/
 [data-animate-in] {
-  opacity: 0; }
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease; }
 
 [data-animate-in="fadein"] {
   animation-duration: 1s;
@@ -2774,11 +2779,13 @@ footer .galaxy {
 .landing .galaxy {
   min-height: calc(100vh - 365px); }
 
-.landing .galaxy .galaxy-content h1 {
+.landing .galaxy-content h1 {
   margin: 0 0 7px 0; }
 
+.landing .infinite a {
+  float: left; }
+
 .landing .infinite img {
-  float: left;
   width: 210px;
   margin-right: 20px;
   border-radius: 4px;
@@ -2797,14 +2804,7 @@ footer .galaxy {
   align-items: center; }
 
 .about .galaxy {
-  padding: 60px 30px; }
-
-.about .infinite dd {
-  /*margin: 0 0 0 110px;*/
-  /*padding: 0 0 0.5em 0;*/
-  color: #828585; }
-
-.about .galaxy {
+  padding: 60px 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -2830,6 +2830,11 @@ footer .galaxy {
   border-bottom: dashed 1px #d2d2d2;
   /* display: inline; */
   padding-bottom: 0px; }
+
+.about .infinite dd {
+  /*margin: 0 0 0 110px;*/
+  /*padding: 0 0 0.5em 0;*/
+  color: #828585; }
 
 .about .galaxy section.puppynaut-theme {
   background: none;
@@ -2889,6 +2894,9 @@ footer .galaxy {
 
 .bio .horizon div.bio-intro p.lead {
   margin-top: 55px; }
+
+.bio .horizon div.bio-intro p {
+  line-height: 1.3em; }
 
 .bio .horizon div.list {
   position: relative;
@@ -3042,6 +3050,9 @@ footer .galaxy {
 
 .resume img.puppynaut-img {
   border-radius: 100px; }
+
+.resume p.lead {
+  margin-top: 20px; }
 
 #contact-modal {
   width: 300px;

@@ -132,8 +132,4 @@ export const LiftOff= function($, APP) {
 	  };
   };
 
-  export const test=function(){
-  	alert('test');
-  };
-
   export default LiftOff;

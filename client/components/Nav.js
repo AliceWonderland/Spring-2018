@@ -53,7 +53,7 @@ export default class Nav extends Component{
                   <Link className={(page==='/bio' ? 'is-active' : '')} to="/bio">Bio</Link>
                   <Link className={(page==='/resume' ? 'is-active' : '')} to="/resume">Resume</Link>
                   <Link className={(page.indexOf('/portfolio') > -1 ? 'is-active' : '')} to="/portfolio">Portfolio</Link>
-                  <Link className={(page==='/modal' ? 'is-active' : '')} to="#"  onClick={this.contactClick}>Contact</Link>
+                  {/*<Link className={(page==='/modal' ? 'is-active' : '')} to="#"  onClick={this.contactClick}>Contact</Link>*/}
               </nav>
               <div className="watch"><a href="https://github.com/AliceWonderland" target="_blank" rel="noopener"><i className="fa fa-github fa-2" aria-hidden="true"></i></a></div>
 
