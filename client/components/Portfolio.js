@@ -195,12 +195,17 @@ export default class Portfolio extends Component{
 					}
 
 					{
-						(category==='agency' || category==='all') ?
+						(category==='independent' || category==='all') ?
 						  <div className="grid-container" data-animate-in="fadein">
-							  <div><h5>2000</h5></div><div className="sub-header"><h5>Nuforia - Red Sky Interactive</h5></div>
+							  <div><h5>2001</h5></div><div className="sub-header"><h5>Freelance - Independent Work</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
-								  if(listItem.portEmployer==='Nuforia - Red Sky Interactive'){
+								  if(listItem.portEmployer==='Independent'
+									|| listItem.portEmployer==='Ideas On Purpose'
+									|| listItem.portEmployer==='Bootstrap Software'
+									|| listItem.portEmployer==='Principle MCD'
+									|| listItem.portEmployer==='ITVR Media'
+									|| listItem.portEmployer==='Princeton Information'){
 									  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
 
 									  if(count===3){count=0;}
@@ -228,17 +233,12 @@ export default class Portfolio extends Component{
 					}
 
 					{
-						(category==='independent' || category==='all') ?
+						(category==='agency' || category==='all') ?
 						  <div className="grid-container" data-animate-in="fadein">
-							  <div><h5>2000</h5></div><div className="sub-header"><h5>Freelance - Independent Work</h5></div>
+							  <div><h5>2000</h5></div><div className="sub-header"><h5>Nuforia - Red Sky Interactive</h5></div>
 							  {port.map((listItem,ind) => {
 								  if(ind===0){count=0;}
-								  if(listItem.portEmployer==='Independent'
-									|| listItem.portEmployer==='Ideas On Purpose'
-									|| listItem.portEmployer==='Bootstrap Software'
-									|| listItem.portEmployer==='Principle MCD'
-									|| listItem.portEmployer==='ITVR Media'
-									|| listItem.portEmployer==='Princeton Information'){
+								  if(listItem.portEmployer==='Nuforia - Red Sky Interactive'){
 									  var img=(listItem.portImg)? 'http://www.alicechuang.com/site/spring2010_v3/images_210x118/'+listItem.portImg : 'http://www.alicechuang.com/imgs/pix.gif';
 
 									  if(count===3){count=0;}

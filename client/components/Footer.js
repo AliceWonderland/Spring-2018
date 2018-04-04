@@ -21,6 +21,7 @@ export default class Footer extends Component{
               </div>
               <div className="footer-bar">
                   <div><small>Optimized for Chrome Current on OSX</small></div>
+                  <div><small>Spring 2018</small></div>
                   <div><small>&copy; AliceChuang.com 2001-2018</small></div>
               </div>
           </footer>

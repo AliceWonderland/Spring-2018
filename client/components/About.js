@@ -192,7 +192,8 @@ export default class About extends Component{
                         <dt><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank" rel="noopener">React Developer Tools </a></dt><dd>&nbsp;</dd>
                         <dt><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd" target="_blank" rel="noopener">Redux Developer Tools</a></dt><dd>&nbsp;</dd>
                         <dt><a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">Webstorm</a></dt><dd>ide</dd>
-vcs                    </dl>
+                        <dt><a href="https://github.com/AliceWonderland" target="_blank" rel="noopener">Github</a></dt><dd>vcs</dd>
+                    </dl>
                 </div>
             </section>
 
@@ -237,7 +238,7 @@ vcs                    </dl>
                     <p data-animate-in="intro">The modern web stack and the Progressive Web App as yet another aspect of the kind of engineering I inhabit.</p>
 
                     <h4 data-animate-in="intro">Worlds</h4>
-                    <p data-animate-in="intro">The different worlds all of us may inhabit while residing on the same space time continuum. The rainbow a nod to intersectional unity and cross-functional approaches to development. The myriad of technologies that form the current landscape. A nod to the importance of Science, Technology, Medicine. Plus, I love gradients and 2018 is the Year of the Dog. And I love dogs.</p>
+                    <p data-animate-in="intro">The different worlds all of us may inhabit while residing on the same space time continuum. The rainbow a nod to intersectional unity and cross-functional approaches to development. The myriad of technologies that form the current landscape. A nod to the importance of Science, Technology, Engineering, Medicine. Plus, I love gradients, 2018 is the Year of the Dog, and I love dogs.</p>
 
                     <p>I can take full credit for the design of this site. It is inspired and based on <a href="https://githubuniverse.com/" target="_blank" rel="noopener">GitHub Universe</a>.</p>
                 </section>
