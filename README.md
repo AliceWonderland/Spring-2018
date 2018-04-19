@@ -18,7 +18,6 @@ Before forking this repo and cloning down to your computer, make sure Node and P
 - Fork this repo to your Github (Hit the Fork button at the top right of this repo. Choose where you'd like to fork it.)
 - From your Terminal or Shell Prompt:
 - Browse to folder where you will download this repo
-- Clone down the repo, `git clone https://github.com/your-username/react-boilerplater.git` (this clones into a folder `react-boilerplater`)
 - Browse to this folder
 - Run `npm install` (This installs all the necessary packages required to run this app)
 - Run `npm run start-dev` (Make sure Postgres is running. If not, stop the server by hitting ctrl+c. Start Postgres, you should see the icon in the top right menu bar next to the battery life icon, re-run start-dev)
