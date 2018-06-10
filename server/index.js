@@ -15,10 +15,6 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use('/bootstrap', express.static(path.join(__dirname, '..', '/node_modules/bootstrap/dist')));
 // console.log("dirname",__dirname,path.join(__dirname, '../public'));
 
-// parsing middleware
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // routing
 app.use('/api', require('./api'));

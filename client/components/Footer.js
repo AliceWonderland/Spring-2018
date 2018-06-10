@@ -9,7 +9,7 @@ export default class Footer extends Component{
                   <ul data-animate-in="fadein">
                       <li>GitHub <a href="https://github.com/AliceWonderland">@AliceWonderland</a></li>
                       <li>Twitter <a href="https://twitter.com/omgheartcrafts">@OmgHeartCrafts</a></li>
-                      <li>Contact <a href="">@Gmail</a></li>
+                      <li>Contact <a href="#">@Gmail</a></li>
                   </ul>
 
                   <div className="galaxy-content" data-animate-in="intro">
